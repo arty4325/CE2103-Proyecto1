@@ -1,3 +1,3 @@
-/home/jorge/Proyecto#1_BattleSpace/cmake-build-debug/CMakeFiles/Proyecto_1_BattleSpace.dir
-/home/jorge/Proyecto#1_BattleSpace/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jorge/Proyecto#1_BattleSpace/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/cmake-build-debug/CMakeFiles/Proyecto_1_BattleSpace.dir
+/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

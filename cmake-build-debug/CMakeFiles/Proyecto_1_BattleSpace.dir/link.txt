@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Proyecto_1_BattleSpace.dir/main.cpp.o -o Proyecto_1_BattleSpace  /usr/lib/libSDL2.so 
