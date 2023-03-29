@@ -8,25 +8,25 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/var/lib/snapd/snap/clion/229/bin/cmake/linux/x64/bin/cmake",
-			"cpack" : "/var/lib/snapd/snap/clion/229/bin/cmake/linux/x64/bin/cpack",
-			"ctest" : "/var/lib/snapd/snap/clion/229/bin/cmake/linux/x64/bin/ctest",
-			"root" : "/var/lib/snapd/snap/clion/229/bin/cmake/linux/x64/share/cmake-3.24"
+			"cmake" : "/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake",
+			"cpack" : "/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cpack",
+			"ctest" : "/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/ctest",
+			"root" : "/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 24,
+			"minor" : 25,
 			"patch" : 2,
-			"string" : "3.24.2",
+			"string" : "3.25.2",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-6ba2ff486a397c5b4385.json",
+			"jsonFile" : "codemodel-v2-01640f586e93a4db80e5.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-e3b6a155bdc80db00837.json",
+			"jsonFile" : "cache-v2-9cd175dcb3553d009c72.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-c718572efbc2d9a8e98f.json",
+			"jsonFile" : "cmakeFiles-v1-07866bb2b7da90da34eb.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-e3b6a155bdc80db00837.json",
+			"jsonFile" : "cache-v2-9cd175dcb3553d009c72.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-c718572efbc2d9a8e98f.json",
+			"jsonFile" : "cmakeFiles-v1-07866bb2b7da90da34eb.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-6ba2ff486a397c5b4385.json",
+			"jsonFile" : "codemodel-v2-01640f586e93a4db80e5.json",
 			"kind" : "codemodel",
 			"version" : 
 			{

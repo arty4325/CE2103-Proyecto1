@@ -1,3 +1,4 @@
+find_package(Qt5SerialPort REQUIRED)
 
 cmake_minimum_required(VERSION 3.5)
 
@@ -9,6 +10,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_PREFIX_PATH "/usr/lib/qt")
 
 
 
@@ -18,7 +20,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(Battle_Space nave_jugador.cpp nave_jugador.h)
+add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp)
+target_link_libraries(Battle_Space Qt5::SerialPort)
+
 
 target_link_libraries(Battle_Space Qt5::Core Qt5::Gui Qt5::Widgets)
 

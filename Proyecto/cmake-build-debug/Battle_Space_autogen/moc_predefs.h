@@ -57,7 +57,6 @@
 #define __FLT64X_MAX_10_EXP__ 4932
 #define __cpp_if_constexpr 201606L
 #define __LDBL_IS_IEC_60559__ 2
-#define __FLT64X_IS_IEC_60559__ 2
 #define __FLT64X_HAS_QUIET_NAN__ 1
 #define __UINT_LEAST8_MAX__ 0xff
 #define __GCC_ATOMIC_BOOL_LOCK_FREE 2
@@ -356,6 +355,7 @@
 #define __FLT32X_MAX_10_EXP__ 308
 #define __SIZEOF_INT128__ 16
 #define __FLT16_MIN__ 6.10351562500000000000000000000000000e-5F16
+#define __FLT64X_IS_IEC_60559__ 2
 #define __LDBL_MAX_10_EXP__ 4932
 #define __ATOMIC_RELAXED 0
 #define __DBL_EPSILON__ double(2.22044604925031308084726333618164062e-16L)
@@ -397,6 +397,7 @@
 #define __LONG_WIDTH__ 64
 #define __PIC__ 2
 #define __UINT_FAST32_TYPE__ long unsigned int
+#define QT_SERIALPORT_LIB 1
 #define __FLT16_MANT_DIG__ 11
 #define __FLT32X_NORM_MAX__ 1.79769313486231570814527423731704357e+308F32x
 #define __CHAR32_TYPE__ unsigned int
