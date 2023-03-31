@@ -73,6 +73,30 @@ build CMakeFiles/Battle_Space.dir/SerialPort.cpp.o: CXX_COMPILER__Battle_Space_D
   OBJECT_DIR = CMakeFiles/Battle_Space.dir
   OBJECT_FILE_DIR = CMakeFiles/Battle_Space.dir
 
+build CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: CXX_COMPILER__Battle_Space_Debug /home/oscaraad/TEC/2023SEMI/Datos$ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp || cmake_object_order_depends_target_Battle_Space
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -I"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include" -isystem /usr/include/qt -isystem /usr/include/qt/QtSerialPort -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
+  OBJECT_DIR = CMakeFiles/Battle_Space.dir
+  OBJECT_FILE_DIR = CMakeFiles/Battle_Space.dir
+
+build CMakeFiles/Battle_Space.dir/Node.cpp.o: CXX_COMPILER__Battle_Space_Debug /home/oscaraad/TEC/2023SEMI/Datos$ II/CE2103-Proyecto1/Proyecto/Node.cpp || cmake_object_order_depends_target_Battle_Space
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Battle_Space.dir/Node.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -I"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include" -isystem /usr/include/qt -isystem /usr/include/qt/QtSerialPort -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
+  OBJECT_DIR = CMakeFiles/Battle_Space.dir
+  OBJECT_FILE_DIR = CMakeFiles/Battle_Space.dir
+
+build CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o: CXX_COMPILER__Battle_Space_Debug /home/oscaraad/TEC/2023SEMI/Datos$ II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp || cmake_object_order_depends_target_Battle_Space
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -I"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include" -isystem /usr/include/qt -isystem /usr/include/qt/QtSerialPort -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
+  OBJECT_DIR = CMakeFiles/Battle_Space.dir
+  OBJECT_FILE_DIR = CMakeFiles/Battle_Space.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Battle_Space
@@ -81,7 +105,7 @@ build CMakeFiles/Battle_Space.dir/SerialPort.cpp.o: CXX_COMPILER__Battle_Space_D
 #############################################
 # Link the executable Battle_Space
 
-build Battle_Space: CXX_EXECUTABLE_LINKER__Battle_Space_Debug CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o CMakeFiles/Battle_Space.dir/main.cpp.o CMakeFiles/Battle_Space.dir/SerialPort.cpp.o | /usr/lib/libQt5SerialPort.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 /usr/lib/libQt5Widgets.so.5.15.8 /usr/lib/libQt5Gui.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 || Battle_Space_autogen Battle_Space_autogen_timestamp_deps
+build Battle_Space: CXX_EXECUTABLE_LINKER__Battle_Space_Debug CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o CMakeFiles/Battle_Space.dir/main.cpp.o CMakeFiles/Battle_Space.dir/SerialPort.cpp.o CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o CMakeFiles/Battle_Space.dir/Node.cpp.o CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o | /usr/lib/libQt5SerialPort.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 /usr/lib/libQt5Widgets.so.5.15.8 /usr/lib/libQt5Gui.so.5.15.8 /usr/lib/libQt5Core.so.5.15.8 || Battle_Space_autogen Battle_Space_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libQt5SerialPort.so.5.15.8  /usr/lib/libQt5Core.so.5.15.8  /usr/lib/libQt5Core.so.5.15.8  /usr/lib/libQt5Widgets.so.5.15.8  /usr/lib/libQt5Gui.so.5.15.8  /usr/lib/libQt5Core.so.5.15.8
   OBJECT_DIR = CMakeFiles/Battle_Space.dir

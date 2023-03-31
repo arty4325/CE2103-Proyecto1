@@ -20,13 +20,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp)
+add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp ListaSimple.cpp ListaSimple.h Node.cpp Node.h SerialWorker.h SerialWorker.cpp)
 target_link_libraries(Battle_Space Qt5::SerialPort)
 
 
 target_link_libraries(Battle_Space Qt5::Core Qt5::Gui Qt5::Widgets)
 
 target_link_libraries(Battle_Space Qt5::Core Qt5::Gui Qt5::Widgets)
-
+set_source_files_properties(SRC:/SerialThread.cpp PROPERTIES SKIP_AUTOMOC ON)  # Agregar esta línea
 set(CMAKE_AUTOMOC_FLAGS "-fskip-targets=MOC_AUTOMOC_TARGETS_REGEX")
 

@@ -110,9 +110,27 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h",
+			"MU",
+			"EWIEGA46WW/moc_ListaSimple.cpp",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h",
+			"MU",
+			"EWIEGA46WW/moc_Node.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.h",
 			"MU",
 			"EWIEGA46WW/moc_SerialPort.cpp",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h",
+			"MU",
+			"EWIEGA46WW/moc_SerialWorker.cpp",
 			null
 		],
 		[
@@ -174,7 +192,22 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp",
 			"MU",
 			null
 		],

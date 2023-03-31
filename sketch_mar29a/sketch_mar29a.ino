@@ -17,24 +17,26 @@ void setup() {
 void loop() {
   int xAxisValue = analogRead(xAxisPin);
   int yAxisValue = analogRead(yAxisPin);
-  int buttonState = digitalRead(buttonPin);
+  int potentiometerValue = analogRead(potentiometerPin);
   int buttonState1 = digitalRead(buttonPin1);
   int buttonState2 = digitalRead(buttonPin2);
-  int potentiometerValue = analogRead(potentiometerPin);
+  int buttonState = digitalRead(buttonPin);
 
-  Serial.print(" X: ");
+  //Serial.print(" X: ");
   Serial.print(xAxisValue);
-  Serial.print(", Y: ");
+  Serial.print(",");
   Serial.print(yAxisValue);
-  Serial.print(", Potentiometer: ");
+  Serial.print(",");
   Serial.print(potentiometerValue);
-  Serial.print(", Button: ");
-  Serial.println(buttonState);
-  Serial.print(", Button1: ");
+  Serial.print(",");
   Serial.print(buttonState1);
-  Serial.print(", Button2: ");
+  Serial.print(",");
   Serial.print(buttonState2);
+  Serial.print(",");
+  Serial.println(buttonState);
+  //Serial.print("\n");
 
+  
   if (buttonState == HIGH) {
     digitalWrite(buzzerPin, HIGH);
     delay(1000); // Espera 1 segundo
