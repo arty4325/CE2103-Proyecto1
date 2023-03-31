@@ -22,19 +22,14 @@
   <component name="ChangeListManager">
     <list default="true" id="48ecbaa1-aa61-4263-9aed-80415bcb4678" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-01640f586e93a4db80e5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-29T17-10-09-0594.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Battle_Space-Debug-cb814ec4d480a834b12f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerialWorker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SerialWorker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerialWorker.h" beforeDir="false" afterPath="$PROJECT_DIR$/SerialWorker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battle_Space" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battle_Space" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +103,7 @@
       <workItem from="1679613511670" duration="314000" />
       <workItem from="1679694026536" duration="1848000" />
       <workItem from="1680107003074" duration="11478000" />
-      <workItem from="1680125824477" duration="19316000" />
+      <workItem from="1680125824477" duration="22857000" />
     </task>
     <servers />
   </component>

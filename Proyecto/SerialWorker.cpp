@@ -2,6 +2,7 @@
 // Created by oscaraad on 31/03/23.
 //
 #include "SerialWorker.h"
+#include "ListaSimple.h"
 
 SerialWorker::SerialWorker(QObject *parent) : QObject(parent)
 {
@@ -14,10 +15,24 @@ SerialWorker::SerialWorker(QObject *parent) : QObject(parent)
 
 void SerialWorker::readData()
 {
+    QList<QString> dataList;
+    ListaSimple list;
     m_data += m_serialPort.readAll();
 
     if (m_data.endsWith("\n")) {
-        emit dataReceived(QString(m_data));
+        QStringList subStrings = QString(m_data).split(",");
+
+        //dataList.append(QString(m_data));
+        //emit dataReceived(QString(m_data));
+
+        for (const QString& subString : subStrings) {
+            bool ok = false;
+            int value = subString.trimmed().toInt(&ok);
+            if (ok) {
+                list.insertHead(value);
+            }
+        }
+        emit dataReceived(list);
         m_data.clear();
     }
 }

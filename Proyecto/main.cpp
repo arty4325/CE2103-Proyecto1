@@ -2,6 +2,7 @@
 #include <QThread>
 #include <QTextStream>
 #include "SerialWorker.h"
+#include "ListaSimple.h"
 #include <iostream>
 using namespace std;
 QThread workerThread;  // variable global para el hilo
@@ -15,10 +16,14 @@ int main(int argc, char *argv[])
     worker->moveToThread(&workerThread);
 
     // Conectamos la señal dataReceived() del objeto worker a una función lambda que imprime los datos recibidos
-    QObject::connect(worker, &SerialWorker::dataReceived, [](const QString& data) {
+QObject::connect(worker, &SerialWorker::dataReceived, [](const ListaSimple& dataList) {
         cout << "Se recibe informacion" << endl;
-        QTextStream(stdout) << data << endl;
+        //for (const QString& data : dataList) {
+        //    QTextStream(stdout) << data << endl;
+        //}
+        dataList.printList();
     });
+
 
     // Conectamos la señal finished() del objeto worker al método quit() del objeto QCoreApplication
     QObject::connect(worker, &SerialWorker::finished, &a, &QCoreApplication::quit);

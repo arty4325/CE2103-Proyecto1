@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SerialWorker_t {
-    QByteArrayData data[6];
-    char stringdata0[50];
+    QByteArrayData data[7];
+    char stringdata0[63];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,13 +35,14 @@ static const qt_meta_stringdata_SerialWorker_t qt_meta_stringdata_SerialWorker =
 QT_MOC_LITERAL(0, 0, 12), // "SerialWorker"
 QT_MOC_LITERAL(1, 13, 12), // "dataReceived"
 QT_MOC_LITERAL(2, 26, 0), // ""
-QT_MOC_LITERAL(3, 27, 4), // "data"
-QT_MOC_LITERAL(4, 32, 8), // "finished"
-QT_MOC_LITERAL(5, 41, 8) // "readData"
+QT_MOC_LITERAL(3, 27, 11), // "ListaSimple"
+QT_MOC_LITERAL(4, 39, 5), // "lista"
+QT_MOC_LITERAL(5, 45, 8), // "finished"
+QT_MOC_LITERAL(6, 54, 8) // "readData"
 
     },
-    "SerialWorker\0dataReceived\0\0data\0"
-    "finished\0readData"
+    "SerialWorker\0dataReceived\0\0ListaSimple\0"
+    "lista\0finished\0readData"
 };
 #undef QT_MOC_LITERAL
 
@@ -60,13 +61,13 @@ static const uint qt_meta_data_SerialWorker[] = {
 
  // signals: name, argc, parameters, tag, flags
        1,    1,   29,    2, 0x06 /* Public */,
-       4,    0,   32,    2, 0x06 /* Public */,
+       5,    0,   32,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    0,   33,    2, 0x0a /* Public */,
+       6,    0,   33,    2, 0x0a /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void,
 
  // slots: parameters
@@ -81,7 +82,7 @@ void SerialWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         auto *_t = static_cast<SerialWorker *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->dataReceived((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: _t->dataReceived((*reinterpret_cast< ListaSimple(*)>(_a[1]))); break;
         case 1: _t->finished(); break;
         case 2: _t->readData(); break;
         default: ;
@@ -89,7 +90,7 @@ void SerialWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (SerialWorker::*)(const QString & );
+            using _t = void (SerialWorker::*)(ListaSimple );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialWorker::dataReceived)) {
                 *result = 0;
                 return;
@@ -146,7 +147,7 @@ int SerialWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void SerialWorker::dataReceived(const QString & _t1)
+void SerialWorker::dataReceived(ListaSimple _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

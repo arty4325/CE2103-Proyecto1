@@ -50,7 +50,7 @@ void ListaSimple::deleteHead(){
 /**
  * @brief Método que permite mostrar los valores de la lista
  */
-void ListaSimple::printList(){
+void ListaSimple::printList() const{
     cout << "*********************" << endl;
     cout << "Estado actual de la lista " << endl;
     Node* current = this->head;

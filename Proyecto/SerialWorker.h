@@ -7,6 +7,7 @@
 
 #include <QObject>
 #include <QSerialPort>
+#include "ListaSimple.h"
 
 class SerialWorker : public QObject
 {
@@ -16,7 +17,7 @@ public:
     ~SerialWorker() {}
 
 signals:
-    void dataReceived(const QString& data);
+    void dataReceived(ListaSimple lista);
     void finished();
 
 public slots:
