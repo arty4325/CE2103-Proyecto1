@@ -1,64 +1,22 @@
 # ninja log v5
-1	16	1680260168866742849	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-17	353	1680254316120018253	CMakeFiles/Battle_Space.dir/Node.cpp.o	403c49400326eff6
-1	88	1680260408743418558	build.ninja	94df85c983be376a
-1	16	1680260168866742849	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-1	16	1680260168866742849	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-17	1205	1680260170056742893	CMakeFiles/Battle_Space.dir/serialworker.cpp.o	92382322f7e9f686
-17	336	1680254316103351586	CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o	570d8bea9cec8213
-1205	1505	1680260170353409570	Battle_Space	b78a07d3a21ae076
-11	1037	1680115498582131980	CMakeFiles/Battle_Space.dir/SerialPort.cpp.o	e2d1bbd2f0b3eb74
-11	1791	1680260131120074752	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-120	1368	1680199538430168522	CMakeFiles/Battle_Space.dir/SerialThread.cpp.o	5ec240ff079cdcec
-1	16	1680260168866742849	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-111	1371	1680259957726734931	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
-17	380	1680213936940162168	CMakeFiles/Battle_Space.dir/LinkedList.cpp.o	5ca66f52e1a70cb8
-1	84	1680260408743418558	build.ninja	94df85c983be376a
-3	143	1680260408893418564	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	143	1680260408893418564	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-3	143	1680260408893418564	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	143	1680260408893418564	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-143	1248	1680260410000085272	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
-144	1271	1680260410023418607	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	527e015ee6b58b6a
-143	1499	1680260410250085281	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-1499	1854	1680260410603418627	Battle_Space	13c1f5cd3e40f2f2
-1	10	1680260815940100524	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-1	10	1680260815940100524	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-1	10	1680260815940100524	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-1	10	1680260815940100524	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-11	1372	1680260817300100574	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-1372	1671	1680260817596767252	Battle_Space	13c1f5cd3e40f2f2
-3	113	1680261509793459847	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	113	1680261509793459847	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-3	113	1680261509793459847	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	113	1680261509793459847	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-113	1167	1680261510853459887	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
-114	1174	1680261510860126552	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	527e015ee6b58b6a
-113	1522	1680261511206793232	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-1522	1851	1680261511533459911	Battle_Space	13c1f5cd3e40f2f2
-3	134	1680263743963543535	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	134	1680263743963543535	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-3	134	1680263743963543535	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-3	134	1680263743963543535	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-135	1197	1680263745026876907	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	527e015ee6b58b6a
-135	1289	1680263745120210243	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
-134	1657	1680263745490210258	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-1657	1963	1680263745793543602	Battle_Space	13c1f5cd3e40f2f2
-1	129	1680265540530277503	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-1	129	1680265540530277503	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-1	129	1680265540530277503	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-1	129	1680265540530277503	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-130	1245	1680265541650277544	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
-130	1276	1680265541680277546	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	527e015ee6b58b6a
-129	1546	1680265541950277555	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
-1546	1955	1680265542356944237	Battle_Space	13c1f5cd3e40f2f2
 2	127	1680265684160282872	Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-2	127	1680265684160282872	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
-2	127	1680265684160282872	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	eb06691f1b3a0e5e
-2	127	1680265684160282872	/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
 128	527	1680265684563616220	CMakeFiles/Battle_Space.dir/Node.cpp.o	403c49400326eff6
-128	625	1680265684663616225	CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o	570d8bea9cec8213
-127	1446	1680265685483616255	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
+1	84	1680305650815519351	build.ninja	94df85c983be376a
+2	127	1680265684160282872	Battle_Space_autogen/mocs_compilation.cpp	eb06691f1b3a0e5e
 129	1460	1680265685496949589	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	527e015ee6b58b6a
-127	2005	1680265686043616277	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
+128	625	1680265684663616225	CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o	570d8bea9cec8213
 2005	2307	1680265686343616288	Battle_Space	13c1f5cd3e40f2f2
+11	1037	1680115498582131980	CMakeFiles/Battle_Space.dir/SerialPort.cpp.o	e2d1bbd2f0b3eb74
+127	2005	1680265686043616277	CMakeFiles/Battle_Space.dir/main.cpp.o	24039fbe45b58eaa
+127	1446	1680265685483616255	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	decb7d42eebcaded
+2	159	1680305681805349296	Battle_Space_autogen/timestamp	dd021831a6c4d1ba
+2	159	1680305681805349296	Battle_Space_autogen/mocs_compilation.cpp	dd021831a6c4d1ba
+2	159	1680305681805349296	/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/timestamp	dd021831a6c4d1ba
+2	159	1680305681805349296	/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp	dd021831a6c4d1ba
+160	767	1680305682418679264	CMakeFiles/Battle_Space.dir/Node.cpp.o	6486d1484dd2ac61
+160	823	1680305682472012305	CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o	405c4cc1ceb2f7f7
+160	1710	1680305683362007421	CMakeFiles/Battle_Space.dir/SerialPort.cpp.o	ee5935921e2ed092
+159	1771	1680305683422007092	CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o	43731e6dca19ee5c
+162	1832	1680305683482006762	CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o	ace1b51b57f87ab5
+159	2230	1680305683878671252	CMakeFiles/Battle_Space.dir/main.cpp.o	d1dbe1621abd43
+2230	2611	1680305684258669167	Battle_Space	13c1f5cd3e40f2f2

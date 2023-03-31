@@ -20,7 +20,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp ListaSimple.cpp ListaSimple.h Node.cpp Node.h SerialWorker.h SerialWorker.cpp)
+add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp ListaSimple.cpp ListaSimple.h Node.cpp Node.h SerialWorker.h SerialWorker.cpp main.cpp)
 target_link_libraries(Battle_Space Qt5::SerialPort)
 
 

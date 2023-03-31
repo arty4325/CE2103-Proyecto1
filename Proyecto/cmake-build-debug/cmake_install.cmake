@@ -1,4 +1,4 @@
-# Install script for directory: /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto
+# Install script for directory: /home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

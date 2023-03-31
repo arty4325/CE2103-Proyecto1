@@ -1,4 +1,4 @@
-/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/233/bin/ninja/linux/x64/ninja -G Ninja -S "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto" -B "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"
+/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/233/bin/ninja/linux/x64/ninja -G Ninja -S "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto" -B "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"
 CMake Warning (dev) at /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake:155 (add_library):
   ADD_LIBRARY called with SHARED option but the target platform does not
   support dynamic linking.  Building a STATIC library instead.  This may lead
@@ -16,6 +16,18 @@ Call Stack (most recent call first):
   CMakeLists.txt:1 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+-- The C compiler identification is GNU 12.2.1
+-- The CXX compiler identification is GNU 12.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug
+-- Build files have been written to: /home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug
