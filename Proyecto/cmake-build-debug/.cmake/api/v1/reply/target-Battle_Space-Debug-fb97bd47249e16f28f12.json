@@ -78,7 +78,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"
+					"path" : "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"
 				},
 				{
 					"backtrace" : 2,
@@ -119,15 +119,13 @@
 				4,
 				5,
 				7,
-				10
+				10,
+				11
 			]
 		}
 	],
 	"dependencies" : 
 	[
-		{
-			"id" : "Battle_Space_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
 		{
 			"backtrace" : 0,
 			"id" : "Battle_Space_autogen::@6890427a1f51a3e7e1df"
@@ -197,7 +195,8 @@
 				4,
 				5,
 				7,
-				10
+				10,
+				11
 			]
 		},
 		{
@@ -208,20 +207,7 @@
 				3,
 				6,
 				8,
-				9
-			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				11
-			]
-		},
-		{
-			"name" : "CMake Rules",
-			"sourceIndexes" : 
-			[
+				9,
 				12
 			]
 		}
@@ -291,16 +277,15 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Battle_Space_autogen/timestamp",
-			"sourceGroupIndex" : 2
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MenuDificultades.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Battle_Space_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
+			"backtrace" : 1,
+			"path" : "MenuDificultades.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

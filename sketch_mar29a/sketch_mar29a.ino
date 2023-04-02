@@ -91,7 +91,7 @@ void loop() {
       digitalWrite(pinF, LOW);
       digitalWrite(pinG, LOW);
       digitalWrite(pinDP, LOW);
-      delay(1000);
+      //delay(1000);
     
       // Apaga el segmento A
       /*
@@ -118,7 +118,7 @@ void loop() {
       
       digitalWrite(pinC, LOW);
       digitalWrite(pinDP, LOW);
-      delay(1000);
+      //delay(1000);
 
       /*
       digitalWrite(pinC, HIGH);
@@ -143,7 +143,7 @@ void loop() {
       digitalWrite(pinD, LOW);
       digitalWrite(pinA, LOW);
       digitalWrite(pinB, LOW);
-      delay(1000);
+      //delay(1000);
 
       /*
       digitalWrite(pinG, HIGH);
@@ -173,7 +173,7 @@ void loop() {
       digitalWrite(pinD, LOW);
       digitalWrite(pinC, LOW);
       digitalWrite(pinB, LOW);
-      delay(1000);
+      //delay(1000);
 
       /*
       digitalWrite(pinG, HIGH);
@@ -199,7 +199,7 @@ void loop() {
       digitalWrite(pinD, LOW);
       digitalWrite(pinDP, LOW);
       digitalWrite(pinC, LOW);
-      delay(1000);
+      //delay(1000);
 
       /*
       digitalWrite(pinF, HIGH);
@@ -225,7 +225,7 @@ void loop() {
       digitalWrite(pinD, LOW);
       digitalWrite(pinC, LOW);
       digitalWrite(pinB, LOW);
-      delay(1000);
+      //delay(1000);
 
       /*
       digitalWrite(pinG, HIGH);
