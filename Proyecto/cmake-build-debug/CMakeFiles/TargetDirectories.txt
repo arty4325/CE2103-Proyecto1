@@ -1,0 +1,5 @@
+/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space.dir
+/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen_timestamp_deps.dir
+/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir
