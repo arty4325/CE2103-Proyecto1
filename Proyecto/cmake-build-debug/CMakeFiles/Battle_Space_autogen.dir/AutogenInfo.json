@@ -113,6 +113,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_GameScreen.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h",
 			"MU",
 			"EWIEGA46WW/moc_ListaSimple.cpp",
@@ -200,6 +206,11 @@
 	"SETTINGS_FILE" : "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp",
 			"MU",

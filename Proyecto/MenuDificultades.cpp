@@ -3,6 +3,7 @@
 //
 
 #include "MenuDificultades.h"
+#include "GameScreen.h"
 #include <QPushButton>
 #include <QLabel>
 #include <QGraphicsProxyWidget>
@@ -12,6 +13,9 @@ using namespace std;
 
 void MenuDificultades::medium() {
     cout << "Funciona el boton y la interfaz" << endl;
+    GameScreen * medium = new GameScreen(1);
+    medium -> show();
+    this -> close();
 }
 
 MenuDificultades::MenuDificultades(QWidget *parent) {
