@@ -8,9 +8,6 @@
 #include <QGraphicsProxyWidget>
 #include <QRectF>
 #include <iostream>
-#include <QThread>
-#include <QTextStream>
-#include "SerialWorker.h"
 using namespace std;
 
 void MenuDificultades::medium() {
@@ -49,10 +46,4 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
     setFixedSize(800, 600);
 
     show();
-    
-
-
-
-
-
 }

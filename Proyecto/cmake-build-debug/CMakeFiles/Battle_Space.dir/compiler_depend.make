@@ -3,7 +3,7 @@
 
 CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_Space_autogen/mocs_compilation.cpp \
   /usr/include/stdc-predef.h \
-  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
+  Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp \
   /usr/include/c++/12.2.1/memory \
   /usr/include/c++/12.2.1/bits/allocator.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -132,11 +132,11 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/backward/auto_ptr.h \
   /usr/include/c++/12.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/12.2.1/pstl/execution_defs.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
-  /usr/include/qt/QtCore/QObject \
-  /usr/include/qt/QtCore/qobject.h \
-  /usr/include/qt/QtCore/qobjectdefs.h \
-  /usr/include/qt/QtCore/qnamespace.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /usr/include/qt/QtWidgets/QGraphicsView \
+  /usr/include/qt/QtWidgets/qgraphicsview.h \
+  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtCore/qglobal.h \
   /usr/include/c++/12.2.1/cstddef \
   /usr/include/c++/12.2.1/utility \
@@ -180,11 +180,12 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/qt/QtCore/qglobalstatic.h \
   /usr/include/qt/QtCore/qnumeric.h \
   /usr/include/qt/QtCore/qversiontagging.h \
-  /usr/include/qt/QtCore/qobjectdefs_impl.h \
-  /usr/include/qt/QtCore/qstring.h \
-  /usr/include/qt/QtCore/qchar.h \
+  /usr/include/qt/QtGui/qtgui-config.h \
+  /usr/include/qt/QtWidgets/qtwidgets-config.h \
+  /usr/include/qt/QtCore/qmetatype.h \
   /usr/include/qt/QtCore/qbytearray.h \
   /usr/include/qt/QtCore/qrefcount.h \
+  /usr/include/qt/QtCore/qnamespace.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -234,13 +235,16 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
   /usr/include/c++/12.2.1/stdexcept \
   /usr/include/c++/12.2.1/bits/streambuf.tcc \
+  /usr/include/qt/QtCore/qvarlengtharray.h \
+  /usr/include/qt/QtCore/qcontainerfwd.h \
+  /usr/include/qt/QtCore/qalgorithms.h \
+  /usr/include/qt/QtCore/qcontainertools_impl.h \
+  /usr/include/qt/QtCore/qhashfunctions.h \
+  /usr/include/qt/QtCore/qstring.h \
+  /usr/include/qt/QtCore/qchar.h \
   /usr/include/qt/QtCore/qstringliteral.h \
   /usr/include/qt/QtCore/qstringalgorithms.h \
   /usr/include/qt/QtCore/qstringview.h \
-  /usr/include/qt/QtCore/qlist.h \
-  /usr/include/qt/QtCore/qalgorithms.h \
-  /usr/include/qt/QtCore/qiterator.h \
-  /usr/include/qt/QtCore/qhashfunctions.h \
   /usr/include/qt/QtCore/qpair.h \
   /usr/include/c++/12.2.1/numeric \
   /usr/include/c++/12.2.1/bits/stl_numeric.h \
@@ -260,11 +264,30 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/bits/vector.tcc \
   /usr/include/c++/12.2.1/array \
   /usr/include/c++/12.2.1/compare \
-  /usr/include/qt/QtCore/qvector.h \
-  /usr/include/qt/QtCore/qcontainertools_impl.h \
+  /usr/include/qt/QtCore/qobjectdefs.h \
+  /usr/include/qt/QtCore/qobjectdefs_impl.h \
   /usr/include/c++/12.2.1/list \
   /usr/include/c++/12.2.1/bits/stl_list.h \
   /usr/include/c++/12.2.1/bits/list.tcc \
+  /usr/include/c++/12.2.1/map \
+  /usr/include/c++/12.2.1/bits/stl_tree.h \
+  /usr/include/c++/12.2.1/bits/stl_map.h \
+  /usr/include/c++/12.2.1/bits/stl_multimap.h \
+  /usr/include/qt/QtGui/qpainter.h \
+  /usr/include/qt/QtCore/qrect.h \
+  /usr/include/qt/QtCore/qmargins.h \
+  /usr/include/qt/QtCore/qsize.h \
+  /usr/include/qt/QtCore/qpoint.h \
+  /usr/include/qt/QtCore/qscopedpointer.h \
+  /usr/include/qt/QtGui/qpixmap.h \
+  /usr/include/qt/QtGui/qpaintdevice.h \
+  /usr/include/qt/QtGui/qwindowdefs.h \
+  /usr/include/qt/QtGui/qcolor.h \
+  /usr/include/qt/QtGui/qrgb.h \
+  /usr/include/qt/QtCore/qstringlist.h \
+  /usr/include/qt/QtCore/qlist.h \
+  /usr/include/qt/QtCore/qiterator.h \
+  /usr/include/qt/QtCore/qvector.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/syslimits.h \
   /usr/include/limits.h \
@@ -275,17 +298,14 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/bits/xopen_lim.h \
   /usr/include/bits/uio_lim.h \
   /usr/include/qt/QtCore/qbytearraylist.h \
-  /usr/include/qt/QtCore/qstringlist.h \
   /usr/include/qt/QtCore/qregexp.h \
   /usr/include/qt/QtCore/qstringmatcher.h \
-  /usr/include/qt/QtCore/qscopedpointer.h \
-  /usr/include/qt/QtCore/qmetatype.h \
-  /usr/include/qt/QtCore/qvarlengtharray.h \
-  /usr/include/qt/QtCore/qcontainerfwd.h \
-  /usr/include/c++/12.2.1/map \
-  /usr/include/c++/12.2.1/bits/stl_tree.h \
-  /usr/include/c++/12.2.1/bits/stl_map.h \
-  /usr/include/c++/12.2.1/bits/stl_multimap.h \
+  /usr/include/qt/QtGui/qrgba64.h \
+  /usr/include/qt/QtCore/qsharedpointer.h \
+  /usr/include/qt/QtCore/qshareddata.h \
+  /usr/include/qt/QtCore/qhash.h \
+  /usr/include/qt/QtCore/qsharedpointer_impl.h \
+  /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtCore/qobject_impl.h \
   /usr/include/c++/12.2.1/chrono \
   /usr/include/c++/12.2.1/bits/chrono.h \
@@ -293,13 +313,46 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/limits \
   /usr/include/c++/12.2.1/ctime \
   /usr/include/c++/12.2.1/bits/parse_numbers.h \
+  /usr/include/qt/QtGui/qimage.h \
+  /usr/include/qt/QtGui/qpixelformat.h \
+  /usr/include/qt/QtGui/qtransform.h \
+  /usr/include/qt/QtGui/qmatrix.h \
+  /usr/include/qt/QtGui/qpolygon.h \
+  /usr/include/qt/QtGui/qregion.h \
+  /usr/include/qt/QtCore/qdatastream.h \
+  /usr/include/qt/QtCore/qiodevice.h \
+  /usr/include/qt/QtCore/qline.h \
+  /usr/include/qt/QtGui/qtextoption.h \
+  /usr/include/qt/QtGui/qpen.h \
+  /usr/include/qt/QtGui/qbrush.h \
+  /usr/include/qt/QtGui/qfontinfo.h \
+  /usr/include/qt/QtGui/qfont.h \
+  /usr/include/qt/QtGui/qfontmetrics.h \
+  /usr/include/qt/QtWidgets/qscrollarea.h \
+  /usr/include/qt/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt/QtWidgets/qframe.h \
+  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtGui/qpalette.h \
+  /usr/include/qt/QtWidgets/qsizepolicy.h \
+  /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qkeysequence.h \
+  /usr/include/qt/QtWidgets/qgraphicsscene.h \
+  /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtWidgets/QGraphicsScene \
+  /usr/include/qt/QtWidgets/qgraphicsscene.h \
+  /usr/include/qt/QtCore/QTimer \
+  /usr/include/qt/QtCore/qtimer.h \
+  /usr/include/qt/QtCore/qbasictimer.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /usr/include/qt/QtCore/QObject \
+  /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtSerialPort/QSerialPort \
   /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtCore/qiodevice.h \
-  /usr/include/qt/QtCore/qobject.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h
+  /usr/include/qt/QtSerialPort/qserialportglobal.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \
@@ -2075,37 +2128,49 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtWidgets/QPushButton:
 
+/usr/include/qt/QtCore/QThread:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
+
+/usr/include/c++/12.2.1/bits/istream.tcc:
+
+/usr/include/c++/12.2.1/bits/ostream.tcc:
+
+/usr/include/c++/12.2.1/istream:
+
+/usr/include/c++/12.2.1/bits/basic_ios.tcc:
+
+/usr/include/c++/12.2.1/bits/locale_facets.tcc:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/12.2.1/bits/locale_facets.h:
+
+/usr/include/c++/12.2.1/ostream:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+
+/usr/include/qt/QtSerialPort/qserialportglobal.h:
+
+/usr/include/qt/QtGui/qicon.h:
+
+/usr/include/qt/QtSerialPort/QSerialPort:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
+
+Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
+
+/usr/include/qt/QtCore/qbasictimer.h:
+
+/usr/include/qt/QtCore/qtimer.h:
+
 /usr/include/qt/QtWidgets/QWidget:
-
-/usr/include/qt/QtWidgets/qgraphicsscene.h:
-
-/usr/include/qt/QtGui/qcursor.h:
-
-/usr/include/qt/QtWidgets/qsizepolicy.h:
-
-/usr/include/qt/QtWidgets/qwidget.h:
-
-/usr/include/qt/QtWidgets/qframe.h:
-
-/usr/include/qt/QtWidgets/qabstractscrollarea.h:
-
-/usr/include/qt/QtGui/qfont.h:
-
-/usr/include/qt/QtGui/qfontinfo.h:
-
-/usr/include/qt/QtGui/qtextoption.h:
-
-/usr/include/qt/QtCore/qline.h:
-
-/usr/include/qt/QtCore/qdatastream.h:
-
-/usr/include/qt/QtGui/qregion.h:
-
-/usr/include/c++/12.2.1/bits/unique_lock.h:
-
-/usr/include/qt/QtGui/qpolygon.h:
-
-/usr/include/qt/QtGui/qtransform.h:
 
 /usr/include/alloca.h:
 
@@ -2115,9 +2180,13 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/bits/select.h:
 
+/usr/include/linux/errno.h:
+
 /usr/include/qt/QtCore/qobject.h:
 
-/usr/include/linux/errno.h:
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h:
+
+/usr/include/c++/12.2.1/cstdlib:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -2139,15 +2208,13 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/stdio.h:
 
-/usr/include/qt/QtGui/qicon.h:
+/usr/include/c++/12.2.1/bits/basic_ios.h:
 
-/usr/include/qt/QtSerialPort/QSerialPort:
+/usr/include/qt/QtCore/qstringalgorithms.h:
 
 /usr/include/qt/QtCore/qglobal.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h:
-
-/usr/include/pthread.h:
 
 /usr/include/qt/QtGui/qpalette.h:
 
@@ -2157,7 +2224,9 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/c++/12.2.1/bits/atomic_lockfree_defines.h:
 
-Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
+/usr/include/c++/12.2.1/bits/unique_lock.h:
+
+/usr/include/qt/QtGui/qpolygon.h:
 
 /usr/include/c++/12.2.1/ext/concurrence.h:
 
@@ -2185,8 +2254,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/bits/wctype-wchar.h:
-
 /usr/include/c++/12.2.1/bits/range_access.h:
 
 /usr/include/c++/12.2.1/bits/stl_bvector.h:
@@ -2205,12 +2272,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/system_error:
 
-/usr/include/qt/QtGui/qkeysequence.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/c++/12.2.1/bits/ptr_traits.h:
-
 /usr/include/bits/types/struct_sched_param.h:
 
 /usr/include/c++/12.2.1/bits/shared_ptr_atomic.h:
@@ -2226,10 +2287,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
 /usr/include/c++/12.2.1/pstl/pstl_config.h:
-
-/usr/include/qt/QtGui/qmatrix.h:
-
-/usr/include/c++/12.2.1/cwctype:
 
 /usr/include/c++/12.2.1/functional:
 
@@ -2253,10 +2310,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/bits/std_abs.h:
 
-/usr/include/qt/QtGui/qpen.h:
-
-/usr/include/c++/12.2.1/map:
-
 /usr/include/qt/QtCore/qobject_impl.h:
 
 /usr/include/c++/12.2.1/bits/refwrap.h:
@@ -2269,11 +2322,13 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/ext/numeric_traits.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
-
 /usr/include/qt/QtGui/qfontmetrics.h:
 
 /usr/include/bits/pthreadtypes.h:
+
+/usr/include/pthread.h:
+
+/usr/include/qt/QtCore/qdatastream.h:
 
 /usr/include/c++/12.2.1/bits/stl_iterator_base_types.h:
 
@@ -2299,7 +2354,11 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h:
+
 /usr/include/c++/12.2.1/bits/functexcept.h:
+
+/usr/include/qt/QtCore/qline.h:
 
 /usr/include/qt/QtCore/qcompilerdetection.h:
 
@@ -2321,6 +2380,14 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/bits/atomic_base.h:
 
+/usr/include/c++/12.2.1/iostream:
+
+/usr/include/qt/QtWidgets/qgraphicsview.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/12.2.1/bits/string_view.tcc:
+
 /usr/include/endian.h:
 
 /usr/include/c++/12.2.1/bits/list.tcc:
@@ -2332,12 +2399,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/qt/QtCore/qhash.h:
-
-/usr/include/c++/12.2.1/bits/postypes.h:
-
-/usr/include/c++/12.2.1/bits/nested_exception.h:
-
-/usr/include/c++/12.2.1/bits/allocator.h:
 
 /usr/include/c++/12.2.1/typeinfo:
 
@@ -2361,6 +2422,16 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/bits/shared_ptr.h:
 
+/usr/include/c++/12.2.1/bits/nested_exception.h:
+
+/usr/include/c++/12.2.1/bits/allocator.h:
+
+/usr/include/qt/QtSerialPort/qserialport.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/qt/QtWidgets/QGraphicsView:
+
 /usr/include/c++/12.2.1/bits/stl_iterator.h:
 
 /usr/include/bits/wordsize.h:
@@ -2380,8 +2451,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtWidgets/QApplication:
 
 /usr/include/sys/cdefs.h:
-
-/usr/include/c++/12.2.1/bits/istream.tcc:
 
 /usr/include/qt/QtGui/qpainter.h:
 
@@ -2409,8 +2478,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/bits/exception.h:
 
-/usr/include/qt/QtCore/qflags.h:
-
 /usr/include/c++/12.2.1/bits/utility.h:
 
 /usr/include/qt/QtCore/qfile.h:
@@ -2422,6 +2489,10 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/bits/ios_base.h:
 
 /usr/include/c++/12.2.1/debug/debug.h:
+
+/usr/include/qt/QtGui/qfontinfo.h:
+
+/usr/include/qt/QtWidgets/qtwidgetsglobal.h:
 
 /usr/include/c++/12.2.1/bits/predefined_ops.h:
 
@@ -2457,8 +2528,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/cstddef:
 
-/usr/include/c++/12.2.1/bits/ostream.tcc:
-
 /usr/include/qt/QtWidgets/qtwidgets-config.h:
 
 /usr/include/qt/QtCore/qbytearray.h:
@@ -2469,23 +2538,15 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/bits/libc-header-start.h:
 
-/usr/include/bits/typesizes.h:
-
-/usr/include/qt/QtWidgets/QGraphicsView:
-
-/usr/include/qt/QtSerialPort/qserialport.h:
-
 /usr/include/c++/12.2.1/bits/allocated_ptr.h:
 
 /usr/include/stdlib.h:
 
-/usr/include/qt/QtCore/QThread:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
-
 /usr/include/c++/12.2.1/ext/aligned_buffer.h:
 
 /usr/include/c++/12.2.1/bits/uses_allocator.h:
+
+/usr/include/qt/QtWidgets/qframe.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -2519,9 +2580,19 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/c++/12.2.1/iosfwd:
 
+/usr/include/c++/12.2.1/bits/postypes.h:
+
+/usr/include/qt/QtWidgets/qsizepolicy.h:
+
 /usr/include/c++/12.2.1/bits/algorithmfwd.h:
 
 /usr/include/qt/QtCore/qstringlist.h:
+
+/usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/12.2.1/backward/binders.h:
+
+/usr/include/bits/floatn.h:
 
 /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:
 
@@ -2569,11 +2640,11 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qsysinfo.h:
 
+/usr/include/qt/QtCore/qflags.h:
+
 /usr/include/qt/QtCore/qbasicatomic.h:
 
 /usr/include/qt/QtCore/qatomic_cxx11.h:
-
-/usr/include/c++/12.2.1/ostream:
 
 /usr/include/qt/QtCore/qgenericatomic.h:
 
@@ -2583,19 +2654,13 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qversiontagging.h:
 
-/usr/include/qt/QtCore/qobjectdefs_impl.h:
+/usr/include/c++/12.2.1/bits/charconv.h:
 
-/usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+/usr/include/qt/QtGui/qtgui-config.h:
 
-/usr/include/qt/QtCore/qstring.h:
+/usr/include/c++/12.2.1/memory:
 
-/usr/include/c++/12.2.1/string_view:
-
-/usr/include/qt/QtCore/qchar.h:
-
-/usr/include/c++/12.2.1/type_traits:
-
-/usr/include/ctype.h:
+/usr/include/qt/QtCore/qmetatype.h:
 
 /usr/include/qt/QtCore/qarraydata.h:
 
@@ -2616,6 +2681,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/c++/12.2.1/bits/unique_ptr.h:
 
 /usr/include/c++/12.2.1/stdexcept:
+
+/usr/include/qt/QtWidgets/qwidget.h:
 
 /usr/include/c++/12.2.1/cstdint:
 
@@ -2641,13 +2708,33 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/cctype:
 
+/usr/include/c++/12.2.1/type_traits:
+
+/usr/include/ctype.h:
+
+/usr/include/qt/QtCore/qchar.h:
+
 /usr/include/c++/12.2.1/bits/cxxabi_forced.h:
+
+/usr/include/c++/12.2.1/string_view:
+
+/usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/qt/QtCore/qstring.h:
 
 /usr/include/c++/12.2.1/ext/string_conversions.h:
 
 /usr/include/bits/types/__fpos_t.h:
 
+/usr/include/c++/12.2.1/cwctype:
+
+/usr/include/qt/QtGui/qmatrix.h:
+
+/usr/include/qt/QtGui/qfont.h:
+
 /usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/qt/QtWidgets/qabstractscrollarea.h:
 
 /usr/include/features-time64.h:
 
@@ -2669,13 +2756,13 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/bits/types/error_t.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
-
 /usr/include/c++/12.2.1/bits/basic_string.tcc:
 
 /usr/include/c++/12.2.1/iterator:
 
 /usr/include/qt/QtCore/qsharedpointer.h:
+
+/usr/include/qt/QtCore/QTimer:
 
 /usr/include/c++/12.2.1/bits/stream_iterator.h:
 
@@ -2687,19 +2774,13 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/bits/streambuf.tcc:
 
-/usr/include/qt/QtCore/qlist.h:
+/usr/include/qt/QtCore/qvarlengtharray.h:
 
-/usr/include/c++/12.2.1/backward/binders.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+/usr/include/qt/QtCore/qcontainerfwd.h:
 
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/qt/QtCore/qalgorithms.h:
-
-/usr/include/qt/QtCore/qiterator.h:
 
 /usr/include/c++/12.2.1/bits/stl_numeric.h:
 
@@ -2709,13 +2790,9 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/pstl/glue_numeric_defs.h:
 
-/usr/include/qt/QtGui/qimage.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/qt/QtGui/qrgb.h:
-
 /usr/include/qt/QtCore/QObject:
+
+Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -2747,37 +2824,11 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtGui/qpixmap.h:
 
-/usr/include/qt/QtCore/qvector.h:
+/usr/include/qt/QtCore/qobjectdefs_impl.h:
 
 /usr/include/time.h:
 
 /usr/include/c++/12.2.1/bits/stl_list.h:
-
-/usr/include/qt/QtGui/qpixelformat.h:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/c++/12.2.1/bits/stl_algobase.h:
-
-/usr/include/qt/QtCore/qsize.h:
-
-/usr/include/qt/QtCore/qnamespace.h:
-
-/usr/include/qt/QtCore/qscopedpointer.h:
-
-/usr/include/qt/QtGui/qcolor.h:
-
-/usr/include/c++/12.2.1/memory:
-
-/usr/include/qt/QtCore/qmetatype.h:
-
-/usr/include/qt/QtCore/qvarlengtharray.h:
-
-/usr/include/qt/QtCore/qcontainerfwd.h:
 
 /usr/include/qt/QtGui/qinputmethod.h:
 
@@ -2789,56 +2840,68 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/bits/stl_multimap.h:
 
+/usr/include/qt/QtCore/qmargins.h:
+
+/usr/include/c++/12.2.1/bits/stl_algobase.h:
+
+/usr/include/qt/QtCore/qsize.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/qt/QtCore/qpoint.h:
+
+/usr/include/qt/QtCore/qnamespace.h:
+
+/usr/include/qt/QtCore/qscopedpointer.h:
+
+/usr/include/qt/QtGui/qcolor.h:
+
+/usr/include/qt/QtGui/qwindowdefs.h:
+
+/usr/include/qt/QtCore/qlist.h:
+
+/usr/include/qt/QtCore/qiterator.h:
+
+/usr/include/qt/QtGui/qregion.h:
+
+/usr/include/qt/QtCore/qvector.h:
+
+/usr/include/qt/QtGui/qpixelformat.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
 /usr/include/qt/QtCore/qsharedpointer_impl.h:
 
 /usr/include/qt/QtCore/qstringmatcher.h:
 
 /usr/include/c++/12.2.1/chrono:
 
-/usr/include/qt/QtSerialPort/qserialportglobal.h:
+/usr/include/bits/types/timer_t.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
+/usr/include/qt/QtGui/qrgb.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+/usr/include/qt/QtGui/qimage.h:
 
-/usr/include/c++/12.2.1/cstdlib:
+/usr/include/qt/QtGui/qtransform.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h:
+/usr/include/qt/QtGui/qtextoption.h:
 
-/usr/include/qt/QtCore/qstringalgorithms.h:
+/usr/include/qt/QtGui/qcursor.h:
 
-/usr/include/c++/12.2.1/bits/basic_ios.h:
+/usr/include/c++/12.2.1/map:
 
-/usr/include/c++/12.2.1/bits/locale_facets.h:
-
-/usr/include/wctype.h:
-
-/usr/include/c++/12.2.1/bits/locale_facets.tcc:
-
-/usr/include/c++/12.2.1/istream:
-
-/usr/include/c++/12.2.1/bits/basic_ios.tcc:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/12.2.1/bits/string_view.tcc:
-
-/usr/include/c++/12.2.1/iostream:
-
-/usr/include/qt/QtWidgets/qgraphicsview.h:
-
-/usr/include/qt/QtWidgets/qtwidgetsglobal.h:
-
-/usr/include/qt/QtGui/qbrush.h:
+/usr/include/qt/QtGui/qpen.h:
 
 /usr/include/qt/QtGui/qtguiglobal.h:
 
-/usr/include/c++/12.2.1/bits/charconv.h:
+/usr/include/qt/QtGui/qbrush.h:
 
-/usr/include/qt/QtGui/qtgui-config.h:
+/usr/include/bits/types/clock_t.h:
 
-/usr/include/qt/QtCore/qmargins.h:
+/usr/include/c++/12.2.1/bits/ptr_traits.h:
 
-/usr/include/qt/QtCore/qpoint.h:
+/usr/include/qt/QtGui/qkeysequence.h:
 
-/usr/include/qt/QtGui/qwindowdefs.h:
+/usr/include/qt/QtWidgets/qgraphicsscene.h:
