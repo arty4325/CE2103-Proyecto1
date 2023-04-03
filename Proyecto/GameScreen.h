@@ -1,3 +1,6 @@
+
+
+
 //
 // Created by oscaraad on 03/04/23.
 //
@@ -8,7 +11,7 @@
 #include <QGraphicsView>
 
 class GameScreen: public QGraphicsView{
-    Q_OBJECT
+Q_OBJECT
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 };

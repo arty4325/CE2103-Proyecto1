@@ -7,7 +7,7 @@
 #include "ListaSimple.h"
 #include <iostream>
 using namespace std;
-QThread workerThread;  // variable global para el hilo
+QThread workerThread; // variable global para el hilo
 
 MenuDificultades * menuGeneral;
 
@@ -17,6 +17,38 @@ int main(int argc, char *argv[])
 
     menuGeneral = new MenuDificultades();
     menuGeneral -> show();
+
+    // Creamos un objeto SerialWorker y lo movemos al hilo workerThread
+    SerialWorker *worker = new SerialWorker();
+    worker->moveToThread(&workerThread);
+
+    // Conectamos la señal dataReceived() del objeto worker a una función lambda que imprime los datos recibidos
+    QObject::connect(worker, &SerialWorker::dataReceived, [](const ListaSimple& dataList) {
+        cout << "Se recibe informacion" << endl;
+        //for (const QString& data : dataList) {
+        //    QTextStream(stdout) << data << endl;
+        //}
+        dataList.printList();
+    });
+
+
+    // Conectamos la señal finished() del objeto worker al método quit() del objeto QCoreApplication
+    QObject::connect(worker, &SerialWorker::finished, &a, &QCoreApplication::quit);
+
+    // Iniciamos el hilo
+    workerThread.start();
+
+    // Ejecutamos la aplicación
+    int result = a.exec();
+
+    // Esperamos a que el hilo termine
+    workerThread.quit();
+    workerThread.wait();
+
+    // Liberamos la memoria del objeto worker
+    delete worker;
+
+    //return result;
 
     return a.exec();
 

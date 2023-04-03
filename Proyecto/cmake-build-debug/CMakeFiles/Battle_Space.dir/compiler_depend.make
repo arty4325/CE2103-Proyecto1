@@ -672,7 +672,18 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
   /usr/include/qt/QtGui/qcursor.h \
-  /usr/include/qt/QtGui/qkeysequence.h
+  /usr/include/qt/QtGui/qkeysequence.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /usr/include/qt/QtWidgets/QGraphicsView \
+  /usr/include/qt/QtWidgets/qgraphicsview.h \
+  /usr/include/qt/QtGui/qpainter.h \
+  /usr/include/qt/QtGui/qtextoption.h \
+  /usr/include/qt/QtGui/qpen.h \
+  /usr/include/qt/QtWidgets/qscrollarea.h \
+  /usr/include/qt/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt/QtWidgets/qframe.h \
+  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtWidgets/qgraphicsscene.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \
