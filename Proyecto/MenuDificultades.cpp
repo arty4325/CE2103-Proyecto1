@@ -22,8 +22,8 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
     // Se crea la escena
     QGraphicsScene *scene = new QGraphicsScene();
     scene ->setSceneRect(0, 0, 1000, 1000);
-    int width = 800;
-    int height = 600;
+    int width = 1000;
+    int height = 1000;
 
     QLabel *label = new QLabel("Proyecto I Datos II");
     QGraphicsProxyWidget *proxy_label = new QGraphicsProxyWidget();
@@ -47,7 +47,7 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setFixedSize(800, 600);
+    setFixedSize(1000, 1000);
 
     show();
 }

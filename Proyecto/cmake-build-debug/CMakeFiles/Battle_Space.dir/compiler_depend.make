@@ -337,16 +337,21 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/qt/QtGui/qcursor.h \
   /usr/include/qt/QtGui/qkeysequence.h \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
+  /usr/include/qt/QtWidgets/QGraphicsRectItem \
+  /usr/include/qt/QtWidgets/qgraphicsitem.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/c++/12.2.1/variant \
+  /usr/include/qt/QtGui/qpainterpath.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtSerialPort/QSerialPort \
   /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h \
-  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h
+  /usr/include/qt/QtSerialPort/qserialportglobal.h
 
 CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp \
   /usr/include/stdc-predef.h \
@@ -700,6 +705,12 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
+  /usr/include/qt/QtWidgets/QGraphicsRectItem \
+  /usr/include/qt/QtWidgets/qgraphicsitem.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/c++/12.2.1/variant \
+  /usr/include/qt/QtGui/qpainterpath.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
@@ -1247,14 +1258,14 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtWidgets/QGraphicsScene \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /usr/include/qt/QtWidgets/QGraphicsRectItem \
+  /usr/include/qt/QtWidgets/qgraphicsitem.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/c++/12.2.1/variant \
+  /usr/include/qt/QtGui/qpainterpath.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
-  /usr/include/qt/QtCore/QObject \
-  /usr/include/qt/QtCore/qobject.h \
-  /usr/include/qt/QtSerialPort/QSerialPort \
-  /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h \
   /usr/include/qt/QtWidgets/QPushButton \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -1267,9 +1278,6 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtWidgets/qgraphicslayoutitem.h \
   /usr/include/qt/QtGui/qevent.h \
   /usr/include/qt/QtCore/qcoreevent.h \
-  /usr/include/qt/QtCore/qvariant.h \
-  /usr/include/qt/QtCore/qmap.h \
-  /usr/include/c++/12.2.1/variant \
   /usr/include/qt/QtCore/qset.h \
   /usr/include/qt/QtCore/qurl.h \
   /usr/include/qt/QtCore/qfile.h \
@@ -1277,7 +1285,6 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qtouchdevice.h \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
-  /usr/include/qt/QtGui/qpainterpath.h \
   /usr/include/qt/QtCore/QRectF \
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/c++/12.2.1/iostream \
@@ -2467,19 +2474,9 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtCore/QRectF:
 
-/usr/include/qt/QtGui/qpainterpath.h:
-
-/usr/include/qt/QtWidgets/qgraphicsitem.h:
-
 /usr/include/qt/QtGui/qvector2d.h:
 
 /usr/include/qt/QtCore/qfiledevice.h:
-
-/usr/include/c++/12.2.1/variant:
-
-/usr/include/qt/QtCore/qmap.h:
-
-/usr/include/qt/QtCore/qvariant.h:
 
 /usr/include/qt/QtCore/qcoreevent.h:
 
@@ -2529,8 +2526,6 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtWidgets/QWidget:
 
-Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
-
 /usr/include/qt/QtSerialPort/qserialportglobal.h:
 
 /usr/include/qt/QtGui/qicon.h:
@@ -2539,9 +2534,21 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
 
+Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
+
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
+
+/usr/include/qt/QtGui/qpainterpath.h:
+
+/usr/include/c++/12.2.1/variant:
+
+/usr/include/qt/QtCore/qmap.h:
+
+/usr/include/qt/QtCore/qvariant.h:
+
+/usr/include/qt/QtWidgets/qgraphicsitem.h:
 
 /usr/include/alloca.h:
 
@@ -3062,6 +3069,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/c++/12.2.1/bits/char_traits.h:
 
 /usr/include/c++/12.2.1/bits/localefwd.h:
+
+/usr/include/qt/QtWidgets/QGraphicsRectItem:
 
 /usr/include/qt/QtCore/qregexp.h:
 

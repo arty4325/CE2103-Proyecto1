@@ -16,6 +16,7 @@ public:
     void insertHead(int value);
     void deleteHead();
     void printList() const;
+    int getPosVal(int position) const;
     //void* operator new(size_t size, int value);
     //void operator delete(void* ptr) noexcept;
 

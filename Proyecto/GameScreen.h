@@ -9,14 +9,18 @@
 #define BATTLE_SPACE_GAMESCREEN_H
 
 #include <QGraphicsView>
+#include <QGraphicsRectItem>
 #include "ListaSimple.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
+private:
+    QGraphicsRectItem* rectangle;
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
+public slots:
     void animate(const ListaSimple &dataList);
-    
+
 };
 
 

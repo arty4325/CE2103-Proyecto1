@@ -62,4 +62,17 @@ void ListaSimple::printList() const{
 }
 
 
+int ListaSimple::getPosVal(int position) const {
+    Node* current = this -> head;
+    int currentPosition = 0;
+    while (current != nullptr && currentPosition != position){
+        current = current -> next;
+        currentPosition++;
+    }
+    if (current == nullptr){
+        throw std::out_of_range("Posicion Invalida");
+    }
+    return current -> value;
+}
+
 
