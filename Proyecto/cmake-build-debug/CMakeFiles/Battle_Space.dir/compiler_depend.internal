@@ -338,15 +338,16 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o
  /usr/include/qt/QtGui/qcursor.h
  /usr/include/qt/QtGui/qkeysequence.h
  /usr/include/qt/QtWidgets/qgraphicsscene.h
- /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h
  /usr/include/qt/QtCore/QObject
  /usr/include/qt/QtCore/qobject.h
  /usr/include/qt/QtSerialPort/QSerialPort
  /usr/include/qt/QtSerialPort/qserialport.h
  /usr/include/qt/QtSerialPort/qserialportglobal.h
- /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h
- /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h
 
 CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp
@@ -675,6 +676,32 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
  /usr/include/qt/QtWidgets/qsizepolicy.h
  /usr/include/qt/QtGui/qcursor.h
  /usr/include/qt/QtGui/qkeysequence.h
+ /usr/include/qt/QtCore/QThread
+ /usr/include/qt/QtCore/qthread.h
+ /usr/include/qt/QtCore/qdeadlinetimer.h
+ /usr/include/qt/QtCore/qelapsedtimer.h
+ /usr/include/c++/12.2.1/future
+ /usr/include/c++/12.2.1/mutex
+ /usr/include/c++/12.2.1/bits/std_mutex.h
+ /usr/include/c++/12.2.1/bits/unique_lock.h
+ /usr/include/c++/12.2.1/condition_variable
+ /usr/include/c++/12.2.1/bits/atomic_futex.h
+ /usr/include/c++/12.2.1/bits/std_thread.h
+ /usr/include/c++/12.2.1/iostream
+ /usr/include/c++/12.2.1/ostream
+ /usr/include/c++/12.2.1/ios
+ /usr/include/c++/12.2.1/bits/basic_ios.h
+ /usr/include/c++/12.2.1/bits/locale_facets.h
+ /usr/include/c++/12.2.1/cwctype
+ /usr/include/wctype.h
+ /usr/include/bits/wctype-wchar.h
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h
+ /usr/include/c++/12.2.1/bits/locale_facets.tcc
+ /usr/include/c++/12.2.1/bits/basic_ios.tcc
+ /usr/include/c++/12.2.1/bits/ostream.tcc
+ /usr/include/c++/12.2.1/istream
+ /usr/include/c++/12.2.1/bits/istream.tcc
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h
  /usr/include/qt/QtWidgets/QGraphicsView
  /usr/include/qt/QtWidgets/qgraphicsview.h
@@ -686,6 +713,14 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
  /usr/include/qt/QtWidgets/qframe.h
  /usr/include/qt/QtWidgets/qwidget.h
  /usr/include/qt/QtWidgets/qgraphicsscene.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h
+ /usr/include/qt/QtCore/QObject
+ /usr/include/qt/QtCore/qobject.h
+ /usr/include/qt/QtSerialPort/QSerialPort
+ /usr/include/qt/QtSerialPort/qserialport.h
+ /usr/include/qt/QtSerialPort/qserialportglobal.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp
@@ -1216,6 +1251,14 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o
  /usr/include/qt/QtWidgets/QGraphicsScene
  /usr/include/qt/QtWidgets/qgraphicsscene.h
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h
+ /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h
+ /usr/include/qt/QtCore/QObject
+ /usr/include/qt/QtCore/qobject.h
+ /usr/include/qt/QtSerialPort/QSerialPort
+ /usr/include/qt/QtSerialPort/qserialport.h
+ /usr/include/qt/QtSerialPort/qserialportglobal.h
  /usr/include/qt/QtWidgets/QPushButton
  /usr/include/qt/QtWidgets/qpushbutton.h
  /usr/include/qt/QtWidgets/qabstractbutton.h
