@@ -21,7 +21,7 @@ void MenuDificultades::medium() {
 MenuDificultades::MenuDificultades(QWidget *parent) {
     // Se crea la escena
     QGraphicsScene *scene = new QGraphicsScene();
-    scene ->setSceneRect(0, 0, 1000, 1000);
+    scene ->setSceneRect(0, 0, 1000, 700);
     int width = 1000;
     int height = 1000;
 
@@ -47,7 +47,7 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setFixedSize(1000, 1000);
+    setFixedSize(1000, 700);
 
     show();
 }

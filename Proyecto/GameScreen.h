@@ -16,6 +16,11 @@ class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
     QGraphicsRectItem* rectangle;
+    int cantBullets;
+    int cantVidas;
+    int poteDisparo;
+    int faseJuego;
+    int oleadaJuego;
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 public slots:
