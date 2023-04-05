@@ -713,6 +713,11 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
  /usr/include/qt/QtCore/qmap.h
  /usr/include/c++/12.2.1/variant
  /usr/include/qt/QtGui/qpainterpath.h
+ /usr/include/qt/QtCore/QDir
+ /usr/include/qt/QtCore/qdir.h
+ /usr/include/qt/QtCore/qfileinfo.h
+ /usr/include/qt/QtCore/qfile.h
+ /usr/include/qt/QtCore/qfiledevice.h
  /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h
  /usr/include/qt/QtWidgets/QGraphicsView
  /usr/include/qt/QtWidgets/qgraphicsview.h

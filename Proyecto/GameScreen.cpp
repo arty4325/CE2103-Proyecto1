@@ -7,6 +7,7 @@
 #include <QThread>
 #include <iostream>
 #include <QGraphicsRectItem>
+#include <QDir>
 #include "GameScreen.h"
 #include "SerialWorker.h"
 
@@ -16,6 +17,11 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    QString path = QDir::currentPath();
+    std::string pathStr = path.toStdString();
+    std::cout << "Directorio actual: " << pathStr << std::endl;
+
+
     if (Dificultad == 1){
         cantBullets = 10;
         cantVidas = 3;
@@ -26,6 +32,20 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
+
+    // Cargar la imagen
+    QString direc = QDir::currentPath();
+    QPixmap backgroundImage(direc.mid(0,direc.length() - 18) + "/Imagenes/fondo.jpg");
+    if (backgroundImage.isNull()) {
+        cout << "Error: no se pudo cargar la imagen de fondo.";
+    }
+    else {
+        // Crear un objeto QBrush a partir de la imagen
+        QBrush backgroundBrush(backgroundImage);
+
+        // Establecer el pincel de fondo de la escena con el objeto QBrush
+        scene->setBackgroundBrush(backgroundBrush);
+    }
 
 
     rectangle = new QGraphicsRectItem(0, 0, 50, 50);

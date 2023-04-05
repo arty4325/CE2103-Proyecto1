@@ -711,6 +711,11 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/c++/12.2.1/variant \
   /usr/include/qt/QtGui/qpainterpath.h \
+  /usr/include/qt/QtCore/QDir \
+  /usr/include/qt/QtCore/qdir.h \
+  /usr/include/qt/QtCore/qfileinfo.h \
+  /usr/include/qt/QtCore/qfile.h \
+  /usr/include/qt/QtCore/qfiledevice.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
@@ -2476,8 +2481,6 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtGui/qvector2d.h:
 
-/usr/include/qt/QtCore/qfiledevice.h:
-
 /usr/include/qt/QtCore/qcoreevent.h:
 
 /usr/include/qt/QtGui/qevent.h:
@@ -2493,6 +2496,12 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 /usr/include/qt/QtWidgets/QPushButton:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+
+/usr/include/qt/QtCore/qfiledevice.h:
+
+/usr/include/qt/QtCore/qfileinfo.h:
+
+/usr/include/qt/QtCore/qdir.h:
 
 /usr/include/c++/12.2.1/bits/istream.tcc:
 
@@ -2729,6 +2738,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/debug/assertions.h:
 
 /usr/include/c++/12.2.1/bits/functional_hash.h:
+
+/usr/include/qt/QtCore/QDir:
 
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 

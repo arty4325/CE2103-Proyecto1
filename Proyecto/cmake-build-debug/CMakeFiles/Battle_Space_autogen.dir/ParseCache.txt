@@ -345,8 +345,8 @@
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stddef.h
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stdint.h
 /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp
-/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp
 /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.cpp
+/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp
 /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.cpp
 /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp
 /home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h
