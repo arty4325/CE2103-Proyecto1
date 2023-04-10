@@ -166,6 +166,30 @@ Battle_Space_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.s
 .PHONY : Battle_Space_autogen/mocs_compilation.cpp.s
 
+Enemigos.o: Enemigos.cpp.o
+.PHONY : Enemigos.o
+
+# target to build an object file
+Enemigos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Enemigos.cpp.o
+.PHONY : Enemigos.cpp.o
+
+Enemigos.i: Enemigos.cpp.i
+.PHONY : Enemigos.i
+
+# target to preprocess a source file
+Enemigos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Enemigos.cpp.i
+.PHONY : Enemigos.cpp.i
+
+Enemigos.s: Enemigos.cpp.s
+.PHONY : Enemigos.s
+
+# target to generate assembly for a file
+Enemigos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Enemigos.cpp.s
+.PHONY : Enemigos.cpp.s
+
 GameScreen.o: GameScreen.cpp.o
 .PHONY : GameScreen.o
 
@@ -371,6 +395,9 @@ help:
 	@echo "... Battle_Space_autogen/mocs_compilation.o"
 	@echo "... Battle_Space_autogen/mocs_compilation.i"
 	@echo "... Battle_Space_autogen/mocs_compilation.s"
+	@echo "... Enemigos.o"
+	@echo "... Enemigos.i"
+	@echo "... Enemigos.s"
 	@echo "... GameScreen.o"
 	@echo "... GameScreen.i"
 	@echo "... GameScreen.s"
