@@ -81,15 +81,15 @@ void GameScreen::animate(const ListaSimple &dataList) {
     //dataList.printList();
     //cout << dataList.getPosVal(4) << endl;
 
-
-    if (dataList.getPosVal(5) <= 300) {
+    cout << player -> pos().y() << endl;
+    if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
         cout << "El objeto se mueve para abajo" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
         player->setPos(player->pos().x(), player->pos().y() + 10);
 
     }
-    else if (dataList.getPosVal(5)  >= 600) {
+    else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
         cout << "El objeto se mueve para arriba" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
