@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/Node.cpp.o"
   "CMakeFiles/Battle_Space.dir/Node.cpp.o.d"
+  "CMakeFiles/Battle_Space.dir/Player.cpp.o"
+  "CMakeFiles/Battle_Space.dir/Player.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/SerialPort.cpp.o"
   "CMakeFiles/Battle_Space.dir/SerialPort.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o"

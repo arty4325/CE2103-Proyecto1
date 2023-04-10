@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ include CMakeFiles/Battle_Space_autogen.dir/progress.make
 
 CMakeFiles/Battle_Space_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Battle_Space"
-	/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E cmake_autogen "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" Debug
+	/var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E cmake_autogen "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" Debug
 
 Battle_Space_autogen: CMakeFiles/Battle_Space_autogen
 Battle_Space_autogen: CMakeFiles/Battle_Space_autogen.dir/build.make

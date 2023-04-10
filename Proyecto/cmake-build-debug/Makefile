@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyec
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -262,6 +262,30 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
+Player.o: Player.cpp.o
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 SerialPort.o: SerialPort.cpp.o
 .PHONY : SerialPort.o
 
@@ -359,6 +383,9 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... SerialPort.o"
 	@echo "... SerialPort.i"
 	@echo "... SerialPort.s"

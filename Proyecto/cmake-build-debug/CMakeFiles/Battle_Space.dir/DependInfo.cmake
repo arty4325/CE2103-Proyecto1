@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp" "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp" "CMakeFiles/Battle_Space.dir/Node.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Node.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.cpp" "CMakeFiles/Battle_Space.dir/Player.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Player.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.cpp" "CMakeFiles/Battle_Space.dir/SerialPort.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/SerialPort.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp" "CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.cpp" "CMakeFiles/Battle_Space.dir/main.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/main.cpp.o.d"

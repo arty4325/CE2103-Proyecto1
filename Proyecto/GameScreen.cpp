@@ -10,6 +10,7 @@
 #include <QDir>
 #include "GameScreen.h"
 #include "SerialWorker.h"
+#include "Player.h"
 
 
 using namespace std;
@@ -34,6 +35,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     scene -> setSceneRect(0, 0, 1000, 700);
 
     // Cargar la imagen
+
     QString direc = QDir::currentPath();
     QPixmap backgroundImage(direc.mid(0,direc.length() - 18) + "/Imagenes/fondo.jpg");
     if (backgroundImage.isNull()) {
@@ -48,9 +50,14 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     }
 
 
-    rectangle = new QGraphicsRectItem(0, 0, 50, 50);
-    rectangle -> setPos(100, 100);
-    scene -> addItem(rectangle);
+    //rectangle = new QGraphicsRectItem(0, 0, 50, 50);
+    //rectangle -> setPos(100, 100);
+    //scene -> addItem(rectangle);
+
+    // Crear jugador y agregar a la escena
+    player = new Player();
+    player -> setPos(100, 100);
+    scene -> addItem(player);
 
 
     qRegisterMetaType<ListaSimple>("ListaSimple");
@@ -77,13 +84,17 @@ void GameScreen::animate(const ListaSimple &dataList) {
 
     if (dataList.getPosVal(5) <= 300) {
         cout << "El objeto se mueve para abajo" << endl;
-        QPointF  rectPos = rectangle -> pos();
-        rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
+        //QPointF  rectPos = rectangle -> pos();
+        //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
+        player->setPos(player->pos().x(), player->pos().y() + 10);
+
     }
     else if (dataList.getPosVal(5)  >= 600) {
         cout << "El objeto se mueve para arriba" << endl;
-        QPointF  rectPos = rectangle -> pos();
-        rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
+        //QPointF  rectPos = rectangle -> pos();
+        //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
+        player->setPos(player->pos().x(), player->pos().y() - 10);
+
     }
 }
 

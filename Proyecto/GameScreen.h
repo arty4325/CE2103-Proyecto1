@@ -11,11 +11,12 @@
 #include <QGraphicsView>
 #include <QGraphicsRectItem>
 #include "ListaSimple.h"
+#include "Player.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
-    QGraphicsRectItem* rectangle;
+    Player *player;
     int cantBullets;
     int cantVidas;
     int poteDisparo;
