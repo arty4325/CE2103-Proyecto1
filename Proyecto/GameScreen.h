@@ -26,7 +26,8 @@ public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 public slots:
     void animate(const ListaSimple &dataList);
-
+    void shootBullets();
+    //void fireBullets(const ListaSimple &dataList);
 };
 
 

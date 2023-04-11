@@ -11,6 +11,7 @@ class Player : public QGraphicsPixmapItem {
 public:
     Player(QGraphicsItem *parent = nullptr);
 
+
     void disminuirBalas();
     void disminuirVida(int cantidad);
     void aumentarVida(int cantidad);

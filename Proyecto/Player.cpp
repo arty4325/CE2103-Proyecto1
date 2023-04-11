@@ -14,6 +14,8 @@ Player::Player(QGraphicsItem *parent)
     setPixmap(imagen.scaled(50, 50));
 }
 
+
+
 void Player::disminuirBalas() {
     cantidadBalas--;
 }
@@ -25,3 +27,5 @@ void Player::disminuirVida(int cantidad) {
 void Player::aumentarVida(int cantidad) {
     vida += cantidad;
 }
+
+

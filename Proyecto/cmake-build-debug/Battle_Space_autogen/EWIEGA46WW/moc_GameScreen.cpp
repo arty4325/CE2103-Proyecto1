@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_GameScreen_t {
-    QByteArrayData data[5];
-    char stringdata0[41];
+    QByteArrayData data[6];
+    char stringdata0[54];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +36,12 @@ QT_MOC_LITERAL(0, 0, 10), // "GameScreen"
 QT_MOC_LITERAL(1, 11, 7), // "animate"
 QT_MOC_LITERAL(2, 19, 0), // ""
 QT_MOC_LITERAL(3, 20, 11), // "ListaSimple"
-QT_MOC_LITERAL(4, 32, 8) // "dataList"
+QT_MOC_LITERAL(4, 32, 8), // "dataList"
+QT_MOC_LITERAL(5, 41, 12) // "shootBullets"
 
     },
     "GameScreen\0animate\0\0ListaSimple\0"
-    "dataList"
+    "dataList\0shootBullets"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,7 +51,7 @@ static const uint qt_meta_data_GameScreen[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -58,10 +59,12 @@ static const uint qt_meta_data_GameScreen[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x0a /* Public */,
+       1,    1,   24,    2, 0x0a /* Public */,
+       5,    0,   27,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -73,6 +76,7 @@ void GameScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->animate((*reinterpret_cast< const ListaSimple(*)>(_a[1]))); break;
+        case 1: _t->shootBullets(); break;
         default: ;
         }
     }
@@ -107,13 +111,13 @@ int GameScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

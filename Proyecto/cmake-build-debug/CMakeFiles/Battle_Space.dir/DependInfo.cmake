@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp" "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.cpp" "CMakeFiles/Battle_Space.dir/Bullets.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Bullets.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d"

@@ -166,6 +166,30 @@ Battle_Space_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.s
 .PHONY : Battle_Space_autogen/mocs_compilation.cpp.s
 
+Bullets.o: Bullets.cpp.o
+.PHONY : Bullets.o
+
+# target to build an object file
+Bullets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Bullets.cpp.o
+.PHONY : Bullets.cpp.o
+
+Bullets.i: Bullets.cpp.i
+.PHONY : Bullets.i
+
+# target to preprocess a source file
+Bullets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Bullets.cpp.i
+.PHONY : Bullets.cpp.i
+
+Bullets.s: Bullets.cpp.s
+.PHONY : Bullets.s
+
+# target to generate assembly for a file
+Bullets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Bullets.cpp.s
+.PHONY : Bullets.cpp.s
+
 Enemigos.o: Enemigos.cpp.o
 .PHONY : Enemigos.o
 
@@ -395,6 +419,9 @@ help:
 	@echo "... Battle_Space_autogen/mocs_compilation.o"
 	@echo "... Battle_Space_autogen/mocs_compilation.i"
 	@echo "... Battle_Space_autogen/mocs_compilation.s"
+	@echo "... Bullets.o"
+	@echo "... Bullets.i"
+	@echo "... Bullets.s"
 	@echo "... Enemigos.o"
 	@echo "... Enemigos.i"
 	@echo "... Enemigos.s"

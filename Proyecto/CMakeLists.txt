@@ -20,7 +20,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp ListaSimple.cpp ListaSimple.h Node.cpp Node.h SerialWorker.h SerialWorker.cpp main.cpp MenuDificultades.cpp MenuDificultades.h GameScreen.cpp GameScreen.h Player.cpp Player.h Enemigos.cpp Enemigos.h)
+add_executable(Battle_Space main.cpp main.h SerialPort.h SerialPort.cpp ListaSimple.cpp ListaSimple.h Node.cpp Node.h SerialWorker.h SerialWorker.cpp main.cpp MenuDificultades.cpp MenuDificultades.h GameScreen.cpp GameScreen.h Player.cpp Player.h Enemigos.cpp Enemigos.h Bullets.cpp Bullets.h)
 target_link_libraries(Battle_Space Qt5::SerialPort)
 
 

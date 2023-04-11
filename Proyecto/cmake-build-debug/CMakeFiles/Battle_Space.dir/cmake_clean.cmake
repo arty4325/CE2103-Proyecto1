@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "Battle_Space.pdb"
   "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/Battle_Space.dir/Bullets.cpp.o"
+  "CMakeFiles/Battle_Space.dir/Bullets.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o"
   "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o"

@@ -5,6 +5,7 @@
 
 #include <QWidget>
 #include <QThread>
+#include <QTimer>
 #include <iostream>
 #include <QGraphicsRectItem>
 #include <QDir>
@@ -66,7 +67,9 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     QObject::connect(worker, &SerialWorker::dataReceived, this, &GameScreen::animate);
 
+
     workerThread.start();
+
 
 
     setScene(scene);
@@ -79,7 +82,14 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
 void GameScreen::animate(const ListaSimple &dataList) {
     //dataList.printList();
-    //cout << dataList.getPosVal(4) << endl;
+    //cout << dataList.getPosVal(3) << endl;
+    //fireBullets(dataList);
+
+    QTimer *timer = new QTimer(this);
+    timer ->setInterval(1000);
+    connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
+
+    timer -> start();
 
     cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
@@ -87,14 +97,16 @@ void GameScreen::animate(const ListaSimple &dataList) {
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
         player->setPos(player->pos().x(), player->pos().y() + 10);
-
     }
     else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
         cout << "El objeto se mueve para arriba" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
         player->setPos(player->pos().x(), player->pos().y() - 10);
-
     }
+}
+
+void GameScreen::shootBullets(){
+    cout << "FUNCIONA " << endl;
 }
 
