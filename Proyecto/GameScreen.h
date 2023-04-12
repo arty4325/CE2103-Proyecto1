@@ -10,12 +10,15 @@
 
 #include <QGraphicsView>
 #include <QGraphicsRectItem>
+#include <QSerialPort>
+#include <QThread>
 #include "ListaSimple.h"
 #include "Player.h"
 #include "Bullets.h"
 #include "SimpleList.h"
 #include "SimpleList.cpp"
 #include "EasyEnemy.h"
+#include "SerialWorker.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
@@ -24,6 +27,10 @@ private:
     ListaSimple dataList;
     SimpleList<Bullets*> bulletsList;
     SimpleList<EasyEnemy*> easyEnemys;
+
+    QThread workerThread;
+    SerialWorker* worker;
+
     int cantBullets;
     int cantVidas;
     int poteDisparo;

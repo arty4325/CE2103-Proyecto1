@@ -235,6 +235,11 @@ void loop() {
       digitalWrite(pinB, HIGH);
       */
     }
+    if (valorSerial == '6') {
+      digitalWrite(buzzerPin, HIGH);
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
+    }
   }
 
   

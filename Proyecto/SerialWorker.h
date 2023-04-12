@@ -22,10 +22,12 @@ signals:
 
 public slots:
     void readData();
+    void writeData(const QByteArray &data);
 
 private:
     QSerialPort m_serialPort;
     QByteArray m_data;
+
 };
 
 

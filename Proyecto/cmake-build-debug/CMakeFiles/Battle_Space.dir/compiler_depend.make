@@ -343,6 +343,20 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/c++/12.2.1/variant \
   /usr/include/qt/QtGui/qpainterpath.h \
+  /usr/include/qt/QtSerialPort/QSerialPort \
+  /usr/include/qt/QtSerialPort/qserialport.h \
+  /usr/include/qt/QtSerialPort/qserialportglobal.h \
+  /usr/include/qt/QtCore/QThread \
+  /usr/include/qt/QtCore/qthread.h \
+  /usr/include/qt/QtCore/qdeadlinetimer.h \
+  /usr/include/qt/QtCore/qelapsedtimer.h \
+  /usr/include/c++/12.2.1/future \
+  /usr/include/c++/12.2.1/mutex \
+  /usr/include/c++/12.2.1/bits/std_mutex.h \
+  /usr/include/c++/12.2.1/bits/unique_lock.h \
+  /usr/include/c++/12.2.1/condition_variable \
+  /usr/include/c++/12.2.1/bits/atomic_futex.h \
+  /usr/include/c++/12.2.1/bits/std_thread.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
@@ -368,13 +382,11 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
-  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
-  /usr/include/qt/QtSerialPort/QSerialPort \
-  /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h
+  Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h
 
 CMakeFiles/Battle_Space.dir/Bullets.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp \
   /usr/include/stdc-predef.h \
@@ -1725,6 +1737,9 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/c++/12.2.1/variant \
   /usr/include/qt/QtGui/qpainterpath.h \
+  /usr/include/qt/QtSerialPort/QSerialPort \
+  /usr/include/qt/QtSerialPort/qserialport.h \
+  /usr/include/qt/QtSerialPort/qserialportglobal.h \
   /usr/include/qt/QtCore/QDir \
   /usr/include/qt/QtCore/qdir.h \
   /usr/include/qt/QtCore/qfileinfo.h \
@@ -1753,10 +1768,7 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
-  /usr/include/qt/QtCore/qobject.h \
-  /usr/include/qt/QtSerialPort/QSerialPort \
-  /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h
+  /usr/include/qt/QtCore/qobject.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \
@@ -2291,6 +2303,20 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/c++/12.2.1/variant \
   /usr/include/qt/QtGui/qpainterpath.h \
+  /usr/include/qt/QtSerialPort/QSerialPort \
+  /usr/include/qt/QtSerialPort/qserialport.h \
+  /usr/include/qt/QtSerialPort/qserialportglobal.h \
+  /usr/include/qt/QtCore/QThread \
+  /usr/include/qt/QtCore/qthread.h \
+  /usr/include/qt/QtCore/qdeadlinetimer.h \
+  /usr/include/qt/QtCore/qelapsedtimer.h \
+  /usr/include/c++/12.2.1/future \
+  /usr/include/c++/12.2.1/mutex \
+  /usr/include/c++/12.2.1/bits/std_mutex.h \
+  /usr/include/c++/12.2.1/bits/unique_lock.h \
+  /usr/include/c++/12.2.1/condition_variable \
+  /usr/include/c++/12.2.1/bits/atomic_futex.h \
+  /usr/include/c++/12.2.1/bits/std_thread.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
@@ -2316,6 +2342,9 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /usr/include/qt/QtCore/QObject \
+  /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtWidgets/QPushButton \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -4232,18 +4261,6 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtCore/qtimer.h:
 
-/usr/include/c++/12.2.1/bits/atomic_futex.h:
-
-/usr/include/c++/12.2.1/future:
-
-/usr/include/qt/QtCore/qdeadlinetimer.h:
-
-/usr/include/qt/QtCore/qthread.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
-
-/usr/include/qt/QtCore/QThread:
-
 /usr/include/qt/QtWidgets/QWidget:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.h:
@@ -4258,15 +4275,9 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp:
 
-/usr/include/qt/QtSerialPort/qserialportglobal.h:
-
-/usr/include/qt/QtGui/qicon.h:
-
-/usr/include/qt/QtSerialPort/QSerialPort:
+Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
-
-Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h:
 
@@ -4297,6 +4308,24 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
+
+/usr/include/c++/12.2.1/bits/atomic_futex.h:
+
+/usr/include/c++/12.2.1/future:
+
+/usr/include/qt/QtCore/qdeadlinetimer.h:
+
+/usr/include/qt/QtCore/qthread.h:
+
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
+
+/usr/include/qt/QtCore/QThread:
+
+/usr/include/qt/QtSerialPort/qserialportglobal.h:
+
+/usr/include/qt/QtGui/qicon.h:
+
+/usr/include/qt/QtSerialPort/QSerialPort:
 
 /usr/include/qt/QtGui/qpainterpath.h:
 

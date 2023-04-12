@@ -8,6 +8,7 @@
 #include <QTimer>
 #include <iostream>
 #include <QGraphicsRectItem>
+#include <QSerialPort>
 #include <QDir>
 #include "GameScreen.h"
 #include "SerialWorker.h"
@@ -29,6 +30,9 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         faseJuego = 0;
         oleadaJuego = 0;
     }
+
+
+
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -89,7 +93,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
 
     qRegisterMetaType<ListaSimple>("ListaSimple");
-    SerialWorker *worker = new SerialWorker();
+    worker = new SerialWorker();
     worker ->moveToThread(&workerThread);
 
     QObject::connect(worker, &SerialWorker::dataReceived, this, &GameScreen::animate);
@@ -98,6 +102,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     workerThread.start();
 
 
+    //worker -> writeData("6");
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -172,6 +177,14 @@ void GameScreen::moveEnemys() {
     for (int i = 0; i < easyEnemys.getSize(); i++){
         EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
         tempEnemy -> setPos(tempEnemy->pos().x() - 1, tempEnemy->pos().y());
+        if (tempEnemy-> pos().x() <= 0 ){
+            cout << "SE SALIO" << endl;
+            worker -> writeData("6");
+            scene() -> removeItem(tempEnemy);
+            easyEnemys.deletePos(i);
+            delete tempEnemy;
+            //worker -> writeData("6");
+        }
     }
 }
 
@@ -188,6 +201,7 @@ void GameScreen::checkCollisions() {
                 easyEnemys.deletePos(j);
                 delete bullet;
                 delete enemy;
+                //worker -> writeData("6");
 
             }
         }
