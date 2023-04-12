@@ -1355,6 +1355,9 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
  /usr/include/c++/12.2.1/condition_variable
  /usr/include/c++/12.2.1/bits/atomic_futex.h
  /usr/include/c++/12.2.1/bits/std_thread.h
+ /usr/include/qt/QtCore/QTimer
+ /usr/include/qt/QtCore/qtimer.h
+ /usr/include/qt/QtCore/qbasictimer.h
  /usr/include/c++/12.2.1/iostream
  /usr/include/c++/12.2.1/ostream
  /usr/include/c++/12.2.1/ios

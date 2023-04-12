@@ -12,6 +12,7 @@
 #include "GameScreen.h"
 #include "SerialWorker.h"
 #include "Player.h"
+#include "Bullets.h"
 
 
 using namespace std;
@@ -23,6 +24,10 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     std::string pathStr = path.toStdString();
     std::cout << "Directorio actual: " << pathStr << std::endl;
 
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
+    timer ->setInterval(1000);
+    timer -> start();
 
     if (Dificultad == 1){
         cantBullets = 10;
@@ -84,12 +89,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
-
-    QTimer *timer = new QTimer(this);
-    timer ->setInterval(1000);
-    connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
-
-    timer -> start();
+    this->dataList = dataList;
 
     cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
@@ -107,6 +107,10 @@ void GameScreen::animate(const ListaSimple &dataList) {
 }
 
 void GameScreen::shootBullets(){
-    cout << "FUNCIONA " << endl;
+    //cout << dataList.getPosVal(3) << endl;
+    Bullets* bullets = new Bullets();
+    bullets->setPos(900,
+                    player->pos().y());
+    scene()->addItem(bullets);
 }
 

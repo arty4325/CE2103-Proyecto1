@@ -9,6 +9,6 @@
 Bullets::Bullets(QGraphicsItem *parent)
 : QGraphicsPixmapItem(parent) {
     QString direc = QDir::currentPath();
-    QPixmap imagen(direc.mid(0, direc.length() - 18) + "/Imagenes/ship.png");
+    QPixmap imagen(direc.mid(0, direc.length() - 18) + "/Imagenes/Bullet.png");
     setPixmap(imagen.scaled(50, 50));
 }

@@ -17,6 +17,7 @@ class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
     Player *player;
+    ListaSimple dataList;
     int cantBullets;
     int cantVidas;
     int poteDisparo;

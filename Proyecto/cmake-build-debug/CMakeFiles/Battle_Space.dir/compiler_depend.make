@@ -1351,6 +1351,9 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/c++/12.2.1/condition_variable \
   /usr/include/c++/12.2.1/bits/atomic_futex.h \
   /usr/include/c++/12.2.1/bits/std_thread.h \
+  /usr/include/qt/QtCore/QTimer \
+  /usr/include/qt/QtCore/qtimer.h \
+  /usr/include/qt/QtCore/qbasictimer.h \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/ostream \
   /usr/include/c++/12.2.1/ios \
@@ -3509,6 +3512,10 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/c++/12.2.1/ostream:
 
+/usr/include/qt/QtCore/qbasictimer.h:
+
+/usr/include/qt/QtCore/qtimer.h:
+
 /usr/include/c++/12.2.1/bits/atomic_futex.h:
 
 /usr/include/c++/12.2.1/future:
@@ -4162,6 +4169,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp:
 
 /usr/include/qt/QtCore/qsharedpointer.h:
+
+/usr/include/qt/QtCore/QTimer:
 
 /usr/include/c++/12.2.1/bits/stream_iterator.h:
 
