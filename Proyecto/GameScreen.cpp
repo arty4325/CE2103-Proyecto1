@@ -53,6 +53,12 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     moveTimer ->setInterval(4);
     moveTimer -> start();
 
+    QTimer *collisionTimer = new QTimer(this);
+    connect(collisionTimer, &QTimer::timeout, this, &GameScreen::checkCollisions);
+    collisionTimer ->setInterval(4);
+    collisionTimer -> start();
+    
+
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
 
@@ -115,15 +121,15 @@ void GameScreen::animate(const ListaSimple &dataList) {
     }
 
 
-    cout << player -> pos().y() << endl;
+    //cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
-        cout << "El objeto se mueve para abajo" << endl;
+        //cout << "El objeto se mueve para abajo" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
         player->setPos(player->pos().x(), player->pos().y() + 10);
     }
     else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
-        cout << "El objeto se mueve para arriba" << endl;
+        //cout << "El objeto se mueve para arriba" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
         player->setPos(player->pos().x(), player->pos().y() - 10);
@@ -169,3 +175,21 @@ void GameScreen::moveEnemys() {
     }
 }
 
+
+void GameScreen::checkCollisions() {
+    for (int i = 0; i < bulletsList.size(); i++){
+        for (int j = 0; j < easyEnemys.getSize(); j++) {
+            Bullets* bullet = bulletsList.at(i);
+            EasyEnemy* enemy = easyEnemys.getPosVal(j);
+            if (bullet ->collidesWithItem(enemy)) {
+                scene() -> removeItem(bullet);
+                scene() -> removeItem(enemy);
+                bulletsList.removeAt(i);
+                easyEnemys.deletePos(j);
+                delete bullet;
+                delete enemy;
+
+            }
+        }
+    }
+}

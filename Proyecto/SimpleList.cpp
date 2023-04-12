@@ -78,3 +78,25 @@ int SimpleList<T>::getSize() const {
     }
     return size;
 }
+
+
+template <class T>
+void SimpleList<T>::deletePos(int position) {
+    if (position == 0) {
+        deleteHead();
+        return;
+    }
+    NodeList<T>* current = this -> head;
+    int currentPosition = 0;
+    while (current != nullptr && currentPosition != position - 1){
+        current = current -> next;
+        currentPosition++;
+    }
+    if (current == nullptr || current->next == nullptr) {
+        throw out_of_range("Posicion Invalida");
+    }
+    NodeList<T>* temp = current->next;
+    current->next = temp->next;
+    temp->next = nullptr;
+    delete temp;
+}

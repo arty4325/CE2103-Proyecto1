@@ -22,6 +22,8 @@ public:
     void setHead(NodeList<T> *newHead);
 
     int getSize() const;
+
+    void deletePos(int position);
 };
 
 

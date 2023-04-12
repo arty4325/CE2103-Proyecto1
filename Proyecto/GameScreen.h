@@ -36,6 +36,7 @@ public slots:
     void shootBullets();
     void spawnEnemys();
     void moveEnemys();
+    void checkCollisions();
     //void fireBullets(const ListaSimple &dataList);
 };
 
