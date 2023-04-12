@@ -223,6 +223,48 @@ CMakeFiles/Battle_Space.dir/Bullets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battle_Space.dir/Bullets.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.cpp" -o CMakeFiles/Battle_Space.dir/Bullets.cpp.s
 
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: CMakeFiles/Battle_Space.dir/flags.make
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: CMakeFiles/Battle_Space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o -MF CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o.d -o CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o -c "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp"
+
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp" > CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.i
+
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp" -o CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.s
+
+CMakeFiles/Battle_Space.dir/NodeList.cpp.o: CMakeFiles/Battle_Space.dir/flags.make
+CMakeFiles/Battle_Space.dir/NodeList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp
+CMakeFiles/Battle_Space.dir/NodeList.cpp.o: CMakeFiles/Battle_Space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Battle_Space.dir/NodeList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Battle_Space.dir/NodeList.cpp.o -MF CMakeFiles/Battle_Space.dir/NodeList.cpp.o.d -o CMakeFiles/Battle_Space.dir/NodeList.cpp.o -c "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp"
+
+CMakeFiles/Battle_Space.dir/NodeList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battle_Space.dir/NodeList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp" > CMakeFiles/Battle_Space.dir/NodeList.cpp.i
+
+CMakeFiles/Battle_Space.dir/NodeList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battle_Space.dir/NodeList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp" -o CMakeFiles/Battle_Space.dir/NodeList.cpp.s
+
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: CMakeFiles/Battle_Space.dir/flags.make
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: CMakeFiles/Battle_Space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Battle_Space.dir/SimpleList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Battle_Space.dir/SimpleList.cpp.o -MF CMakeFiles/Battle_Space.dir/SimpleList.cpp.o.d -o CMakeFiles/Battle_Space.dir/SimpleList.cpp.o -c "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp"
+
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battle_Space.dir/SimpleList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp" > CMakeFiles/Battle_Space.dir/SimpleList.cpp.i
+
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battle_Space.dir/SimpleList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp" -o CMakeFiles/Battle_Space.dir/SimpleList.cpp.s
+
 # Object files for target Battle_Space
 Battle_Space_OBJECTS = \
 "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o" \
@@ -235,7 +277,10 @@ Battle_Space_OBJECTS = \
 "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o" \
 "CMakeFiles/Battle_Space.dir/Player.cpp.o" \
 "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o" \
-"CMakeFiles/Battle_Space.dir/Bullets.cpp.o"
+"CMakeFiles/Battle_Space.dir/Bullets.cpp.o" \
+"CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o" \
+"CMakeFiles/Battle_Space.dir/NodeList.cpp.o" \
+"CMakeFiles/Battle_Space.dir/SimpleList.cpp.o"
 
 # External object files for target Battle_Space
 Battle_Space_EXTERNAL_OBJECTS =
@@ -251,6 +296,9 @@ Battle_Space: CMakeFiles/Battle_Space.dir/GameScreen.cpp.o
 Battle_Space: CMakeFiles/Battle_Space.dir/Player.cpp.o
 Battle_Space: CMakeFiles/Battle_Space.dir/Enemigos.cpp.o
 Battle_Space: CMakeFiles/Battle_Space.dir/Bullets.cpp.o
+Battle_Space: CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o
+Battle_Space: CMakeFiles/Battle_Space.dir/NodeList.cpp.o
+Battle_Space: CMakeFiles/Battle_Space.dir/SimpleList.cpp.o
 Battle_Space: CMakeFiles/Battle_Space.dir/build.make
 Battle_Space: /usr/lib/libQt5SerialPort.so.5.15.8
 Battle_Space: /usr/lib/libQt5Core.so.5.15.8
@@ -259,7 +307,7 @@ Battle_Space: /usr/lib/libQt5Widgets.so.5.15.8
 Battle_Space: /usr/lib/libQt5Gui.so.5.15.8
 Battle_Space: /usr/lib/libQt5Core.so.5.15.8
 Battle_Space: CMakeFiles/Battle_Space.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Battle_Space"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Battle_Space"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Battle_Space.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

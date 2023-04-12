@@ -30,6 +30,7 @@ public:
 public slots:
     void animate(const ListaSimple &dataList);
     void shootBullets();
+    void spawnEnemys();
     //void fireBullets(const ListaSimple &dataList);
 };
 

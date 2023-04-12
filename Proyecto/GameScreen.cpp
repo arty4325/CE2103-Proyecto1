@@ -21,15 +21,6 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
-    QString path = QDir::currentPath();
-    std::string pathStr = path.toStdString();
-    std::cout << "Directorio actual: " << pathStr << std::endl;
-
-    QTimer *timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
-    timer ->setInterval(1000);
-    timer -> start();
-
     if (Dificultad == 1){
         cantBullets = 10;
         cantVidas = 3;
@@ -37,6 +28,24 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         faseJuego = 0;
         oleadaJuego = 0;
     }
+
+    QString path = QDir::currentPath();
+    std::string pathStr = path.toStdString();
+    std::cout << "Directorio actual: " << pathStr << std::endl;
+
+
+    // Esto es lo que permite manejar a las balas
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
+    timer -> setInterval(500);
+    timer -> start();
+
+    // Ahora voy a hacer un timer que permita manejar la aparicion de los enemigos
+    // Dependiendo de la oleada en la que se esta
+    QTimer *spawnTimer = new QTimer(this);
+    connect(spawnTimer, &QTimer::timeout, this, &GameScreen::spawnEnemys);
+    spawnTimer -> setInterval(500);
+    spawnTimer -> start();
 
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
@@ -97,7 +106,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
         bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
     }
 
-    
+
     cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
         cout << "El objeto se mueve para abajo" << endl;
@@ -115,10 +124,20 @@ void GameScreen::animate(const ListaSimple &dataList) {
 
 void GameScreen::shootBullets(){
     //cout << dataList.getPosVal(3) << endl;
+
+    int waitTime = dataList.getPosVal(3)*5;
+
+
     Bullets* bullets = new Bullets();
     bullets->setPos(player->pos().x(),player->pos().y());
     scene()->addItem(bullets);
 
     bulletsList.append(bullets);
+
+}
+
+void GameScreen::spawnEnemys() {
+    cout << "PRUEBAS" << endl;
+
 }
 

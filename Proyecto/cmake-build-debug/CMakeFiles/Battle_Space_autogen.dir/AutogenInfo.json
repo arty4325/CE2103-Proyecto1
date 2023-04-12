@@ -119,6 +119,12 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.h",
+			"MU",
+			"EWIEGA46WW/moc_EasyEnemy.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.h",
 			"MU",
 			"EWIEGA46WW/moc_Enemigos.cpp",
@@ -149,6 +155,12 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.h",
+			"MU",
+			"EWIEGA46WW/moc_NodeList.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.h",
 			"MU",
 			"EWIEGA46WW/moc_Player.cpp",
@@ -164,6 +176,12 @@
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h",
 			"MU",
 			"EWIEGA46WW/moc_SerialWorker.cpp",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.h",
+			"MU",
+			"EWIEGA46WW/moc_SimpleList.cpp",
 			null
 		],
 		[
@@ -230,6 +248,11 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp",
 			"MU",
 			null
@@ -255,6 +278,11 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.cpp",
 			"MU",
 			null
@@ -266,6 +294,11 @@
 		],
 		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp",
 			"MU",
 			null
 		],

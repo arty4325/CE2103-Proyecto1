@@ -120,6 +120,12 @@
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.h">
 			<Option target="Battle_Space"/>
 		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.h">
+			<Option target="Battle_Space"/>
+		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
@@ -150,6 +156,12 @@
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h">
 			<Option target="Battle_Space"/>
 		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.h">
+			<Option target="Battle_Space"/>
+		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
@@ -166,6 +178,12 @@
 			<Option target="Battle_Space"/>
 		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.h">
 			<Option target="Battle_Space"/>
 		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp">

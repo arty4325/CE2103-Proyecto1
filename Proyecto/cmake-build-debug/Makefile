@@ -190,6 +190,30 @@ Bullets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Bullets.cpp.s
 .PHONY : Bullets.cpp.s
 
+EasyEnemy.o: EasyEnemy.cpp.o
+.PHONY : EasyEnemy.o
+
+# target to build an object file
+EasyEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o
+.PHONY : EasyEnemy.cpp.o
+
+EasyEnemy.i: EasyEnemy.cpp.i
+.PHONY : EasyEnemy.i
+
+# target to preprocess a source file
+EasyEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.i
+.PHONY : EasyEnemy.cpp.i
+
+EasyEnemy.s: EasyEnemy.cpp.s
+.PHONY : EasyEnemy.s
+
+# target to generate assembly for a file
+EasyEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.s
+.PHONY : EasyEnemy.cpp.s
+
 Enemigos.o: Enemigos.cpp.o
 .PHONY : Enemigos.o
 
@@ -310,6 +334,30 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
+NodeList.o: NodeList.cpp.o
+.PHONY : NodeList.o
+
+# target to build an object file
+NodeList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/NodeList.cpp.o
+.PHONY : NodeList.cpp.o
+
+NodeList.i: NodeList.cpp.i
+.PHONY : NodeList.i
+
+# target to preprocess a source file
+NodeList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/NodeList.cpp.i
+.PHONY : NodeList.cpp.i
+
+NodeList.s: NodeList.cpp.s
+.PHONY : NodeList.s
+
+# target to generate assembly for a file
+NodeList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/NodeList.cpp.s
+.PHONY : NodeList.cpp.s
+
 Player.o: Player.cpp.o
 .PHONY : Player.o
 
@@ -382,6 +430,30 @@ SerialWorker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/SerialWorker.cpp.s
 .PHONY : SerialWorker.cpp.s
 
+SimpleList.o: SimpleList.cpp.o
+.PHONY : SimpleList.o
+
+# target to build an object file
+SimpleList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/SimpleList.cpp.o
+.PHONY : SimpleList.cpp.o
+
+SimpleList.i: SimpleList.cpp.i
+.PHONY : SimpleList.i
+
+# target to preprocess a source file
+SimpleList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/SimpleList.cpp.i
+.PHONY : SimpleList.cpp.i
+
+SimpleList.s: SimpleList.cpp.s
+.PHONY : SimpleList.s
+
+# target to generate assembly for a file
+SimpleList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/SimpleList.cpp.s
+.PHONY : SimpleList.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -422,6 +494,9 @@ help:
 	@echo "... Bullets.o"
 	@echo "... Bullets.i"
 	@echo "... Bullets.s"
+	@echo "... EasyEnemy.o"
+	@echo "... EasyEnemy.i"
+	@echo "... EasyEnemy.s"
 	@echo "... Enemigos.o"
 	@echo "... Enemigos.i"
 	@echo "... Enemigos.s"
@@ -437,6 +512,9 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
+	@echo "... NodeList.o"
+	@echo "... NodeList.i"
+	@echo "... NodeList.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
@@ -446,6 +524,9 @@ help:
 	@echo "... SerialWorker.o"
 	@echo "... SerialWorker.i"
 	@echo "... SerialWorker.s"
+	@echo "... SimpleList.o"
+	@echo "... SimpleList.i"
+	@echo "... SimpleList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
