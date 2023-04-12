@@ -79,7 +79,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     spawnTimer -> setInterval(2000);
     spawnTimer -> start();
 
-    QTimer *moveTimer = new QTimer(this);
+    moveTimer = new QTimer(this);
     connect(moveTimer, &QTimer::timeout, this, &GameScreen::moveEnemys);
     moveTimer ->setInterval(velocidadEnemigos);
     moveTimer -> start();
@@ -286,6 +286,7 @@ void GameScreen::checkOleada(){
         EnemigosFaciles = infoOleadas[oleada][1];
         EnemigosMedios = infoOleadas[oleada][2];
         EnemigosDificiles = infoOleadas[oleada][3];
+        moveTimer ->setInterval(velocidadEnemigos);
     }
     string strOleada = to_string(oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);

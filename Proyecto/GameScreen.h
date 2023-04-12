@@ -42,6 +42,8 @@ private:
     int faseJuego;
     int oleadaJuego;
 
+    QTimer* moveTimer;
+
 
     int velocidadEnemigos;
     int EnemigosFaciles;
