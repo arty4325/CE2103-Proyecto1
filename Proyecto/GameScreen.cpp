@@ -13,6 +13,7 @@
 #include "SerialWorker.h"
 #include "Player.h"
 #include "Bullets.h"
+#include "EasyEnemy.h"
 //#include "SimpleList.h"
 
 
@@ -135,13 +136,28 @@ void GameScreen::shootBullets(){
     scene()->addItem(bullets);
 
 
-    test.insertHead(bullets);
-    //bulletsList.append(bullets);
+    //test.insertHead(bullets);
+    bulletsList.append(bullets);
     //test.printList();
 }
 
 void GameScreen::spawnEnemys() {
-    cout << "PRUEBAS" << endl;
+    //cout << "PRUEBAS" << endl;
+    int randomY = qrand() % 400;
+    randomY += 100;
+    //cout << randomY + 100 << endl;
+    EasyEnemy* easyEnemy = new EasyEnemy();
+    easyEnemy -> setPos(1050, randomY);
+    scene() -> addItem(easyEnemy);
+
+    easyEnemys.insertHead(easyEnemy);
+
+    cout << easyEnemys.getSize() << endl;
+
+    for (int i = 0; i < easyEnemys.getSize(); i++){
+        EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
+        tempEnemy -> setPos(tempEnemy->pos().x() - 10, tempEnemy->pos().y());
+    }
 
 }
 

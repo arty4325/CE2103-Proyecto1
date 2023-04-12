@@ -20,6 +20,8 @@ public:
     T getPosVal(int position) const;
 
     void setHead(NodeList<T> *newHead);
+
+    int getSize() const;
 };
 
 

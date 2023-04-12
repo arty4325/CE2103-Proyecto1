@@ -67,3 +67,14 @@ T SimpleList<T>::getPosVal(int position) const {
     }
     return current -> value;
 }
+
+template <class T>
+int SimpleList<T>::getSize() const {
+    NodeList<T>* current = this -> head;
+    int size = 0;
+    while (current != nullptr){
+        size++;
+        current = current -> next;
+    }
+    return size;
+}

@@ -15,6 +15,7 @@
 #include "Bullets.h"
 #include "SimpleList.h"
 #include "SimpleList.cpp"
+#include "EasyEnemy.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
@@ -22,7 +23,7 @@ private:
     Player *player;
     ListaSimple dataList;
     QList<Bullets*> bulletsList;
-    SimpleList<Bullets*> test;
+    SimpleList<EasyEnemy*> easyEnemys;
     int cantBullets;
     int cantVidas;
     int poteDisparo;
