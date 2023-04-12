@@ -388,6 +388,7 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
   Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h
 
@@ -1748,6 +1749,36 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtCore/qfileinfo.h \
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h \
+  /usr/include/qt/QtCore/QRandomGenerator \
+  /usr/include/qt/QtCore/qrandom.h \
+  /usr/include/c++/12.2.1/random \
+  /usr/include/c++/12.2.1/cmath \
+  /usr/include/math.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/c++/12.2.1/bits/specfun.h \
+  /usr/include/c++/12.2.1/tr1/gamma.tcc \
+  /usr/include/c++/12.2.1/tr1/special_function_util.h \
+  /usr/include/c++/12.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/12.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/12.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/12.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/12.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/12.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/12.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/12.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/12.2.1/bits/random.h \
+  /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
+  /usr/include/c++/12.2.1/bits/random.tcc \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
@@ -1771,7 +1802,8 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
-  /usr/include/qt/QtCore/qobject.h
+  /usr/include/qt/QtCore/qobject.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \
@@ -2680,6 +2712,7 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
   /usr/include/qt/QtWidgets/QPushButton \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -4556,8 +4589,6 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtCore/qtextstream.h:
 
-/usr/include/qt/QtCore/QTextStream:
-
 /usr/include/qt/QtCore/qlocale.h:
 
 /usr/include/qt/QtGui/qguiapplication.h:
@@ -4588,11 +4619,45 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtWidgets/qabstractbutton.h:
 
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+
+/usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
+
+/usr/include/qt/QtCore/QTextStream:
+
+/usr/include/c++/12.2.1/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/12.2.1/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/12.2.1/tr1/poly_hermite.tcc:
+
+/usr/include/c++/12.2.1/tr1/legendre_function.tcc:
+
+/usr/include/c++/12.2.1/tr1/hypergeometric.tcc:
+
+/usr/include/c++/12.2.1/tr1/ell_integral.tcc:
+
+/usr/include/c++/12.2.1/tr1/beta_function.tcc:
+
 /usr/include/qt/QtWidgets/QPushButton:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h:
+/usr/include/c++/12.2.1/tr1/bessel_function.tcc:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+/usr/include/c++/12.2.1/tr1/gamma.tcc:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/c++/12.2.1/cmath:
+
+/usr/include/qt/QtCore/qrandom.h:
 
 /usr/include/qt/QtWidgets/QWidget:
 
@@ -4610,6 +4675,8 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
+/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h:
+
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h:
@@ -4625,6 +4692,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/bits/locale_facets.tcc:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/bits/fp-logb.h:
 
 /usr/include/wctype.h:
 
@@ -4684,6 +4753,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/linux/errno.h:
 
+/usr/include/c++/12.2.1/tr1/modified_bessel_func.tcc:
+
 /usr/include/qt/QtCore/qobject.h:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h:
@@ -4693,6 +4764,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/bits/types/locale_t.h:
 
 /usr/include/c++/12.2.1/bits/uniform_int_dist.h:
+
+/usr/include/c++/12.2.1/bits/random.h:
 
 /usr/include/qt/QtCore/qrect.h:
 
@@ -4732,6 +4805,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtGui/qpolygon.h:
 
+/usr/include/c++/12.2.1/tr1/special_function_util.h:
+
 /usr/include/c++/12.2.1/ext/concurrence.h:
 
 /usr/include/c++/12.2.1/bits/cxxabi_init_exception.h:
@@ -4739,6 +4814,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/bits/cpp_type_traits.h:
 
 /usr/include/bits/types/struct_tm.h:
+
+/usr/include/math.h:
 
 /usr/include/c++/12.2.1/bits/stl_construct.h:
 
@@ -4763,6 +4840,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/bits/stl_bvector.h:
 
 /usr/include/sys/select.h:
+
+/usr/include/c++/12.2.1/random:
 
 /usr/include/c++/12.2.1/bits/stl_algo.h:
 
@@ -4899,6 +4978,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/endian.h:
 
 /usr/include/c++/12.2.1/bits/list.tcc:
+
+/usr/include/qt/QtCore/QRandomGenerator:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h:
 
@@ -5100,6 +5181,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtWidgets/qsizepolicy.h:
 
+/usr/include/bits/libm-simd-decl-stubs.h:
+
 /usr/include/c++/12.2.1/bits/algorithmfwd.h:
 
 /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp:
@@ -5220,6 +5303,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/compare:
 
+/usr/include/bits/mathcalls-helper-functions.h:
+
 /usr/include/qt/QtGui/qrgba64.h:
 
 /usr/include/bits/locale.h:
@@ -5249,6 +5334,10 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/c++/12.2.1/cwctype:
 
 /usr/include/qt/QtGui/qmatrix.h:
+
+/usr/include/c++/12.2.1/tr1/exp_integral.tcc:
+
+/usr/include/c++/12.2.1/bits/specfun.h:
 
 /usr/include/qt/QtGui/qfont.h:
 
@@ -5304,6 +5393,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qalgorithms.h:
 
+/usr/include/c++/12.2.1/bits/random.tcc:
+
 /usr/include/c++/12.2.1/bits/stl_numeric.h:
 
 /usr/include/qt/QtCore/qpair.h:
@@ -5327,6 +5418,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 /usr/include/c++/12.2.1/bits/hashtable.h:
 
 /usr/include/c++/12.2.1/bits/hashtable_policy.h:
+
+/usr/include/bits/fp-fast.h:
 
 /usr/include/bits/posix1_lim.h:
 

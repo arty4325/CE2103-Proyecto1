@@ -20,6 +20,7 @@
 #include "SimpleList.cpp"
 #include "EasyEnemy.h"
 #include "SerialWorker.h"
+#include "MediumEnemy.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
@@ -28,10 +29,13 @@ private:
     ListaSimple dataList;
     SimpleList<Bullets*> bulletsList;
     SimpleList<EasyEnemy*> easyEnemys;
+    SimpleList<MediumEnemy*> mediumEnemys;
 
     QThread workerThread;
     SerialWorker* worker;
-    QTimer* timer;
+
+    int oleada;
+
     int cantBullets;
     int cantVidas;
     int poteDisparo;
@@ -45,6 +49,8 @@ private:
     int EnemigosDificiles;
 
     int infoOleadas;
+
+    bool cambioOleada;
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 public slots:
@@ -53,6 +59,7 @@ public slots:
     void spawnEnemys();
     void moveEnemys();
     void checkCollisions();
+    void checkOleada();
     //void fireBullets(const ListaSimple &dataList);
 };
 

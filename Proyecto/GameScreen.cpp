@@ -10,11 +10,13 @@
 #include <QGraphicsRectItem>
 #include <QSerialPort>
 #include <QDir>
+#include <QRandomGenerator>
 #include "GameScreen.h"
 #include "SerialWorker.h"
 #include "Player.h"
 #include "Bullets.h"
 #include "EasyEnemy.h"
+#include "MediumEnemy.h"
 //#include "SimpleList.h"
 
 
@@ -26,6 +28,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     if (Dificultad == 1){
         cantBullets = 400;
         cantVidas = 3;
+        oleada = 0;
         // En el arreglo el orden de la info es:
         // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
         int infoOleadas[5][4] = {
@@ -35,6 +38,12 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 {4, 15, 15, 0},
                 {2, 10, 25, 0}
         };
+
+        cambioOleada = false;
+        velocidadEnemigos = infoOleadas[0][0];
+        EnemigosFaciles = infoOleadas[0][1];
+        EnemigosMedios = infoOleadas[0][2];
+        EnemigosDificiles = infoOleadas[0][3];
     }
 
 
@@ -44,9 +53,15 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     std::string pathStr = path.toStdString();
     std::cout << "Directorio actual: " << pathStr << std::endl;
 
+    QTimer *oleadaTimer = new QTimer(this);
+    connect(oleadaTimer, &QTimer::timeout, this, &GameScreen::checkOleada);
+    oleadaTimer -> setInterval(1000);
+    oleadaTimer -> start();
+
+
 
     // Esto es lo que permite manejar a las balas
-    timer = new QTimer(this);
+    QTimer *timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
     timer -> setInterval(500);
     timer -> start();
@@ -61,7 +76,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     QTimer *moveTimer = new QTimer(this);
     connect(moveTimer, &QTimer::timeout, this, &GameScreen::moveEnemys);
-    moveTimer ->setInterval(2);
+    moveTimer ->setInterval(velocidadEnemigos);
     moveTimer -> start();
 
     QTimer *collisionTimer = new QTimer(this);
@@ -168,11 +183,31 @@ void GameScreen::spawnEnemys() {
     int randomY = qrand() % 400;
     randomY += 100;
     //cout << randomY + 100 << endl;
-    EasyEnemy* easyEnemy = new EasyEnemy();
-    easyEnemy -> setPos(1050, randomY);
-    scene() -> addItem(easyEnemy);
 
-    easyEnemys.insertHead(easyEnemy);
+    int num = QRandomGenerator::global() -> bounded(1, 4);
+
+    if (num == 1 && EnemigosFaciles != 0) {
+        cout << EnemigosFaciles << " Aparecio un facil" << endl;
+        EasyEnemy *easyEnemy = new EasyEnemy();
+        easyEnemy->setPos(1050, randomY);
+        scene()->addItem(easyEnemy);
+        easyEnemys.insertHead(easyEnemy);
+        EnemigosFaciles -= 1;
+    } else if (num == 2 && EnemigosMedios != 0){
+        MediumEnemy *mediumEnemy = new MediumEnemy();
+        mediumEnemy -> setPos(1050, randomY);
+        scene() -> addItem(mediumEnemy);
+        mediumEnemys.insertHead(mediumEnemy);
+        EnemigosMedios -= 1;
+    } else if (num == 3 && EnemigosDificiles != 0){
+        cout << "AUN NO SE DEFINE ESTE ENEMIGO" << endl;
+    } else if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
+        cout << "Suave un touqe, se acabo la oleada" << endl;
+    }
+    else {
+        cout << "NO APARECIO DE LO OTRO Y SE TUVO QUE LLAMAR A ESTO " << endl;
+        return spawnEnemys();
+    }
 
 
 
@@ -192,6 +227,17 @@ void GameScreen::moveEnemys() {
             //worker -> writeData("6");
         }
     }
+    for (int i = 0; i < mediumEnemys.getSize(); i++){
+        MediumEnemy* tempEnemy = mediumEnemys.getPosVal(i);
+        tempEnemy -> setPos(tempEnemy ->pos().x() - 2, tempEnemy->pos().y());
+        if (tempEnemy -> pos().x() <= 0){
+            cout << "SE SALIO MEDIUM " << endl;
+            worker -> writeData("6");
+            scene() ->removeItem(tempEnemy);
+            mediumEnemys.deletePos(i);
+            delete tempEnemy;
+        }
+    }
 }
 
 
@@ -208,8 +254,27 @@ void GameScreen::checkCollisions() {
                 delete bullet;
                 delete enemy;
                 //worker -> writeData("6");
-
             }
         }
+        for (int j = 0; j < mediumEnemys.getSize(); j++){
+            Bullets* bullet = bulletsList.getPosVal(i);
+            MediumEnemy* enemy = mediumEnemys.getPosVal(j);
+            if (bullet ->collidesWithItem(enemy)) {
+                scene() ->removeItem(bullet);
+                scene() -> removeItem(enemy);
+                bulletsList.deletePos(i);
+                mediumEnemys.deletePos(j);
+                delete bullet;
+                delete enemy;
+            }
+        }
+    }
+}
+
+
+void GameScreen::checkOleada(){
+    cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
+    if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
+        cout << "Se acabo la oleada " << endl;
     }
 }
