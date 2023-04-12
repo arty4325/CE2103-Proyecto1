@@ -66,7 +66,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
 
     // Esto es lo que permite manejar a las balas
-    QTimer *timer = new QTimer(this);
+    timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
     timer -> setInterval(500);
     timer -> start();
@@ -171,7 +171,7 @@ void GameScreen::shootBullets(){
     //cout << dataList.getPosVal(3) << endl;
 
     int waitTime = dataList.getPosVal(3)*5;
-
+    timer ->setInterval(500 + waitTime);
 
     Bullets* bullets = new Bullets();
     bullets->setPos(player->pos().x(),player->pos().y());

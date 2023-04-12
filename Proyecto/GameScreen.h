@@ -43,7 +43,7 @@ private:
     int oleadaJuego;
 
     QTimer* moveTimer;
-
+    QTimer* timer;
 
     int velocidadEnemigos;
     int EnemigosFaciles;
