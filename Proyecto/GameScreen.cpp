@@ -45,8 +45,13 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     // Dependiendo de la oleada en la que se esta
     QTimer *spawnTimer = new QTimer(this);
     connect(spawnTimer, &QTimer::timeout, this, &GameScreen::spawnEnemys);
-    spawnTimer -> setInterval(500);
+    spawnTimer -> setInterval(2000);
     spawnTimer -> start();
+
+    QTimer *moveTimer = new QTimer(this);
+    connect(moveTimer, &QTimer::timeout, this, &GameScreen::moveEnemys);
+    moveTimer ->setInterval(4);
+    moveTimer -> start();
 
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
@@ -152,12 +157,15 @@ void GameScreen::spawnEnemys() {
 
     easyEnemys.insertHead(easyEnemy);
 
-    cout << easyEnemys.getSize() << endl;
 
+
+}
+
+void GameScreen::moveEnemys() {
+    //cout << easyEnemys.getSize() << endl;
     for (int i = 0; i < easyEnemys.getSize(); i++){
         EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
-        tempEnemy -> setPos(tempEnemy->pos().x() - 10, tempEnemy->pos().y());
+        tempEnemy -> setPos(tempEnemy->pos().x() - 1, tempEnemy->pos().y());
     }
-
 }
 
