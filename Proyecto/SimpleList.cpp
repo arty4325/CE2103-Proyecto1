@@ -4,6 +4,7 @@
 
 #include "SimpleList.h"
 #include "NodeList.h"
+#include "NodeList.cpp"
 #include <iostream>
 using namespace std;
 

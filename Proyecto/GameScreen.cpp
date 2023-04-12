@@ -13,7 +13,7 @@
 #include "SerialWorker.h"
 #include "Player.h"
 #include "Bullets.h"
-
+//#include "SimpleList.h"
 
 
 using namespace std;
@@ -101,6 +101,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
     //fireBullets(dataList);
     this->dataList = dataList;
     this->bulletsList = bulletsList;
+
+
     for (int i = 0; i < bulletsList.size(); i++){
         Bullets* bullet = bulletsList.at(i);
         bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
@@ -132,8 +134,10 @@ void GameScreen::shootBullets(){
     bullets->setPos(player->pos().x(),player->pos().y());
     scene()->addItem(bullets);
 
-    bulletsList.append(bullets);
 
+    test.insertHead(bullets);
+    //bulletsList.append(bullets);
+    //test.printList();
 }
 
 void GameScreen::spawnEnemys() {
