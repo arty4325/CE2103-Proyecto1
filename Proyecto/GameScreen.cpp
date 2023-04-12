@@ -24,11 +24,17 @@ QThread workerThread; // variable global para el hilo
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
     if (Dificultad == 1){
-        cantBullets = 10;
+        cantBullets = 400;
         cantVidas = 3;
-        poteDisparo = 0;
-        faseJuego = 0;
-        oleadaJuego = 0;
+        // En el arreglo el orden de la info es:
+        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
+        int infoOleadas[5][4] = {
+                {10, 10, 0, 0},
+                {8, 15, 5, 0},
+                {6, 15, 10, 0},
+                {4, 15, 15, 0},
+                {2, 10, 25, 0}
+        };
     }
 
 
@@ -40,10 +46,11 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
 
     // Esto es lo que permite manejar a las balas
-    QTimer *timer = new QTimer(this);
+    timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &GameScreen::shootBullets);
     timer -> setInterval(500);
     timer -> start();
+
 
     // Ahora voy a hacer un timer que permita manejar la aparicion de los enemigos
     // Dependiendo de la oleada en la que se esta
@@ -54,7 +61,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     QTimer *moveTimer = new QTimer(this);
     connect(moveTimer, &QTimer::timeout, this, &GameScreen::moveEnemys);
-    moveTimer ->setInterval(4);
+    moveTimer ->setInterval(2);
     moveTimer -> start();
 
     QTimer *collisionTimer = new QTimer(this);
@@ -119,7 +126,6 @@ void GameScreen::animate(const ListaSimple &dataList) {
     this->dataList = dataList;
     this->bulletsList = bulletsList;
 
-
     for (int i = 0; i < bulletsList.getSize(); i++){
         Bullets* bullet = bulletsList.getPosVal(i);
         bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
@@ -131,13 +137,13 @@ void GameScreen::animate(const ListaSimple &dataList) {
         //cout << "El objeto se mueve para abajo" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
-        player->setPos(player->pos().x(), player->pos().y() + 10);
+        player->setPos(player->pos().x(), player->pos().y() + 20);
     }
     else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
         //cout << "El objeto se mueve para arriba" << endl;
         //QPointF  rectPos = rectangle -> pos();
         //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
-        player->setPos(player->pos().x(), player->pos().y() - 10);
+        player->setPos(player->pos().x(), player->pos().y() - 20);
     }
 }
 
@@ -154,7 +160,7 @@ void GameScreen::shootBullets(){
 
     //test.insertHead(bullets);
     bulletsList.insertHead(bullets);
-    //test.printList();
+
 }
 
 void GameScreen::spawnEnemys() {

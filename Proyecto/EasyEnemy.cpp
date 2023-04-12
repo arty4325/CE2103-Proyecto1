@@ -16,3 +16,7 @@ EasyEnemy::EasyEnemy(QGraphicsItem *parent)
 void EasyEnemy::disminuirVida(int cantidad) {
     vida -= cantidad;
 }
+
+int EasyEnemy::getVida(){
+    return vida;
+}

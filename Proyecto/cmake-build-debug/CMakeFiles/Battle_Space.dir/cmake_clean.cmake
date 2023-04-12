@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o"
   "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d"
+  "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o"
+  "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o"
   "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/Node.cpp.o"

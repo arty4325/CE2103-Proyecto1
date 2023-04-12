@@ -286,6 +286,30 @@ ListaSimple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/ListaSimple.cpp.s
 .PHONY : ListaSimple.cpp.s
 
+MediumEnemy.o: MediumEnemy.cpp.o
+.PHONY : MediumEnemy.o
+
+# target to build an object file
+MediumEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o
+.PHONY : MediumEnemy.cpp.o
+
+MediumEnemy.i: MediumEnemy.cpp.i
+.PHONY : MediumEnemy.i
+
+# target to preprocess a source file
+MediumEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.i
+.PHONY : MediumEnemy.cpp.i
+
+MediumEnemy.s: MediumEnemy.cpp.s
+.PHONY : MediumEnemy.s
+
+# target to generate assembly for a file
+MediumEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.s
+.PHONY : MediumEnemy.cpp.s
+
 MenuDificultades.o: MenuDificultades.cpp.o
 .PHONY : MenuDificultades.o
 
@@ -506,6 +530,9 @@ help:
 	@echo "... ListaSimple.o"
 	@echo "... ListaSimple.i"
 	@echo "... ListaSimple.s"
+	@echo "... MediumEnemy.o"
+	@echo "... MediumEnemy.i"
+	@echo "... MediumEnemy.s"
 	@echo "... MenuDificultades.o"
 	@echo "... MenuDificultades.i"
 	@echo "... MenuDificultades.s"

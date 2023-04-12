@@ -13,6 +13,8 @@ public:
 
     void disminuirVida(int cantidad);
 
+    int getVida();
+
 private:
     int vida;
 };

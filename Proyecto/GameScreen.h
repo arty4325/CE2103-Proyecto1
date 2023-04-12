@@ -12,6 +12,7 @@
 #include <QGraphicsRectItem>
 #include <QSerialPort>
 #include <QThread>
+#include <QTimer>
 #include "ListaSimple.h"
 #include "Player.h"
 #include "Bullets.h"
@@ -30,12 +31,20 @@ private:
 
     QThread workerThread;
     SerialWorker* worker;
-
+    QTimer* timer;
     int cantBullets;
     int cantVidas;
     int poteDisparo;
     int faseJuego;
     int oleadaJuego;
+
+
+    int velocidadEnemigos;
+    int EnemigosFaciles;
+    int EnemigosMedios;
+    int EnemigosDificiles;
+
+    int infoOleadas;
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 public slots:

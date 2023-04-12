@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp" "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp" "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp" "CMakeFiles/Battle_Space.dir/Node.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Node.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp" "CMakeFiles/Battle_Space.dir/NodeList.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/NodeList.cpp.o.d"

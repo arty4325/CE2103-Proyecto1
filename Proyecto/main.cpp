@@ -18,8 +18,6 @@ int main(int argc, char *argv[])
     menuGeneral = new MenuDificultades();
     menuGeneral -> show();
 
-
-
     return a.exec();
 
 }

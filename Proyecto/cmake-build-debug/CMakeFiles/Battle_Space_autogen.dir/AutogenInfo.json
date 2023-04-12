@@ -143,6 +143,12 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.h",
+			"MU",
+			"EWIEGA46WW/moc_MediumEnemy.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.h",
 			"MU",
 			"EWIEGA46WW/moc_MenuDificultades.cpp",
@@ -264,6 +270,11 @@
 		],
 		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp",
 			"MU",
 			null
 		],
