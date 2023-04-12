@@ -57,7 +57,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     connect(collisionTimer, &QTimer::timeout, this, &GameScreen::checkCollisions);
     collisionTimer ->setInterval(4);
     collisionTimer -> start();
-    
+
 
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
@@ -115,8 +115,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
     this->bulletsList = bulletsList;
 
 
-    for (int i = 0; i < bulletsList.size(); i++){
-        Bullets* bullet = bulletsList.at(i);
+    for (int i = 0; i < bulletsList.getSize(); i++){
+        Bullets* bullet = bulletsList.getPosVal(i);
         bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
     }
 
@@ -148,7 +148,7 @@ void GameScreen::shootBullets(){
 
 
     //test.insertHead(bullets);
-    bulletsList.append(bullets);
+    bulletsList.insertHead(bullets);
     //test.printList();
 }
 
@@ -177,14 +177,14 @@ void GameScreen::moveEnemys() {
 
 
 void GameScreen::checkCollisions() {
-    for (int i = 0; i < bulletsList.size(); i++){
+    for (int i = 0; i < bulletsList.getSize(); i++){
         for (int j = 0; j < easyEnemys.getSize(); j++) {
-            Bullets* bullet = bulletsList.at(i);
+            Bullets* bullet = bulletsList.getPosVal(i);
             EasyEnemy* enemy = easyEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
                 scene() -> removeItem(bullet);
                 scene() -> removeItem(enemy);
-                bulletsList.removeAt(i);
+                bulletsList.deletePos(i);
                 easyEnemys.deletePos(j);
                 delete bullet;
                 delete enemy;

@@ -22,7 +22,7 @@ Q_OBJECT
 private:
     Player *player;
     ListaSimple dataList;
-    QList<Bullets*> bulletsList;
+    SimpleList<Bullets*> bulletsList;
     SimpleList<EasyEnemy*> easyEnemys;
     int cantBullets;
     int cantVidas;
