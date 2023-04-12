@@ -15,6 +15,7 @@
 #include "Bullets.h"
 
 
+
 using namespace std;
 QThread workerThread; // variable global para el hilo
 
@@ -90,7 +91,13 @@ void GameScreen::animate(const ListaSimple &dataList) {
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
     this->dataList = dataList;
+    this->bulletsList = bulletsList;
+    for (int i = 0; i < bulletsList.size(); i++){
+        Bullets* bullet = bulletsList.at(i);
+        bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
+    }
 
+    
     cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
         cout << "El objeto se mueve para abajo" << endl;
@@ -109,8 +116,9 @@ void GameScreen::animate(const ListaSimple &dataList) {
 void GameScreen::shootBullets(){
     //cout << dataList.getPosVal(3) << endl;
     Bullets* bullets = new Bullets();
-    bullets->setPos(900,
-                    player->pos().y());
+    bullets->setPos(player->pos().x(),player->pos().y());
     scene()->addItem(bullets);
+
+    bulletsList.append(bullets);
 }
 

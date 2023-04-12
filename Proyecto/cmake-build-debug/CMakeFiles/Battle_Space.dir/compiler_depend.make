@@ -1400,7 +1400,8 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtSerialPort/QSerialPort \
   /usr/include/qt/QtSerialPort/qserialport.h \
-  /usr/include/qt/QtSerialPort/qserialportglobal.h
+  /usr/include/qt/QtSerialPort/qserialportglobal.h \
+  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h
 
 CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \

@@ -12,12 +12,14 @@
 #include <QGraphicsRectItem>
 #include "ListaSimple.h"
 #include "Player.h"
+#include "Bullets.h"
 
 class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
     Player *player;
     ListaSimple dataList;
+    QList<Bullets*> bulletsList;
     int cantBullets;
     int cantVidas;
     int poteDisparo;
