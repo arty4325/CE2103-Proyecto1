@@ -48,9 +48,17 @@ private:
     int EnemigosMedios;
     int EnemigosDificiles;
 
-    int infoOleadas;
+    int infoOleadas[5][4] = {
+            {10, 10, 0, 0},
+            {8, 15, 5, 0},
+            {6, 15, 10, 0},
+            {4, 15, 15, 0},
+            {2, 10, 25, 0}
+    };;
 
     bool cambioOleada;
+    //bool primeraOleada;
+
 public:
     GameScreen(int Dificultad, QWidget * parent = 0);
 public slots:

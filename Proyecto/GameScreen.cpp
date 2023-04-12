@@ -31,6 +31,8 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         oleada = 0;
         // En el arreglo el orden de la info es:
         // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
+
+        /*
         int infoOleadas[5][4] = {
                 {10, 10, 0, 0},
                 {8, 15, 5, 0},
@@ -38,7 +40,10 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 {4, 15, 15, 0},
                 {2, 10, 25, 0}
         };
+        */
 
+
+        //primeraOleada = true;
         cambioOleada = false;
         velocidadEnemigos = infoOleadas[0][0];
         EnemigosFaciles = infoOleadas[0][1];
@@ -276,5 +281,13 @@ void GameScreen::checkOleada(){
     cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
+        oleada += 1;
+        velocidadEnemigos = infoOleadas[oleada][0];
+        EnemigosFaciles = infoOleadas[oleada][1];
+        EnemigosMedios = infoOleadas[oleada][2];
+        EnemigosDificiles = infoOleadas[oleada][3];
     }
+    string strOleada = to_string(oleada);
+    QByteArray byteArray = QByteArray::fromStdString(strOleada);
+    worker -> writeData(byteArray);
 }
