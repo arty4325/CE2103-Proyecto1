@@ -70,7 +70,8 @@ int ListaSimple::getPosVal(int position) const {
         currentPosition++;
     }
     if (current == nullptr){
-        throw std::out_of_range("Posicion Invalida");
+        //throw std::out_of_range("Posicion Invalida");
+        return 0;
     }
     return current -> value;
 }

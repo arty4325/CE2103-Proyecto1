@@ -62,7 +62,8 @@ T SimpleList<T>::getPosVal(int position) const {
         currentPosition++;
     }
     if (current == nullptr){
-        throw out_of_range("Posicion Invalida");
+        //throw out_of_range("Posicion Invalida");
+        return head -> value;
 
     }
     return current -> value;

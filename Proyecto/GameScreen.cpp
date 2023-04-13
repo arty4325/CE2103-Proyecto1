@@ -4,8 +4,11 @@
 
 
 #include <QWidget>
+#include <QtWidgets>
+#include <QLabel>
 #include <QThread>
 #include <QTimer>
+#include <string>
 #include <iostream>
 #include <QGraphicsRectItem>
 #include <QSerialPort>
@@ -140,6 +143,9 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 }
 
 void GameScreen::animate(const ListaSimple &dataList) {
+    if (cantVidas == 0){
+
+    }
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
@@ -149,37 +155,39 @@ void GameScreen::animate(const ListaSimple &dataList) {
     for (int i = 0; i < bulletsList.getSize(); i++){
         Bullets* bullet = bulletsList.getPosVal(i);
         bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
+        if (bullet->pos().x() >= 1000){
+            //cout << "SE SALIO " << endl;
+            bulletsList.deletePos(i);
+            bullet->disminuirDano();
+            bulletCollector.insertHead(bullet);
+        }
     }
 
-
-    //cout << player -> pos().y() << endl;
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
-        //cout << "El objeto se mueve para abajo" << endl;
-        //QPointF  rectPos = rectangle -> pos();
-        //rectangle -> setPos(rectPos.x(), rectPos.y() + 10 );
         player->setPos(player->pos().x(), player->pos().y() + 20);
     }
     else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
-        //cout << "El objeto se mueve para arriba" << endl;
-        //QPointF  rectPos = rectangle -> pos();
-        //rectangle -> setPos(rectPos.x(), rectPos.y() - 10 );
         player->setPos(player->pos().x(), player->pos().y() - 20);
     }
 }
 
 void GameScreen::shootBullets(){
-    //cout << dataList.getPosVal(3) << endl;
 
     int waitTime = dataList.getPosVal(3)*5;
     timer ->setInterval(500 + waitTime);
 
-    Bullets* bullets = new Bullets();
-    bullets->setPos(player->pos().x(),player->pos().y());
-    scene()->addItem(bullets);
+    if (cantBullets != 0) {
+        cantBullets -= 1;
+        Bullets *bullets = new Bullets();
+        bullets->setPos(player->pos().x(), player->pos().y());
+        scene()->addItem(bullets);
+        bulletsList.insertHead(bullets);
+    }
+    cout << "BALAS " << cantBullets << endl;
 
 
     //test.insertHead(bullets);
-    bulletsList.insertHead(bullets);
+
 
 }
 
@@ -192,7 +200,7 @@ void GameScreen::spawnEnemys() {
     int num = QRandomGenerator::global() -> bounded(1, 4);
 
     if (num == 1 && EnemigosFaciles != 0) {
-        cout << EnemigosFaciles << " Aparecio un facil" << endl;
+        //cout << EnemigosFaciles << " Aparecio un facil" << endl;
         EasyEnemy *easyEnemy = new EasyEnemy();
         easyEnemy->setPos(1050, randomY);
         scene()->addItem(easyEnemy);
@@ -207,10 +215,10 @@ void GameScreen::spawnEnemys() {
     } else if (num == 3 && EnemigosDificiles != 0){
         cout << "AUN NO SE DEFINE ESTE ENEMIGO" << endl;
     } else if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
-        cout << "Suave un touqe, se acabo la oleada" << endl;
+        //cout << "Suave un touqe, se acabo la oleada" << endl;
     }
     else {
-        cout << "NO APARECIO DE LO OTRO Y SE TUVO QUE LLAMAR A ESTO " << endl;
+        //cout << "NO APARECIO DE LO OTRO Y SE TUVO QUE LLAMAR A ESTO " << endl;
         return spawnEnemys();
     }
 
@@ -224,8 +232,9 @@ void GameScreen::moveEnemys() {
         EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
         tempEnemy -> setPos(tempEnemy->pos().x() - 1, tempEnemy->pos().y());
         if (tempEnemy-> pos().x() <= 0 ){
-            cout << "SE SALIO" << endl;
+            //cout << "SE SALIO" << endl;
             worker -> writeData("6");
+            cantVidas -= 1;
             scene() -> removeItem(tempEnemy);
             easyEnemys.deletePos(i);
             delete tempEnemy;
@@ -236,8 +245,9 @@ void GameScreen::moveEnemys() {
         MediumEnemy* tempEnemy = mediumEnemys.getPosVal(i);
         tempEnemy -> setPos(tempEnemy ->pos().x() - 2, tempEnemy->pos().y());
         if (tempEnemy -> pos().x() <= 0){
-            cout << "SE SALIO MEDIUM " << endl;
+            //cout << "SE SALIO MEDIUM " << endl;
             worker -> writeData("6");
+            cantVidas -= 1;
             scene() ->removeItem(tempEnemy);
             mediumEnemys.deletePos(i);
             delete tempEnemy;
@@ -252,25 +262,48 @@ void GameScreen::checkCollisions() {
             Bullets* bullet = bulletsList.getPosVal(i);
             EasyEnemy* enemy = easyEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
-                scene() -> removeItem(bullet);
-                scene() -> removeItem(enemy);
-                bulletsList.deletePos(i);
-                easyEnemys.deletePos(j);
-                delete bullet;
-                delete enemy;
+                //scene() -> removeItem(bullet);
+                //scene() -> removeItem(enemy);
+                //bulletsList.deletePos(i);
+                //easyEnemys.deletePos(j);
+                //delete bullet;
+                //delete enemy;
                 //worker -> writeData("6");
+                enemy->disminuirVida(bullet->getDano());
+
+                scene() -> removeItem(bullet);
+                bulletsList.deletePos(i);
+                delete bullet;
+
+                if (enemy->getVida() <= 0){
+                    easyEnemys.deletePos(j);
+                    delete enemy;
+                }
+
+
             }
         }
         for (int j = 0; j < mediumEnemys.getSize(); j++){
             Bullets* bullet = bulletsList.getPosVal(i);
             MediumEnemy* enemy = mediumEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
-                scene() ->removeItem(bullet);
-                scene() -> removeItem(enemy);
+                //scene() ->removeItem(bullet);
+                //scene() -> removeItem(enemy);
+                //bulletsList.deletePos(i);
+                //mediumEnemys.deletePos(j);
+                //delete bullet;
+                //delete enemy;
+
+                enemy->disminuirVida(bullet->getDano());
+
+                scene() -> removeItem(bullet);
                 bulletsList.deletePos(i);
-                mediumEnemys.deletePos(j);
                 delete bullet;
-                delete enemy;
+
+                if (enemy->getVida() <= 0){
+                    mediumEnemys.deletePos(j);
+                    delete enemy;
+                }
             }
         }
     }
@@ -278,7 +311,7 @@ void GameScreen::checkCollisions() {
 
 
 void GameScreen::checkOleada(){
-    cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
+    //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
         oleada += 1;

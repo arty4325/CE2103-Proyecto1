@@ -6,6 +6,8 @@
 #include "GameScreen.h"
 #include <QPushButton>
 #include <QLabel>
+#include <QWidget>
+#include <QtWidgets>
 #include <QGraphicsProxyWidget>
 #include <QRectF>
 #include <iostream>

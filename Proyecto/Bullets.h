@@ -10,6 +10,8 @@ class Bullets : public QGraphicsPixmapItem{
 public:
     Bullets(QGraphicsItem *parent = nullptr);
 
+    void disminuirDano();
+    int getDano();
 private:
     int damage;
 };

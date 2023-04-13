@@ -13,6 +13,7 @@
 #include <QSerialPort>
 #include <QThread>
 #include <QTimer>
+#include <QLabel>
 #include "ListaSimple.h"
 #include "Player.h"
 #include "Bullets.h"
@@ -28,6 +29,7 @@ private:
     Player *player;
     ListaSimple dataList;
     SimpleList<Bullets*> bulletsList;
+    SimpleList<Bullets*> bulletCollector;
     SimpleList<EasyEnemy*> easyEnemys;
     SimpleList<MediumEnemy*> mediumEnemys;
 
@@ -35,6 +37,7 @@ private:
     SerialWorker* worker;
 
     int oleada;
+
 
     int cantBullets;
     int cantVidas;
