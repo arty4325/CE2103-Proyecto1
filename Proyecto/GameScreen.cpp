@@ -29,7 +29,7 @@ QThread workerThread; // variable global para el hilo
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
     if (Dificultad == 1){
-        cantBullets = 400;
+        cantBullets = 20;
         cantVidas = 3;
         oleada = 0;
         // En el arreglo el orden de la info es:
@@ -143,9 +143,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 }
 
 void GameScreen::animate(const ListaSimple &dataList) {
-    if (cantVidas == 0){
 
-    }
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
@@ -182,7 +180,18 @@ void GameScreen::shootBullets(){
         bullets->setPos(player->pos().x(), player->pos().y());
         scene()->addItem(bullets);
         bulletsList.insertHead(bullets);
+    } else {
+        cout << "Se acabaron las balas " << endl;
+        if (bulletCollector.getSize() > 0) {
+            Bullets *bullets = new Bullets();
+            bullets = bulletCollector.getHead()->value;
+            bulletCollector.deleteHead();
+            bullets->setPos(player->pos().x(), player->pos().y());
+            //scene() -> addItem(bullets);
+            bulletsList.insertHead(bullets);
+        }
     }
+
     cout << "BALAS " << cantBullets << endl;
 
 
