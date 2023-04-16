@@ -36,6 +36,10 @@ private:
     QThread workerThread;
     SerialWorker* worker;
 
+    QLabel *labelBalas;
+    QLabel *labelCollector;
+    QLabel *labelOleada;
+
     int oleada;
 
 
@@ -52,6 +56,8 @@ private:
     int EnemigosFaciles;
     int EnemigosMedios;
     int EnemigosDificiles;
+    // En el arreglo el orden de la info es:
+    // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
     int infoOleadas[5][4] = {
             {10, 10, 0, 0},

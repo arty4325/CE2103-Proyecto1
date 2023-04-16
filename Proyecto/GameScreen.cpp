@@ -35,17 +35,6 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         // En el arreglo el orden de la info es:
         // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
-        /*
-        int infoOleadas[5][4] = {
-                {10, 10, 0, 0},
-                {8, 15, 5, 0},
-                {6, 15, 10, 0},
-                {4, 15, 15, 0},
-                {2, 10, 25, 0}
-        };
-        */
-
-
         //primeraOleada = true;
         cambioOleada = false;
         velocidadEnemigos = infoOleadas[0][0];
@@ -55,7 +44,23 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     }
 
 
+    // En esta parte se va a estar definiendo los labels que dan cierta info del jugo
+    labelBalas = new QLabel(this);
+    labelBalas -> setText("Balas disponibles: " + QString::number(cantBullets));
+    labelBalas->setStyleSheet("background-color: white; color: red;");
+    labelBalas -> show();
 
+    labelCollector = new QLabel(this);
+    labelCollector ->setText("Balas en Collector: " + QString::number(bulletCollector.getSize()));
+    labelCollector -> setStyleSheet("background-color: white; color: red;");
+    labelCollector -> move(0, 20);
+    labelCollector -> show();
+
+    labelOleada = new QLabel(this);
+    labelOleada -> setText("Oleada: " + QString::number(oleada));
+    labelOleada -> setStyleSheet("background-color: white; color: red;");
+    labelOleada->move(150, 0);
+    labelOleada -> show();
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -149,6 +154,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
     //fireBullets(dataList);
     this->dataList = dataList;
     this->bulletsList = bulletsList;
+    labelCollector ->setText("Balas en Collector: " + QString::number(bulletCollector.getSize()));
 
     for (int i = 0; i < bulletsList.getSize(); i++){
         Bullets* bullet = bulletsList.getPosVal(i);
@@ -172,7 +178,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
 void GameScreen::shootBullets(){
 
     int waitTime = dataList.getPosVal(3)*5;
-    timer ->setInterval(500 + waitTime);
+    timer -> setInterval(500 + waitTime);
+    labelBalas -> setText("Balas disponibles: " + QString::number(cantBullets));
 
     if (cantBullets != 0) {
         cantBullets -= 1;
@@ -320,6 +327,7 @@ void GameScreen::checkCollisions() {
 
 
 void GameScreen::checkOleada(){
+    labelOleada -> setText("Oleada: " + QString::number(oleada));
     //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;

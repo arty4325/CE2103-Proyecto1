@@ -13,10 +13,24 @@
 #include <iostream>
 using namespace std;
 
+void MenuDificultades::easy() {
+    cout << "Funciona el boton y la interfaz" << endl;
+    GameScreen * easy = new GameScreen(0);
+    easy -> show();
+    this -> close();
+}
+
 void MenuDificultades::medium() {
     cout << "Funciona el boton y la interfaz" << endl;
     GameScreen * medium = new GameScreen(1);
     medium -> show();
+    this -> close();
+}
+
+void MenuDificultades::difficult() {
+    cout << "Funciona el boton yu la interfaz" << endl;
+    GameScreen * hard = new GameScreen(2);
+    hard -> show();
     this -> close();
 }
 
@@ -37,6 +51,14 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
     proxy_label -> setPos(380, 250);
 
 
+    QPushButton * botonFacil = new QPushButton("Dificultad Baja");
+    botonFacil ->setGeometry(0, 0, 170, 50);
+    QGraphicsProxyWidget * proxy_facil = new QGraphicsProxyWidget();
+    proxy_facil ->setWidget(botonFacil);
+    scene ->addItem( proxy_facil);
+    proxy_facil -> setPos(150, 500);
+    connect(botonFacil, &QPushButton::released, this, &MenuDificultades::easy);
+
     //Ahora se crea un boton el cual crea la ventana para ir al juego de dificultad media
     QPushButton * botonNormal = new QPushButton("Dificultad Normal");
     botonNormal ->setGeometry(0, 0, 170, 50);
@@ -46,6 +68,13 @@ MenuDificultades::MenuDificultades(QWidget *parent) {
     proxy_normal -> setPos(400, 500);
     connect(botonNormal, &QPushButton::released, this, &MenuDificultades::medium);
 
+    QPushButton * botonDificil = new QPushButton("Dificultad Alta");
+    botonDificil ->setGeometry(0, 0, 170, 50);
+    QGraphicsProxyWidget * proxy_dificil = new QGraphicsProxyWidget();
+    proxy_dificil ->setWidget(botonDificil);
+    scene -> addItem(proxy_dificil);
+    proxy_dificil -> setPos(650, 500);
+    connect(botonDificil, &QPushButton::released, this, &MenuDificultades::difficult);[[]]
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);

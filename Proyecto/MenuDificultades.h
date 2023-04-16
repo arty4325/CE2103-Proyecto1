@@ -13,7 +13,10 @@ class MenuDificultades: public QGraphicsView{
 public:
     MenuDificultades(QWidget * parent = 0);
 
+    void easy();
     void medium();
+    void difficult();
+
 
     QGraphicsScene * scene;
 };
