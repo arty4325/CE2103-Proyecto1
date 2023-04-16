@@ -28,8 +28,31 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    if (Dificultad == 0){
+        for(int i = 0; i <= 5; i++){
+            for(int k = 0; k <= 4; k++){
+                if (infoOleadas[i][k] != 0){
+                    infoOleadas[i][k] -= 5;
+                }
+            }
+        }
+        cantBullets = 600;
+        cantVidas = 15;
+        oleada = 0;
+        // En el arreglo el orden de la info es:
+        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
+
+        //primeraOleada = true;
+        cambioOleada = false;
+        //velocidadEnemigos = infoOleadas[0][0];
+        velocidadEnemigos = 10;
+        EnemigosFaciles = infoOleadas[0][0];
+        EnemigosMedios = infoOleadas[0][1];
+        EnemigosDificiles = infoOleadas[0][2];
+    }
     if (Dificultad == 1){
-        cantBullets = 20;
+
+        cantBullets = 400;
         cantVidas = 10;
         oleada = 0;
         // En el arreglo el orden de la info es:
@@ -37,10 +60,31 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
         //primeraOleada = true;
         cambioOleada = false;
-        velocidadEnemigos = infoOleadas[0][0];
-        EnemigosFaciles = infoOleadas[0][1];
-        EnemigosMedios = infoOleadas[0][2];
-        EnemigosDificiles = infoOleadas[0][3];
+        //velocidadEnemigos = infoOleadas[0][0];
+        velocidadEnemigos = 8;
+        EnemigosFaciles = infoOleadas[0][0];
+        EnemigosMedios = infoOleadas[0][1];
+        EnemigosDificiles = infoOleadas[0][2];
+    }
+    if (Dificultad == 2){
+        for(int i = 0; i <= 5; i++){
+            for(int k = 0; k <= 4; k++){
+                infoOleadas[i][k] -= 5;
+            }
+        }
+        cantBullets = 600;
+        cantVidas = 5;
+        oleada = 0;
+        // En el arreglo el orden de la info es:
+        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
+
+        //primeraOleada = true;
+        cambioOleada = false;
+        //velocidadEnemigos = infoOleadas[0][0];
+        velocidadEnemigos = 6;
+        EnemigosFaciles = infoOleadas[0][0];
+        EnemigosMedios = infoOleadas[0][1];
+        EnemigosDificiles = infoOleadas[0][2];
     }
 
 
@@ -51,7 +95,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     labelBalas -> show();
 
     labelCollector = new QLabel(this);
-    labelCollector ->setText("Balas en Collector: " + QString::number(bulletCollector.getSize()));
+    labelCollector ->setText("Balas en Collector: " + QString::number(bulletCollector.getSize()) + "    ");
     labelCollector -> setStyleSheet("background-color: white; color: red;");
     labelCollector -> move(0, 20);
     labelCollector -> show();
@@ -67,6 +111,15 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     labelVidas -> setStyleSheet("background-color: white; color: red;");
     labelVidas -> move(150, 20);
     labelVidas -> show();
+
+    labelEnemOleadas =  new QLabel(this);
+    labelEnemOleadas ->setText("Faciles: " + QString::number(EnemigosFaciles) +
+    " Medios " + QString::number(EnemigosMedios) +
+    " Dificiles: " + QString::number(EnemigosDificiles));
+    labelEnemOleadas ->setStyleSheet("background-color: white; color: red;");
+    labelEnemOleadas -> move(300, 0);
+    labelEnemOleadas -> show();
+
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -214,6 +267,10 @@ void GameScreen::shootBullets(){
 }
 
 void GameScreen::spawnEnemys() {
+    labelEnemOleadas ->setText("Faciles: " + QString::number(EnemigosFaciles) +
+                               " Medios " + QString::number(EnemigosMedios) +
+                               " Dificiles: " + QString::number(EnemigosDificiles));
+
     //cout << "PRUEBAS" << endl;
     int randomY = qrand() % 400;
     randomY += 100;
@@ -344,11 +401,11 @@ void GameScreen::checkOleada(){
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
         oleada += 1;
-        velocidadEnemigos = infoOleadas[oleada][0];
-        EnemigosFaciles = infoOleadas[oleada][1];
-        EnemigosMedios = infoOleadas[oleada][2];
-        EnemigosDificiles = infoOleadas[oleada][3];
-        moveTimer ->setInterval(velocidadEnemigos);
+        //velocidadEnemigos = infoOleadas[oleada][0];
+        EnemigosFaciles = infoOleadas[oleada][0];
+        EnemigosMedios = infoOleadas[oleada][1];
+        EnemigosDificiles = infoOleadas[oleada][2];
+        //moveTimer ->setInterval(velocidadEnemigos);
     }
     string strOleada = to_string(oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);

@@ -40,6 +40,7 @@ private:
     QLabel *labelCollector;
     QLabel *labelOleada;
     QLabel *labelVidas;
+    QLabel *labelEnemOleadas;
 
     int oleada;
 
@@ -61,12 +62,12 @@ private:
     // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
     int infoOleadas[5][4] = {
-            {10, 10, 0, 0},
-            {8, 15, 5, 0},
-            {6, 15, 10, 0},
-            {4, 15, 15, 0},
-            {2, 10, 25, 0}
-    };;
+            {10, 0, 0},
+            {15, 5, 0},
+            {15, 10, 0},
+            {15, 15, 0},
+            {10, 25, 0}
+    };
 
     bool cambioOleada;
     //bool primeraOleada;
