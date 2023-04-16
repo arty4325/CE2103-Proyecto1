@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/Bullets.cpp.o"
   "CMakeFiles/Battle_Space.dir/Bullets.cpp.o.d"
+  "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o"
+  "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o"
   "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o"

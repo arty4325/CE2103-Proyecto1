@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp" "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.cpp" "CMakeFiles/Battle_Space.dir/Bullets.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Bullets.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp" "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp" "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o.d"

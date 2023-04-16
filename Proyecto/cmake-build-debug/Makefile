@@ -190,6 +190,30 @@ Bullets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Bullets.cpp.s
 .PHONY : Bullets.cpp.s
 
+DifficultEnemy.o: DifficultEnemy.cpp.o
+.PHONY : DifficultEnemy.o
+
+# target to build an object file
+DifficultEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o
+.PHONY : DifficultEnemy.cpp.o
+
+DifficultEnemy.i: DifficultEnemy.cpp.i
+.PHONY : DifficultEnemy.i
+
+# target to preprocess a source file
+DifficultEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.i
+.PHONY : DifficultEnemy.cpp.i
+
+DifficultEnemy.s: DifficultEnemy.cpp.s
+.PHONY : DifficultEnemy.s
+
+# target to generate assembly for a file
+DifficultEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.s
+.PHONY : DifficultEnemy.cpp.s
+
 EasyEnemy.o: EasyEnemy.cpp.o
 .PHONY : EasyEnemy.o
 
@@ -518,6 +542,9 @@ help:
 	@echo "... Bullets.o"
 	@echo "... Bullets.i"
 	@echo "... Bullets.s"
+	@echo "... DifficultEnemy.o"
+	@echo "... DifficultEnemy.i"
+	@echo "... DifficultEnemy.s"
 	@echo "... EasyEnemy.o"
 	@echo "... EasyEnemy.i"
 	@echo "... EasyEnemy.s"

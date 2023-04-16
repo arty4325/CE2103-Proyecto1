@@ -69,10 +69,10 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     if (Dificultad == 2){
         for(int i = 0; i <= 5; i++){
             for(int k = 0; k <= 4; k++){
-                infoOleadas[i][k] -= 5;
+                infoOleadas[i][k] += 5;
             }
         }
-        cantBullets = 600;
+        cantBullets = 200;
         cantVidas = 5;
         oleada = 0;
         // En el arreglo el orden de la info es:

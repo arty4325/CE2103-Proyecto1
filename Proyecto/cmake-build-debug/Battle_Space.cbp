@@ -120,6 +120,12 @@
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.h">
 			<Option target="Battle_Space"/>
 		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h">
+			<Option target="Battle_Space"/>
+		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
