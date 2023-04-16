@@ -292,7 +292,13 @@ void GameScreen::spawnEnemys() {
         mediumEnemys.insertHead(mediumEnemy);
         EnemigosMedios -= 1;
     } else if (num == 3 && EnemigosDificiles != 0){
-        cout << "AUN NO SE DEFINE ESTE ENEMIGO" << endl;
+        //cout << "AUN NO SE DEFINE ESTE ENEMIGO" << endl;
+        DifficultEnemy *difficultEnemy = new DifficultEnemy();
+        difficultEnemy -> setDirection(true);
+        difficultEnemy -> setPos(1050, randomY);
+        scene() -> addItem(difficultEnemy);
+        difficultEnemys.insertHead(difficultEnemy);
+        EnemigosDificiles -= 1;
     } else if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         //cout << "Suave un touqe, se acabo la oleada" << endl;
     }
@@ -330,6 +336,26 @@ void GameScreen::moveEnemys() {
             cantVidas -= 1;
             scene() ->removeItem(tempEnemy);
             mediumEnemys.deletePos(i);
+            delete tempEnemy;
+        }
+    }
+
+    for (int i = 0; i < difficultEnemys.getSize(); i ++){
+        DifficultEnemy* tempEnemy = difficultEnemys.getPosVal(i);
+        bool direc = tempEnemy->getDirection();
+        if (direc){
+            tempEnemy -> setPos(tempEnemy -> pos().x() - 2, tempEnemy -> pos().y() + 1);
+        } else if (not direc){
+            tempEnemy -> setPos(tempEnemy -> pos().x() - 2, tempEnemy -> pos().y() - 1);
+        }
+        if ((tempEnemy -> pos().y() <= 100) || (tempEnemy-> pos().y() >= 500) ){
+            tempEnemy->setDirection( not tempEnemy->getDirection());
+        }
+        if (tempEnemy -> pos().x() <= 0){
+            worker -> writeData("6");
+            cantVidas -= 1;
+            scene() -> removeItem(tempEnemy);
+            difficultEnemys.deletePos(i);
             delete tempEnemy;
         }
     }

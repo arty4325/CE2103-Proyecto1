@@ -22,7 +22,7 @@
 #include "EasyEnemy.h"
 #include "SerialWorker.h"
 #include "MediumEnemy.h"
-
+#include "DifficultEnemy.h"
 class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
@@ -32,6 +32,7 @@ private:
     SimpleList<Bullets*> bulletCollector;
     SimpleList<EasyEnemy*> easyEnemys;
     SimpleList<MediumEnemy*> mediumEnemys;
+    SimpleList<DifficultEnemy*> difficultEnemys;
 
     QThread workerThread;
     SerialWorker* worker;

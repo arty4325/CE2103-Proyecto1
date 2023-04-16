@@ -21,3 +21,12 @@ void DifficultEnemy::disminuirVida(int cantidad) {
 int DifficultEnemy::getVida(){
     return vida;
 }
+
+bool DifficultEnemy::getDirection(){
+    return direction;
+}
+
+void DifficultEnemy::setDirection(bool value) {
+    direction = value;
+}
+

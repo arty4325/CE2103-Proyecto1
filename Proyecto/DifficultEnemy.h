@@ -10,9 +10,12 @@ class DifficultEnemy : public QGraphicsPixmapItem{
 public:
     DifficultEnemy(QGraphicsItem *parent = nullptr);
     void disminuirVida(int cantidad);
+    bool getDirection();
+    void setDirection(bool value);
     int getVida();
 private:
     int vida;
+    bool direction; // true es arriba y false es abajo;
 };
 
 
