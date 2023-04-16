@@ -39,6 +39,7 @@ private:
     QLabel *labelBalas;
     QLabel *labelCollector;
     QLabel *labelOleada;
+    QLabel *labelVidas;
 
     int oleada;
 

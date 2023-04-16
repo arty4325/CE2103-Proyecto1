@@ -30,7 +30,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
     if (Dificultad == 1){
         cantBullets = 20;
-        cantVidas = 3;
+        cantVidas = 10;
         oleada = 0;
         // En el arreglo el orden de la info es:
         // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
@@ -61,6 +61,12 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     labelOleada -> setStyleSheet("background-color: white; color: red;");
     labelOleada->move(150, 0);
     labelOleada -> show();
+
+    labelVidas = new QLabel(this);
+    labelVidas ->setText("Vidas: " + QString::number(cantVidas));
+    labelVidas -> setStyleSheet("background-color: white; color: red;");
+    labelVidas -> move(150, 20);
+    labelVidas -> show();
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -243,6 +249,7 @@ void GameScreen::spawnEnemys() {
 }
 
 void GameScreen::moveEnemys() {
+    labelVidas ->setText("Vidas: " + QString::number(cantVidas));
     //cout << easyEnemys.getSize() << endl;
     for (int i = 0; i < easyEnemys.getSize(); i++){
         EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
@@ -269,15 +276,20 @@ void GameScreen::moveEnemys() {
             delete tempEnemy;
         }
     }
+    if (cantVidas == 0){
+        this -> close();
+    }
 }
 
 
 void GameScreen::checkCollisions() {
+
     for (int i = 0; i < bulletsList.getSize(); i++){
         for (int j = 0; j < easyEnemys.getSize(); j++) {
             Bullets* bullet = bulletsList.getPosVal(i);
             EasyEnemy* enemy = easyEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
+
                 //scene() -> removeItem(bullet);
                 //scene() -> removeItem(enemy);
                 //bulletsList.deletePos(i);
