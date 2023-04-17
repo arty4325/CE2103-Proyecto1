@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Strategy2>
+    <Number ability = "1"/>
+    <Power1 abilities="100"/>
+    <Power2 abilities="100"/>
+</Strategy2>

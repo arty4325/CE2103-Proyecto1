@@ -31,11 +31,11 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
-    /*
+
     XmlReader uno;
-    string x = uno.ReadXmlName("Strategy1.xml");
-    string a = uno.ReadPower("Strategy2.xml","Power1");
-    string y = uno.ReadPower("Strategy1.xml","Power2");
+    string x = uno.ReadPower("1.xml", "Number");
+    string a = uno.ReadPower("1.xml","Power1");
+    string y = uno.ReadPower("1.xml","Power2");
     cout<<x<<endl;
     cout<<a<<endl;
     cout<<y<<endl;
@@ -43,17 +43,30 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     cout<<"\n";
 
     XmlReader dos;
-    string w = dos.ReadXmlName("Strategy2.xml");
-    string b = dos.ReadPower("Strategy2.xml","Power1");
-    string t = dos.ReadPower("Strategy2.xml","Power2");
+    string w = dos.ReadPower("2.xml", "Number");
+    string b = dos.ReadPower("2.xml","Power1");
+    string t = dos.ReadPower("2.xml","Power2");
     cout<<w<<endl;
     cout<<b<<endl;
     cout<<t<<endl;
-    */
+
+    firstStrat.insertHead(stoi(y));
+    firstStrat.insertHead(stoi(a));
+    firstStrat.insertHead(stoi(x));
+
+    secondStrat.insertHead(stoi(t));
+    secondStrat.insertHead(stoi(b));
+    secondStrat.insertHead(stoi(w));
+
+    firstStrat.printList();
+    secondStrat.printList();
+
+
 
     hasChoosedPower = false;
     tempSelecPower = 0;
     tempSelecStrat = 0;
+    velocidadBalas = 10;
     labelsPowers.insertHead("Cuarto Estrategia");
     labelsPowers.insertHead("Tercer Estrategia");
     labelsPowers.insertHead("Segundo Estrategia");
@@ -78,6 +91,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
+        hasChoosedPower = false;
     }
     else if (Dificultad == 1){
 
@@ -90,6 +104,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
+        hasChoosedPower = false;
     }
     else if (Dificultad == 2){
         for(int i = 0; i <= 5; i++){
@@ -254,7 +269,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
 
     for (int i = 0; i < bulletsList.getSize(); i++){
         Bullets* bullet = bulletsList.getPosVal(i);
-        bullet ->setPos(bullet->pos().x() + 10, bullet -> pos().y());
+        bullet ->setPos(bullet->pos().x() + velocidadBalas, bullet -> pos().y());
         if (bullet->pos().x() >= 1000){
             //cout << "SE SALIO " << endl;
             bulletsList.deletePos(i);
@@ -285,7 +300,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
         //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }   else if (((dataList.getPosVal(4)) < 200) && hasChoosedPower) {
-        cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
+        //cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
+        exePower(tempSelecStrat, tempSelecPower);
     }
 
     if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower){
@@ -547,4 +563,33 @@ void GameScreen::checkOleada(){
     string strOleada = to_string(5 - oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);
     worker -> writeData(byteArray);
+}
+
+void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
+    cout << "Ejecuto " << tempSelecStrat << tempSelecPower << endl;
+    if (tempSelecStrat == firstStrat.getPosVal(0) || tempSelecStrat == secondStrat.getPosVal(0)){
+        cout << " Ya staba cargada " << endl;
+    } else {
+        QTimer::singleShot(5000, this, &GameScreen::pararEjecucion);
+        moveTimer->stop();
+        timer->stop();
+        spawnTimer->stop();
+        collisionTimer->stop();
+        oleadaTimer->stop();
+        worker->writeData("7");
+    }
+}
+
+void GameScreen::pararEjecucion() {
+    cout << "Se para la ejecucion del juego" << endl;
+    moveTimer ->setInterval(velocidadEnemigos);
+    moveTimer -> start();
+    timer -> setInterval(500);
+    timer -> start();
+    spawnTimer -> setInterval(2000);
+    spawnTimer -> start();
+    collisionTimer ->setInterval(4);
+    collisionTimer -> start();
+    oleadaTimer -> setInterval(1000);
+    oleadaTimer -> start();
 }

@@ -47,6 +47,12 @@ private:
     SimpleList<string> terceraStrat;
     SimpleList<string> cuartaStrat;
     SimpleList<DifficultEnemy*> difficultEnemys;
+    //SimpleList<SimpleList<int>> stratsLoaded;
+    SimpleList<int> firstStrat;
+    SimpleList<int> secondStrat;
+
+
+
 
     QThread workerThread;
     SerialWorker* worker;
@@ -66,6 +72,7 @@ private:
     int cantBullets;
     int cantVidas;
     int velocidadJugador;
+    int velocidadBalas;
     int poteDisparo;
     int faseJuego;
     int oleadaJuego;
@@ -108,6 +115,8 @@ public slots:
     void moveEnemys();
     void checkCollisions();
     void checkOleada();
+    void exePower(int tempSelecStrat, int tempSelecPower);
+    void pararEjecucion();
     //void fireBullets(const ListaSimple &dataList);
 };
 
