@@ -31,11 +31,15 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    hasChoosedPower = false;
+    tempSelecPower = 0;
+    tempSelecStrat = 0;
+    labelsPowers.insertHead("Cuarto Estrategia");
+    labelsPowers.insertHead("Tercer Estrategia");
+    labelsPowers.insertHead("Segundo Estrategia");
+    labelsPowers.insertHead("Primer Estrategia");
 
-    labelsPowers.insertHead("Cuarto Poder");
-    labelsPowers.insertHead("Tercer Poder");
-    labelsPowers.insertHead("Segundo Poder");
-    labelsPowers.insertHead("Primer Poder");
+
 
     if (Dificultad == 0){
         for(int i = 0; i <= 5; i++){
@@ -233,7 +237,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 }
 
 void GameScreen::animate(const ListaSimple &dataList) {
-    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
+
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
@@ -259,15 +263,31 @@ void GameScreen::animate(const ListaSimple &dataList) {
         player->setPos(player->pos().x(), player->pos().y() - velocidadJugador);
     }
 
-    if ((dataList.getPosVal(4)) >= 800){
+    if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower == false){
+        labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
         if (tempSelecStrat != 4){
             tempSelecStrat += 1;
         }
         else {
             tempSelecStrat = 0;
         }
+    } else if ((dataList.getPosVal(4) < 400) && hasChoosedPower == false){
+        hasChoosedPower = true;
+        labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }
-    cout << dataList.getPosVal(4) << endl;
+
+    if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower){
+        if (tempSelecPower == 0){
+            tempSelecPower = 1;
+        } else if (tempSelecPower == 1){
+            tempSelecPower = 0;
+        }
+        labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
+    }
+    if (((dataList.getPosVal(4)) < 400) && hasChoosedPower) {
+        cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
+    }
+
 }
 
 void GameScreen::shootBullets(){

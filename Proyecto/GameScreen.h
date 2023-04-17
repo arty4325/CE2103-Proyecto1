@@ -33,6 +33,10 @@ private:
     SimpleList<EasyEnemy*> easyEnemys;
     SimpleList<MediumEnemy*> mediumEnemys;
     SimpleList<string> labelsPowers;
+    SimpleList<string> primeraStrat;
+    SimpleList<string> segundaStrat;
+    SimpleList<string> terceraStrat;
+    SimpleList<string> cuartaStrat;
     SimpleList<DifficultEnemy*> difficultEnemys;
 
     QThread workerThread;
@@ -68,6 +72,7 @@ private:
     int EnemigosMedios;
     int EnemigosDificiles;
     int tempSelecStrat;
+    int tempSelecPower;
     // En el arreglo el orden de la info es:
     // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
@@ -79,8 +84,15 @@ private:
             {10, 25, 0}
     };
 
+    string labelsPoderes[4][2] = {
+            {"11", "12"},
+            {"21", "22"},
+            {"31", "32"},
+            {"41", "42"}
+    };
 
 
+    bool hasChoosedPower;
     bool cambioOleada;
     //bool primeraOleada;
 
