@@ -31,25 +31,11 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
-    /*
-    XmlReader uno;
-    string x = uno.ReadXmlName("Strategy1.xml");
-    string a = uno.ReadPower("Strategy2.xml","Power1");
-    string y = uno.ReadPower("Strategy1.xml","Power2");
-    cout<<x<<endl;
-    cout<<a<<endl;
-    cout<<y<<endl;
 
-    cout<<"\n";
-
-    XmlReader dos;
-    string w = dos.ReadXmlName("Strategy3.xml");
-    string b = dos.ReadPower("Strategy3.xml","Power1");
-    string t = dos.ReadPower("Strategy3.xml","Power2");
-    cout<<w<<endl;
-    cout<<b<<endl;
-    cout<<t<<endl;
-    */ 
+    labelsPowers.insertHead("Cuarto Poder");
+    labelsPowers.insertHead("Tercer Poder");
+    labelsPowers.insertHead("Segundo Poder");
+    labelsPowers.insertHead("Primer Poder");
 
     if (Dificultad == 0){
         for(int i = 0; i <= 5; i++){
@@ -60,7 +46,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
             }
         }
         fase = 0;
-        cantBullets = 600;
+        cantBullets = 20;
         cantVidas = 15;
         oleada = 0;
         // En el arreglo el orden de la info es:
@@ -97,7 +83,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 infoOleadas[i][k] += 5;
             }
         }
-        fase = 1;
+        fase = 2;
         cantBullets = 200;
         cantVidas = 5;
         oleada = 0;
@@ -113,7 +99,14 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         EnemigosDificiles = infoOleadas[0][2];
     }
 
+    velocidadJugador = 20;
+    tempSelecStrat = 0;
 
+    labelStrat = new QLabel(this);
+    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
+    labelStrat -> setStyleSheet("background-color: white; color: red;");
+    labelStrat -> move(600, 0);
+    labelStrat -> show();
     // En esta parte se va a estar definiendo los labels que dan cierta info del jugo
     labelBalas = new QLabel(this);
     labelBalas -> setText("Balas disponibles: " + QString::number(cantBullets));
@@ -148,9 +141,11 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     labelFase = new QLabel(this);
     labelFase ->setText("Fase: " + QString::number(fase));
-    labelFase ->setStyleSheet("background-color: white; color: red;");
+    labelFase -> setStyleSheet("background-color: white; color: red;");
     labelFase -> move(300, 20);
     labelFase -> show();
+
+
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -190,7 +185,9 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
-
+    player = new Player();
+    player -> setPos(100, 100);
+    scene -> addItem(player);
     // Cargar la imagen
 
     QString direc = QDir::currentPath();
@@ -212,9 +209,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     //scene -> addItem(rectangle);
 
     // Crear jugador y agregar a la escena
-    player = new Player();
-    player -> setPos(100, 100);
-    scene -> addItem(player);
+
 
 
     qRegisterMetaType<ListaSimple>("ListaSimple");
@@ -238,7 +233,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 }
 
 void GameScreen::animate(const ListaSimple &dataList) {
-
+    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
@@ -258,11 +253,21 @@ void GameScreen::animate(const ListaSimple &dataList) {
     }
 
     if ((dataList.getPosVal(5) <= 300) && (player -> pos().y() < 500)) {
-        player->setPos(player->pos().x(), player->pos().y() + 20);
+        player->setPos(player->pos().x(), player->pos().y() + velocidadJugador);
     }
     else if ((dataList.getPosVal(5)  >= 600) && (player -> pos().y() > 100)){
-        player->setPos(player->pos().x(), player->pos().y() - 20);
+        player->setPos(player->pos().x(), player->pos().y() - velocidadJugador);
     }
+
+    if ((dataList.getPosVal(4)) >= 800){
+        if (tempSelecStrat != 4){
+            tempSelecStrat += 1;
+        }
+        else {
+            tempSelecStrat = 0;
+        }
+    }
+    cout << dataList.getPosVal(4) << endl;
 }
 
 void GameScreen::shootBullets(){
@@ -455,13 +460,29 @@ void GameScreen::checkCollisions() {
                 }
             }
         }
+        for (int k = 0; k < difficultEnemys.getSize(); k++){
+            Bullets* bullet = bulletsList.getPosVal(i);
+            DifficultEnemy* enemy = difficultEnemys.getPosVal(k);
+            if (bullet -> collidesWithItem(enemy)){
+                enemy ->disminuirVida(bullet -> getDano());
+
+                scene() -> removeItem(bullet);
+                bulletsList.deletePos(i);
+                delete bullet;
+
+                if (enemy -> getVida() <= 0){
+                    difficultEnemys.deletePos(k);
+                    delete enemy;
+                }
+            }
+        }
     }
 }
 
 
 void GameScreen::checkOleada(){
     labelFase ->setText("Fase: " + QString::number(fase));
-    labelOleada -> setText("Oleada: " + QString::number(oleada));
+    labelOleada -> setText("Oleada: " + QString::number(5 - oleada));
     //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
@@ -491,7 +512,7 @@ void GameScreen::checkOleada(){
         oleadaTimer->stop();
         this -> close();
     }
-    string strOleada = to_string(oleada);
+    string strOleada = to_string(5 - oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);
     worker -> writeData(byteArray);
 }

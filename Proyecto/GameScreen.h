@@ -32,6 +32,7 @@ private:
     SimpleList<Bullets*> bulletCollector;
     SimpleList<EasyEnemy*> easyEnemys;
     SimpleList<MediumEnemy*> mediumEnemys;
+    SimpleList<string> labelsPowers;
     SimpleList<DifficultEnemy*> difficultEnemys;
 
     QThread workerThread;
@@ -44,12 +45,14 @@ private:
     QLabel *labelVidas;
     QLabel *labelEnemOleadas;
     QLabel *labelFase;
+    QLabel *labelStrat;
 
     int oleada;
     int fase;
 
     int cantBullets;
     int cantVidas;
+    int velocidadJugador;
     int poteDisparo;
     int faseJuego;
     int oleadaJuego;
@@ -64,6 +67,7 @@ private:
     int EnemigosFaciles;
     int EnemigosMedios;
     int EnemigosDificiles;
+    int tempSelecStrat;
     // En el arreglo el orden de la info es:
     // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
@@ -74,6 +78,8 @@ private:
             {15, 15, 0},
             {10, 25, 0}
     };
+
+
 
     bool cambioOleada;
     //bool primeraOleada;

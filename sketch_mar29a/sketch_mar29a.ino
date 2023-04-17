@@ -240,6 +240,9 @@ void loop() {
       delay(1000);
       digitalWrite(buzzerPin, LOW);
     }
+    if (valorSerial == '7') {
+      delay(5000);
+    }
   }
 
   
