@@ -204,6 +204,12 @@
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.h">
 			<Option target="Battle_Space"/>
 		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.cpp">
+			<Option target="Battle_Space"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.h">
+			<Option target="Battle_Space"/>
+		</Unit>
 		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>

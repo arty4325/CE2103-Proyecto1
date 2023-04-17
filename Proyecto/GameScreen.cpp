@@ -21,6 +21,7 @@
 #include "EasyEnemy.h"
 #include "MediumEnemy.h"
 #include "GameOver.h"
+#include "WonScreen.h"
 //#include "SimpleList.h"
 
 
@@ -38,7 +39,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 }
             }
         }
-        fase = 1;
+        fase = 0;
         cantBullets = 600;
         cantVidas = 15;
         oleada = 0;
@@ -55,7 +56,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     }
     if (Dificultad == 1){
 
-        fase = 2;
+        fase = 1;
         cantBullets = 400;
         cantVidas = 10;
         oleada = 0;
@@ -76,7 +77,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 infoOleadas[i][k] += 5;
             }
         }
-        fase = 2;
+        fase = 1;
         cantBullets = 200;
         cantVidas = 5;
         oleada = 0;
@@ -452,12 +453,23 @@ void GameScreen::checkOleada(){
         //moveTimer ->setInterval(velocidadEnemigos);
     }
     if (oleada == 5 && fase != 0){
+        fase -= 1;
         oleada = 0;
         velocidadEnemigos -= 2;
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
 
+    }
+    if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0 && fase == 0){
+        WonScreen * wonScreen = new WonScreen();
+        wonScreen -> show();
+        moveTimer->stop();
+        timer->stop();
+        spawnTimer->stop();
+        collisionTimer->stop();
+        oleadaTimer->stop();
+        this -> close();
     }
     string strOleada = to_string(oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);

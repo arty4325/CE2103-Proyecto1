@@ -203,6 +203,12 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_WonScreen.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.h",
 			"MU",
 			"EWIEGA46WW/moc_main.cpp",
@@ -332,6 +338,11 @@
 		],
 		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.cpp",
 			"MU",
 			null
 		],

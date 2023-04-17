@@ -526,6 +526,30 @@ SimpleList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/SimpleList.cpp.s
 .PHONY : SimpleList.cpp.s
 
+WonScreen.o: WonScreen.cpp.o
+.PHONY : WonScreen.o
+
+# target to build an object file
+WonScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/WonScreen.cpp.o
+.PHONY : WonScreen.cpp.o
+
+WonScreen.i: WonScreen.cpp.i
+.PHONY : WonScreen.i
+
+# target to preprocess a source file
+WonScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/WonScreen.cpp.i
+.PHONY : WonScreen.cpp.i
+
+WonScreen.s: WonScreen.cpp.s
+.PHONY : WonScreen.s
+
+# target to generate assembly for a file
+WonScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/WonScreen.cpp.s
+.PHONY : WonScreen.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -608,6 +632,9 @@ help:
 	@echo "... SimpleList.o"
 	@echo "... SimpleList.i"
 	@echo "... SimpleList.s"
+	@echo "... WonScreen.o"
+	@echo "... WonScreen.i"
+	@echo "... WonScreen.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
