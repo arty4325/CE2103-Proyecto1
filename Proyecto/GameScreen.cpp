@@ -586,6 +586,14 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
         cout << x << endl;
         cout << a << endl;
         cout << y << endl;
+
+        for(int i = 0; i < 3; i ++){
+            firstStrat.deleteHead();
+        }
+
+        firstStrat.insertHead(stoi(y));
+        firstStrat.insertHead(stoi(a));
+        firstStrat.insertHead(stoi(x));
     }
 }
 
