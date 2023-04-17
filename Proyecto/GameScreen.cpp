@@ -28,6 +28,7 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+
     if (Dificultad == 0){
         for(int i = 0; i <= 5; i++){
             for(int k = 0; k <= 4; k++){
@@ -36,6 +37,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 }
             }
         }
+        fase = 1;
         cantBullets = 600;
         cantVidas = 15;
         oleada = 0;
@@ -52,6 +54,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     }
     if (Dificultad == 1){
 
+        fase = 2;
         cantBullets = 400;
         cantVidas = 10;
         oleada = 0;
@@ -72,6 +75,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
                 infoOleadas[i][k] += 5;
             }
         }
+        fase = 2;
         cantBullets = 200;
         cantVidas = 5;
         oleada = 0;
@@ -120,6 +124,11 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     labelEnemOleadas -> move(300, 0);
     labelEnemOleadas -> show();
 
+    labelFase = new QLabel(this);
+    labelFase ->setText("Fase: " + QString::number(fase));
+    labelFase ->setStyleSheet("background-color: white; color: red;");
+    labelFase -> move(300, 20);
+    labelFase -> show();
 
     QString path = QDir::currentPath();
     std::string pathStr = path.toStdString();
@@ -422,6 +431,7 @@ void GameScreen::checkCollisions() {
 
 
 void GameScreen::checkOleada(){
+    labelFase ->setText("Fase: " + QString::number(fase));
     labelOleada -> setText("Oleada: " + QString::number(oleada));
     //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
@@ -432,6 +442,14 @@ void GameScreen::checkOleada(){
         EnemigosMedios = infoOleadas[oleada][1];
         EnemigosDificiles = infoOleadas[oleada][2];
         //moveTimer ->setInterval(velocidadEnemigos);
+    }
+    if (oleada == 5 && fase != 0){
+        oleada = 0;
+        velocidadEnemigos -= 2;
+        EnemigosFaciles = infoOleadas[0][0];
+        EnemigosMedios = infoOleadas[0][1];
+        EnemigosDificiles = infoOleadas[0][2];
+
     }
     string strOleada = to_string(oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);

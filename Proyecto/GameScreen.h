@@ -37,14 +37,16 @@ private:
     QThread workerThread;
     SerialWorker* worker;
 
+
     QLabel *labelBalas;
     QLabel *labelCollector;
     QLabel *labelOleada;
     QLabel *labelVidas;
     QLabel *labelEnemOleadas;
+    QLabel *labelFase;
 
     int oleada;
-
+    int fase;
 
     int cantBullets;
     int cantVidas;
