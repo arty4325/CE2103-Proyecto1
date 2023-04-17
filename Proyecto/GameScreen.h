@@ -85,10 +85,10 @@ private:
     };
 
     string labelsPoderes[4][2] = {
-            {"11", "12"},
-            {"21", "22"},
-            {"31", "32"},
-            {"41", "42"}
+            {"Balas ilimitadas", "Jugador mas rapido"},
+            {"Elimina enemigos en pantalla", "Quita enemigos medios oleada"},
+            {"Baja vida naves 25%", "Balas mas rapidas"},
+            {"Elimina ultima fase", "Naves enemigas congeladas"}
     };
 
 

@@ -107,7 +107,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     tempSelecStrat = 0;
 
     labelStrat = new QLabel(this);
-    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
+    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)) + "                         ");
     labelStrat -> setStyleSheet("background-color: white; color: red;");
     labelStrat -> move(600, 0);
     labelStrat -> show();
