@@ -577,6 +577,15 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
         collisionTimer->stop();
         oleadaTimer->stop();
         worker->writeData("7");
+
+        XmlReader temp;
+        string x = temp.ReadPower(to_string(tempSelecStrat + 1) + ".xml", "Number");
+        string a = temp.ReadPower(to_string(tempSelecStrat + 1) + ".xml", "Power1");
+        string y = temp.ReadPower(to_string(tempSelecStrat + 1) + ".xml", "Power2");
+
+        cout << x << endl;
+        cout << a << endl;
+        cout << y << endl;
     }
 }
 
