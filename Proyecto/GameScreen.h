@@ -29,10 +29,10 @@ class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
     string labelsPoderes[4][2] = {
-            {"nosirve", "02"},
-            {"11", "12"},
-            {"21", "22"},
-            {"31", "32"}
+            {"Balas ilimitadas 5s", "Jugador 25% rapido"},
+            {"Elim naves en pantalla", "Elim todos los dif media de oleada"},
+            {"Baja vida naves 25%", "Balas mas rapidas"},
+            {"Elimina ultima fase", "Congela naves enem"}
     };
 
     Player *player;

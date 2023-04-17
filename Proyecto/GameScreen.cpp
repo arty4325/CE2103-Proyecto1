@@ -31,6 +31,7 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    /*
     XmlReader uno;
     string x = uno.ReadXmlName("Strategy1.xml");
     string a = uno.ReadPower("Strategy2.xml","Power1");
@@ -48,7 +49,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     cout<<w<<endl;
     cout<<b<<endl;
     cout<<t<<endl;
-
+    */
 
     hasChoosedPower = false;
     tempSelecPower = 0;
@@ -69,38 +70,28 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
             }
         }
         fase = 0;
-        cantBullets = 20;
+        cantBullets = 600;
         cantVidas = 15;
         oleada = 0;
-        // En el arreglo el orden de la info es:
-        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
-
-        //primeraOleada = true;
         cambioOleada = false;
-        //velocidadEnemigos = infoOleadas[0][0];
         velocidadEnemigos = 10;
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
     }
-    if (Dificultad == 1){
+    else if (Dificultad == 1){
 
         fase = 1;
         cantBullets = 400;
         cantVidas = 10;
         oleada = 0;
-        // En el arreglo el orden de la info es:
-        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
-
-        //primeraOleada = true;
         cambioOleada = false;
-        //velocidadEnemigos = infoOleadas[0][0];
         velocidadEnemigos = 8;
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
     }
-    if (Dificultad == 2){
+    else if (Dificultad == 2){
         for(int i = 0; i <= 5; i++){
             for(int k = 0; k <= 4; k++){
                 infoOleadas[i][k] += 5;
@@ -110,23 +101,20 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
         cantBullets = 200;
         cantVidas = 5;
         oleada = 0;
-        // En el arreglo el orden de la info es:
-        // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
-
-        //primeraOleada = true;
         cambioOleada = false;
-        //velocidadEnemigos = infoOleadas[0][0];
         velocidadEnemigos = 6;
         EnemigosFaciles = infoOleadas[0][0];
         EnemigosMedios = infoOleadas[0][1];
         EnemigosDificiles = infoOleadas[0][2];
+        hasChoosedPower = false;
     }
 
     velocidadJugador = 20;
     tempSelecStrat = 0;
 
     labelStrat = new QLabel(this);
-    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)) + "                         ");
+    labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat))
+    + "                                       ");
     labelStrat -> setStyleSheet("background-color: white; color: red;");
     labelStrat -> move(600, 0);
     labelStrat -> show();
@@ -156,8 +144,8 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     labelEnemOleadas =  new QLabel(this);
     labelEnemOleadas ->setText("Faciles: " + QString::number(EnemigosFaciles) +
-    " Medios " + QString::number(EnemigosMedios) +
-    " Dificiles: " + QString::number(EnemigosDificiles));
+                               " Medios " + QString::number(EnemigosMedios) +
+                               " Dificiles: " + QString::number(EnemigosDificiles));
     labelEnemOleadas ->setStyleSheet("background-color: white; color: red;");
     labelEnemOleadas -> move(300, 0);
     labelEnemOleadas -> show();
@@ -256,7 +244,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 }
 
 void GameScreen::animate(const ListaSimple &dataList) {
-
+    //dataList.printList();
     //dataList.printList();
     //cout << dataList.getPosVal(3) << endl;
     //fireBullets(dataList);
@@ -283,8 +271,6 @@ void GameScreen::animate(const ListaSimple &dataList) {
     }
 
     if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower == false){
-
-
         if (tempSelecStrat != 3){
             tempSelecStrat += 1;
         }
@@ -295,7 +281,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
         cout << "La selec esta es " << tempSelecStrat << labelsPowers.getPosVal(tempSelecStrat) << endl;
     } else if ((dataList.getPosVal(4) < 200) && hasChoosedPower == false){
         hasChoosedPower = true;
-        cout << tempSelecStrat << tempSelecPower << endl;
+        cout << dataList.getPosVal(4) << tempSelecStrat << tempSelecPower << endl;
         //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }   else if (((dataList.getPosVal(4)) < 200) && hasChoosedPower) {
