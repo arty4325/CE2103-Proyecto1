@@ -550,6 +550,30 @@ WonScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/WonScreen.cpp.s
 .PHONY : WonScreen.cpp.s
 
+XmlReader.o: XmlReader.cpp.o
+.PHONY : XmlReader.o
+
+# target to build an object file
+XmlReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/XmlReader.cpp.o
+.PHONY : XmlReader.cpp.o
+
+XmlReader.i: XmlReader.cpp.i
+.PHONY : XmlReader.i
+
+# target to preprocess a source file
+XmlReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/XmlReader.cpp.i
+.PHONY : XmlReader.cpp.i
+
+XmlReader.s: XmlReader.cpp.s
+.PHONY : XmlReader.s
+
+# target to generate assembly for a file
+XmlReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/XmlReader.cpp.s
+.PHONY : XmlReader.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -635,6 +659,9 @@ help:
 	@echo "... WonScreen.o"
 	@echo "... WonScreen.i"
 	@echo "... WonScreen.s"
+	@echo "... XmlReader.o"
+	@echo "... XmlReader.i"
+	@echo "... XmlReader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

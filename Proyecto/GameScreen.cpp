@@ -22,6 +22,7 @@
 #include "MediumEnemy.h"
 #include "GameOver.h"
 #include "WonScreen.h"
+#include "XmlReader.h"
 //#include "SimpleList.h"
 
 
@@ -30,6 +31,25 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    /*
+    XmlReader uno;
+    string x = uno.ReadXmlName("Strategy1.xml");
+    string a = uno.ReadPower("Strategy2.xml","Power1");
+    string y = uno.ReadPower("Strategy1.xml","Power2");
+    cout<<x<<endl;
+    cout<<a<<endl;
+    cout<<y<<endl;
+
+    cout<<"\n";
+
+    XmlReader dos;
+    string w = dos.ReadXmlName("Strategy3.xml");
+    string b = dos.ReadPower("Strategy3.xml","Power1");
+    string t = dos.ReadPower("Strategy3.xml","Power2");
+    cout<<w<<endl;
+    cout<<b<<endl;
+    cout<<t<<endl;
+    */ 
 
     if (Dificultad == 0){
         for(int i = 0; i <= 5; i++){

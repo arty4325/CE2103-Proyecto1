@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp" "CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp" "CMakeFiles/Battle_Space.dir/SimpleList.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/SimpleList.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.cpp" "CMakeFiles/Battle_Space.dir/WonScreen.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/WonScreen.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/XmlReader.cpp" "CMakeFiles/Battle_Space.dir/XmlReader.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/XmlReader.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.cpp" "CMakeFiles/Battle_Space.dir/main.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/main.cpp.o.d"
   )
 

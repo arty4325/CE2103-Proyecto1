@@ -38,6 +38,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Battle_Space.dir/SimpleList.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/WonScreen.cpp.o"
   "CMakeFiles/Battle_Space.dir/WonScreen.cpp.o.d"
+  "CMakeFiles/Battle_Space.dir/XmlReader.cpp.o"
+  "CMakeFiles/Battle_Space.dir/XmlReader.cpp.o.d"
   "CMakeFiles/Battle_Space.dir/main.cpp.o"
   "CMakeFiles/Battle_Space.dir/main.cpp.o.d"
 )
