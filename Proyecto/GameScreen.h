@@ -14,6 +14,8 @@
 #include <QThread>
 #include <QTimer>
 #include <QLabel>
+#include <iostream>
+
 #include "ListaSimple.h"
 #include "Player.h"
 #include "Bullets.h"
@@ -26,6 +28,13 @@
 class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
+    string labelsPoderes[4][2] = {
+            {"nosirve", "02"},
+            {"11", "12"},
+            {"21", "22"},
+            {"31", "32"}
+    };
+
     Player *player;
     ListaSimple dataList;
     SimpleList<Bullets*> bulletsList;
@@ -84,12 +93,6 @@ private:
             {10, 25, 0}
     };
 
-    string labelsPoderes[4][2] = {
-            {"Balas ilimitadas", "Jugador mas rapido"},
-            {"Elimina enemigos en pantalla", "Quita enemigos medios oleada"},
-            {"Baja vida naves 25%", "Balas mas rapidas"},
-            {"Elimina ultima fase", "Naves enemigas congeladas"}
-    };
 
 
     bool hasChoosedPower;

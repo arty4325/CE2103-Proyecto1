@@ -31,6 +31,25 @@ QThread workerThread; // variable global para el hilo
 
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
+    XmlReader uno;
+    string x = uno.ReadXmlName("Strategy1.xml");
+    string a = uno.ReadPower("Strategy2.xml","Power1");
+    string y = uno.ReadPower("Strategy1.xml","Power2");
+    cout<<x<<endl;
+    cout<<a<<endl;
+    cout<<y<<endl;
+
+    cout<<"\n";
+
+    XmlReader dos;
+    string w = dos.ReadXmlName("Strategy2.xml");
+    string b = dos.ReadPower("Strategy2.xml","Power1");
+    string t = dos.ReadPower("Strategy2.xml","Power2");
+    cout<<w<<endl;
+    cout<<b<<endl;
+    cout<<t<<endl;
+
+
     hasChoosedPower = false;
     tempSelecPower = 0;
     tempSelecStrat = 0;
@@ -264,15 +283,20 @@ void GameScreen::animate(const ListaSimple &dataList) {
     }
 
     if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower == false){
-        labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
-        if (tempSelecStrat != 4){
+
+
+        if (tempSelecStrat != 3){
             tempSelecStrat += 1;
         }
-        else {
+        else if (tempSelecStrat == 3){
             tempSelecStrat = 0;
         }
+        labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
+        cout << "La selec esta es " << tempSelecStrat << labelsPowers.getPosVal(tempSelecStrat) << endl;
     } else if ((dataList.getPosVal(4) < 400) && hasChoosedPower == false){
         hasChoosedPower = true;
+        cout << tempSelecStrat << tempSelecPower << endl;
+        //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }
 
@@ -282,6 +306,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
         } else if (tempSelecPower == 1){
             tempSelecPower = 0;
         }
+        cout << " Se selecciono " << tempSelecStrat << tempSelecPower << endl;
+
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }
     if (((dataList.getPosVal(4)) < 400) && hasChoosedPower) {
@@ -314,7 +340,7 @@ void GameScreen::shootBullets(){
         }
     }
 
-    cout << "BALAS " << cantBullets << endl;
+    //cout << "BALAS " << cantBullets << endl;
 
 
     //test.insertHead(bullets);
