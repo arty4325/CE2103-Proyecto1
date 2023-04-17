@@ -56,6 +56,9 @@ private:
 
     QTimer* moveTimer;
     QTimer* timer;
+    QTimer* spawnTimer;
+    QTimer* collisionTimer;
+    QTimer* oleadaTimer;
 
     int velocidadEnemigos;
     int EnemigosFaciles;

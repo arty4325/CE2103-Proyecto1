@@ -20,6 +20,7 @@
 #include "Bullets.h"
 #include "EasyEnemy.h"
 #include "MediumEnemy.h"
+#include "GameOver.h"
 //#include "SimpleList.h"
 
 
@@ -134,7 +135,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     std::string pathStr = path.toStdString();
     std::cout << "Directorio actual: " << pathStr << std::endl;
 
-    QTimer *oleadaTimer = new QTimer(this);
+    oleadaTimer = new QTimer(this);
     connect(oleadaTimer, &QTimer::timeout, this, &GameScreen::checkOleada);
     oleadaTimer -> setInterval(1000);
     oleadaTimer -> start();
@@ -150,7 +151,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
     // Ahora voy a hacer un timer que permita manejar la aparicion de los enemigos
     // Dependiendo de la oleada en la que se esta
-    QTimer *spawnTimer = new QTimer(this);
+    spawnTimer = new QTimer(this);
     connect(spawnTimer, &QTimer::timeout, this, &GameScreen::spawnEnemys);
     spawnTimer -> setInterval(2000);
     spawnTimer -> start();
@@ -160,7 +161,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     moveTimer ->setInterval(velocidadEnemigos);
     moveTimer -> start();
 
-    QTimer *collisionTimer = new QTimer(this);
+    collisionTimer = new QTimer(this);
     connect(collisionTimer, &QTimer::timeout, this, &GameScreen::checkCollisions);
     collisionTimer ->setInterval(4);
     collisionTimer -> start();
@@ -369,6 +370,13 @@ void GameScreen::moveEnemys() {
         }
     }
     if (cantVidas == 0){
+        GameOver * gameOver = new GameOver();
+        gameOver -> show();
+        moveTimer->stop();
+        timer->stop();
+        spawnTimer->stop();
+        collisionTimer->stop();
+        oleadaTimer->stop();
         this -> close();
     }
 }

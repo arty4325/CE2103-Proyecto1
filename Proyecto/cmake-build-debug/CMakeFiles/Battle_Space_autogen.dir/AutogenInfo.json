@@ -137,6 +137,12 @@
 			null
 		],
 		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameOver.h",
+			"MU",
+			"EWIEGA46WW/moc_GameOver.cpp",
+			null
+		],
+		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h",
 			"MU",
 			"EWIEGA46WW/moc_GameScreen.cpp",
@@ -271,6 +277,11 @@
 		],
 		[
 			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameOver.cpp",
 			"MU",
 			null
 		],

@@ -262,6 +262,30 @@ Enemigos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/Enemigos.cpp.s
 .PHONY : Enemigos.cpp.s
 
+GameOver.o: GameOver.cpp.o
+.PHONY : GameOver.o
+
+# target to build an object file
+GameOver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/GameOver.cpp.o
+.PHONY : GameOver.cpp.o
+
+GameOver.i: GameOver.cpp.i
+.PHONY : GameOver.i
+
+# target to preprocess a source file
+GameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/GameOver.cpp.i
+.PHONY : GameOver.cpp.i
+
+GameOver.s: GameOver.cpp.s
+.PHONY : GameOver.s
+
+# target to generate assembly for a file
+GameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Battle_Space.dir/build.make CMakeFiles/Battle_Space.dir/GameOver.cpp.s
+.PHONY : GameOver.cpp.s
+
 GameScreen.o: GameScreen.cpp.o
 .PHONY : GameScreen.o
 
@@ -551,6 +575,9 @@ help:
 	@echo "... Enemigos.o"
 	@echo "... Enemigos.i"
 	@echo "... Enemigos.s"
+	@echo "... GameOver.o"
+	@echo "... GameOver.i"
+	@echo "... GameOver.s"
 	@echo "... GameScreen.o"
 	@echo "... GameScreen.i"
 	@echo "... GameScreen.s"

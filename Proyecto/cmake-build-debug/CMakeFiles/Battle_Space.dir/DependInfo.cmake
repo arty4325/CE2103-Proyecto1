@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp" "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp" "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/Enemigos.cpp.o.d"
+  "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameOver.cpp" "CMakeFiles/Battle_Space.dir/GameOver.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/GameOver.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/GameScreen.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o.d"
   "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp" "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o" "gcc" "CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o.d"
