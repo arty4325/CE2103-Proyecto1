@@ -293,11 +293,13 @@ void GameScreen::animate(const ListaSimple &dataList) {
         }
         labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
         cout << "La selec esta es " << tempSelecStrat << labelsPowers.getPosVal(tempSelecStrat) << endl;
-    } else if ((dataList.getPosVal(4) < 400) && hasChoosedPower == false){
+    } else if ((dataList.getPosVal(4) < 200) && hasChoosedPower == false){
         hasChoosedPower = true;
         cout << tempSelecStrat << tempSelecPower << endl;
         //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
+    }   else if (((dataList.getPosVal(4)) < 200) && hasChoosedPower) {
+        cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
     }
 
     if ((dataList.getPosVal(4)) >= 800 && hasChoosedPower){
@@ -310,9 +312,7 @@ void GameScreen::animate(const ListaSimple &dataList) {
 
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }
-    if (((dataList.getPosVal(4)) < 400) && hasChoosedPower) {
-        cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
-    }
+
 
 }
 
