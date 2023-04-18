@@ -70,6 +70,7 @@ private:
     int fase;
 
     int cantBullets;
+    int cantOleadas;
     int tempCantBullets;
     int cantVidas;
     int velocidadJugador;

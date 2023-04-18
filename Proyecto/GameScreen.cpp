@@ -67,6 +67,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     tempSelecPower = 0;
     tempSelecStrat = 0;
     velocidadBalas = 10;
+    cantOleadas = 5;
     onePixel = 1;
     twoPixels = 2;
     labelsPowers.insertHead("Cuarto Estrategia");
@@ -532,7 +533,7 @@ void GameScreen::checkCollisions() {
 
 void GameScreen::checkOleada(){
     labelFase ->setText("Fase: " + QString::number(fase));
-    labelOleada -> setText("Oleada: " + QString::number(5 - oleada));
+    labelOleada -> setText("Oleada: " + QString::number(cantOleadas - oleada));
     //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
@@ -543,7 +544,7 @@ void GameScreen::checkOleada(){
         EnemigosDificiles = infoOleadas[oleada][2];
         //moveTimer ->setInterval(velocidadEnemigos);
     }
-    if (oleada == 5 && fase != 0){
+    if (oleada == cantOleadas && fase != 0){
         fase -= 1;
         oleada = 0;
         velocidadEnemigos -= 2;
@@ -562,7 +563,7 @@ void GameScreen::checkOleada(){
         oleadaTimer->stop();
         this -> close();
     }
-    string strOleada = to_string(5 - oleada);
+    string strOleada = to_string(cantOleadas - oleada);
     QByteArray byteArray = QByteArray::fromStdString(strOleada);
     worker -> writeData(byteArray);
 }
@@ -646,7 +647,7 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
     } else if (tempSelecStrat == 3 && tempSelecPower == 0){
         cout << "Cuarto Primer " << endl;
         cout << firstStrat.getPosVal(1) << endl;
-        oleada = firstStrat.getPosVal(1);
+        cantOleadas = firstStrat.getPosVal(1);
     } else if (tempSelecStrat == 3 && tempSelecPower == 1){
         cout << "Cuarto Segundo " << endl;
         cout << firstStrat.getPosVal(2) << endl;
