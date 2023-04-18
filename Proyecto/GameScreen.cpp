@@ -236,14 +236,6 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     }
 
 
-    //rectangle = new QGraphicsRectItem(0, 0, 50, 50);
-    //rectangle -> setPos(100, 100);
-    //scene -> addItem(rectangle);
-
-    // Crear jugador y agregar a la escena
-
-
-
     qRegisterMetaType<ListaSimple>("ListaSimple");
     worker = new SerialWorker();
     worker ->moveToThread(&workerThread);
@@ -252,9 +244,6 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
 
 
     workerThread.start();
-
-
-    //worker -> writeData("6");
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -269,10 +258,7 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
  * @param dataList Los valores que el arduino arroja en el serial
  */
 void GameScreen::animate(const ListaSimple &dataList) {
-    //dataList.printList();
-    //dataList.printList();
-    //cout << dataList.getPosVal(3) << endl;
-    //fireBullets(dataList);
+
     this->dataList = dataList;
     this->bulletsList = bulletsList;
     labelCollector ->setText("Balas en Collector: " + QString::number(bulletCollector.getSize()));
@@ -281,7 +267,6 @@ void GameScreen::animate(const ListaSimple &dataList) {
         Bullets* bullet = bulletsList.getPosVal(i);
         bullet ->setPos(bullet->pos().x() + velocidadBalas, bullet -> pos().y());
         if (bullet->pos().x() >= 1000){
-            //cout << "SE SALIO " << endl;
             bulletsList.deletePos(i);
             bullet->disminuirDano();
             bulletCollector.insertHead(bullet);
@@ -307,10 +292,8 @@ void GameScreen::animate(const ListaSimple &dataList) {
     } else if ((dataList.getPosVal(4) < 100) && hasChoosedPower == false){
         hasChoosedPower = true;
         cout << dataList.getPosVal(4) << tempSelecStrat << tempSelecPower << endl;
-        //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
     }   else if (((dataList.getPosVal(4)) < 100) && hasChoosedPower) {
-        //cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
         exePower(tempSelecStrat, tempSelecPower);
     }
 
@@ -350,16 +333,9 @@ void GameScreen::shootBullets(){
             bullets = bulletCollector.getHead()->value;
             bulletCollector.deleteHead();
             bullets->setPos(player->pos().x(), player->pos().y());
-            //scene() -> addItem(bullets);
             bulletsList.insertHead(bullets);
         }
     }
-
-    //cout << "BALAS " << cantBullets << endl;
-
-
-    //test.insertHead(bullets);
-
 
 }
 
@@ -371,15 +347,13 @@ void GameScreen::spawnEnemys() {
                                " Medios " + QString::number(EnemigosMedios) +
                                " Dificiles: " + QString::number(EnemigosDificiles));
 
-    //cout << "PRUEBAS" << endl;
+
     int randomY = qrand() % 400;
     randomY += 100;
-    //cout << randomY + 100 << endl;
 
     int num = QRandomGenerator::global() -> bounded(1, 4);
 
     if (num == 1 && EnemigosFaciles != 0) {
-        //cout << EnemigosFaciles << " Aparecio un facil" << endl;
         EasyEnemy *easyEnemy = new EasyEnemy();
         easyEnemy->setPos(1050, randomY);
         scene()->addItem(easyEnemy);
@@ -392,7 +366,6 @@ void GameScreen::spawnEnemys() {
         mediumEnemys.insertHead(mediumEnemy);
         EnemigosMedios -= 1;
     } else if (num == 3 && EnemigosDificiles != 0){
-        //cout << "AUN NO SE DEFINE ESTE ENEMIGO" << endl;
         DifficultEnemy *difficultEnemy = new DifficultEnemy();
         difficultEnemy -> setDirection(true);
         difficultEnemy -> setPos(1050, randomY);
@@ -400,10 +373,8 @@ void GameScreen::spawnEnemys() {
         difficultEnemys.insertHead(difficultEnemy);
         EnemigosDificiles -= 1;
     } else if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
-        //cout << "Suave un touqe, se acabo la oleada" << endl;
     }
     else {
-        //cout << "NO APARECIO DE LO OTRO Y SE TUVO QUE LLAMAR A ESTO " << endl;
         return spawnEnemys();
     }
 
@@ -426,14 +397,12 @@ void GameScreen::moveEnemys() {
             scene() -> removeItem(tempEnemy);
             easyEnemys.deletePos(i);
             delete tempEnemy;
-            //worker -> writeData("6");
         }
     }
     for (int i = 0; i < mediumEnemys.getSize(); i++){
         MediumEnemy* tempEnemy = mediumEnemys.getPosVal(i);
         tempEnemy -> setPos(tempEnemy ->pos().x() - twoPixels, tempEnemy->pos().y());
         if (tempEnemy -> pos().x() <= 0){
-            //cout << "SE SALIO MEDIUM " << endl;
             worker -> writeData("6");
             cantVidas -= 1;
             scene() ->removeItem(tempEnemy);
@@ -484,13 +453,6 @@ void GameScreen::checkCollisions() {
             EasyEnemy* enemy = easyEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
 
-                //scene() -> removeItem(bullet);
-                //scene() -> removeItem(enemy);
-                //bulletsList.deletePos(i);
-                //easyEnemys.deletePos(j);
-                //delete bullet;
-                //delete enemy;
-                //worker -> writeData("6");
                 enemy->disminuirVida(bullet->getDano());
 
                 scene() -> removeItem(bullet);
@@ -509,12 +471,6 @@ void GameScreen::checkCollisions() {
             Bullets* bullet = bulletsList.getPosVal(i);
             MediumEnemy* enemy = mediumEnemys.getPosVal(j);
             if (bullet ->collidesWithItem(enemy)) {
-                //scene() ->removeItem(bullet);
-                //scene() -> removeItem(enemy);
-                //bulletsList.deletePos(i);
-                //mediumEnemys.deletePos(j);
-                //delete bullet;
-                //delete enemy;
 
                 enemy->disminuirVida(bullet->getDano());
 
@@ -551,17 +507,18 @@ void GameScreen::checkCollisions() {
  * @brief Revisa en que oleada se esta y pasa de oleada en caso de que se haya terminado
  */
 void GameScreen::checkOleada(){
+    if (oleada < 0){
+        oleada = 0;
+    }
     labelFase ->setText("Fase: " + QString::number(fase));
     labelOleada -> setText("Oleada: " + QString::number(cantOleadas - oleada));
     //cout << "REVISA EN QUE OLEADA ESTA " << oleada << endl;
     if (EnemigosFaciles == 0 && EnemigosMedios == 0 && EnemigosDificiles == 0){
         cout << "Se acabo la oleada " << endl;
         oleada += 1;
-        //velocidadEnemigos = infoOleadas[oleada][0];
         EnemigosFaciles = infoOleadas[oleada][0];
         EnemigosMedios = infoOleadas[oleada][1];
         EnemigosDificiles = infoOleadas[oleada][2];
-        //moveTimer ->setInterval(velocidadEnemigos);
     }
     if (oleada == cantOleadas && fase != 0){
         fase -= 1;
@@ -671,7 +628,7 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
     } else if (tempSelecStrat == 3 && tempSelecPower == 0){
         cout << "Cuarto Primer " << endl;
         cout << firstStrat.getPosVal(1) << endl;
-        cantOleadas = firstStrat.getPosVal(1);
+        oleada = firstStrat.getPosVal(1);
     } else if (tempSelecStrat == 3 && tempSelecPower == 1){
         cout << "Cuarto Segundo " << endl;
         cout << firstStrat.getPosVal(2) << endl;
