@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto"
+CMAKE_SOURCE_DIR = "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"
 
 # Utility rule file for Battle_Space_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/Battle_Space_autogen.dir/compiler_depend.make
 include CMakeFiles/Battle_Space_autogen.dir/progress.make
 
 CMakeFiles/Battle_Space_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Battle_Space"
-	/var/lib/snapd/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E cmake_autogen "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Battle_Space"
+	/var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E cmake_autogen "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/AutogenInfo.json" Debug
 
 Battle_Space_autogen: CMakeFiles/Battle_Space_autogen
 Battle_Space_autogen: CMakeFiles/Battle_Space_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/Battle_Space_autogen.dir/clean:
 .PHONY : CMakeFiles/Battle_Space_autogen.dir/clean
 
 CMakeFiles/Battle_Space_autogen.dir/depend:
-	cd "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto" "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto" "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" "/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto" "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto" "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug" "/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/CMakeFiles/Battle_Space_autogen.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Battle_Space_autogen.dir/depend
 

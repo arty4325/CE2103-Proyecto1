@@ -5,21 +5,21 @@
 		<Option title="Battle_Space"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Battle_Space">
-				<Option output="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option output="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -28,7 +28,7 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add directory="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"/>
+					<Add directory="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"/>
 					<Add directory="/usr/include/qt"/>
 					<Add directory="/usr/include/qt/QtSerialPort"/>
 					<Add directory="/usr/include/qt/QtCore"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Battle_Space/fast">
-				<Option output="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option output="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,7 +61,7 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add directory="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"/>
+					<Add directory="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include"/>
 					<Add directory="/usr/include/qt"/>
 					<Add directory="/usr/include/qt/QtSerialPort"/>
 					<Add directory="/usr/include/qt/QtCore"/>
@@ -77,315 +77,333 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Battle_Space_autogen">
-				<Option working_dir="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
+				<Option working_dir="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space_autogen"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 Battle_Space_autogen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Bullets.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Bullets.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Bullets.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/EasyEnemy.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Enemigos.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/GameOver.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameOver.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/GameOver.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameOver.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/GameScreen.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/ListaSimple.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MediumEnemy.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/MenuDificultades.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Node.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Node.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/NodeList.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/NodeList.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Player.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/Player.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/Player.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialPort.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SerialWorker.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/SimpleList.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/WonScreen.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/XmlReader.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/XmlReader.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/XmlReader.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/XmlReader.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/mocs_compilation.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/main.cpp">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.cpp">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/main.h">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/main.h">
 			<Option target="Battle_Space"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/CMakeLists.txt">
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5SerialPort\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5/Qt5Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk2ThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5Widgets_QBB10StylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5Widgets_QCleanlooksStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5Widgets_QGtk2StylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5Widgets_QMotifStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/../../../../../../../usr/lib/cmake/Qt5Widgets/Qt5Widgets_QPlastiqueStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\Qt5Widgets\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

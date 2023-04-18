@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I"/home/oscaraad/TEC/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include" -isystem /usr/include/qt -isystem /usr/include/qt/QtSerialPort -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
+CXX_INCLUDES = -I"/home/oscaraad/TEC/2023SEMI/Datos II/CE2103-Proyecto1/Proyecto/cmake-build-debug/Battle_Space_autogen/include" -isystem /usr/include/qt -isystem /usr/include/qt/QtSerialPort -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
 
 CXX_FLAGS = -g -fdiagnostics-color=always -fPIC
 

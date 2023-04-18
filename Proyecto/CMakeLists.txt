@@ -29,4 +29,3 @@ target_link_libraries(Battle_Space Qt5::Core Qt5::Gui Qt5::Widgets)
 target_link_libraries(Battle_Space Qt5::Core Qt5::Gui Qt5::Widgets)
 set_source_files_properties(SRC:/SerialThread.cpp PROPERTIES SKIP_AUTOMOC ON)  # Agregar esta línea
 set(CMAKE_AUTOMOC_FLAGS "-fskip-targets=MOC_AUTOMOC_TARGETS_REGEX")
-
