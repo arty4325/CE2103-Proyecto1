@@ -294,12 +294,12 @@ void GameScreen::animate(const ListaSimple &dataList) {
         }
         labelStrat -> setText(QString::fromStdString(labelsPowers.getPosVal(tempSelecStrat)));
         cout << "La selec esta es " << tempSelecStrat << labelsPowers.getPosVal(tempSelecStrat) << endl;
-    } else if ((dataList.getPosVal(4) < 200) && hasChoosedPower == false){
+    } else if ((dataList.getPosVal(4) < 100) && hasChoosedPower == false){
         hasChoosedPower = true;
         cout << dataList.getPosVal(4) << tempSelecStrat << tempSelecPower << endl;
         //cout << labelsPoderes[0][0] << endl;
         labelStrat -> setText(QString::fromStdString(labelsPoderes[tempSelecStrat][tempSelecPower]));
-    }   else if (((dataList.getPosVal(4)) < 200) && hasChoosedPower) {
+    }   else if (((dataList.getPosVal(4)) < 100) && hasChoosedPower) {
         //cout << "Poder seleccionado " << tempSelecStrat << tempSelecPower << endl;
         exePower(tempSelecStrat, tempSelecPower);
     }
@@ -594,6 +594,31 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
         firstStrat.insertHead(stoi(y));
         firstStrat.insertHead(stoi(a));
         firstStrat.insertHead(stoi(x));
+    }
+    if (tempSelecStrat == 0 && tempSelecPower == 0){
+        cout << " Primer primer" << endl;
+        cout << firstStrat.getPosVal(1) << endl;
+    } else if (tempSelecStrat == 0 && tempSelecPower == 1){
+        cout << " Primer Segundo" << endl;
+        cout << firstStrat.getPosVal(2) << endl;
+    } else if (tempSelecStrat == 1 && tempSelecPower == 0){
+        cout << "Segundo Primero " << endl;
+        cout << secondStrat.getPosVal(1) << endl;
+    } else if (tempSelecStrat == 1 && tempSelecPower == 1){
+        cout << "Segundo Segundo " << endl;
+        cout << secondStrat.getPosVal(2) << endl;
+    } else if (tempSelecStrat == 2 && tempSelecPower == 0){
+        cout << "Tercer primero " << endl;
+        cout << firstStrat.getPosVal(1) << endl;
+    } else if (tempSelecStrat == 2 && tempSelecPower == 1){
+        cout << "Tercer Segundo " << endl;
+        cout << firstStrat.getPosVal(2) << endl;
+    } else if (tempSelecStrat == 3 && tempSelecPower == 0){
+        cout << "Cuarto Primer " << endl;
+        cout << firstStrat.getPosVal(1) << endl;
+    } else if (tempSelecStrat == 3 && tempSelecPower == 1){
+        cout << "Cuarto Segundo " << endl;
+        cout << firstStrat.getPosVal(2) << endl;
     }
 }
 
