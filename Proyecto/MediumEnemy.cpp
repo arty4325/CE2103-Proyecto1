@@ -4,7 +4,10 @@
 
 #include "MediumEnemy.h"
 #include <QDir>
-
+/**
+ * @brief
+ * @param parent
+ */
 MediumEnemy::MediumEnemy(QGraphicsItem *parent)
 : QGraphicsPixmapItem(parent), vida(200) {
     QString direc = QDir::currentPath();

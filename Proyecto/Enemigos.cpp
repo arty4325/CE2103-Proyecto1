@@ -5,7 +5,9 @@
 #include "Enemigos.h"
 #include <QDir>
 
-
+/**
+ * @brief Metodo constructor de la clase Enemigos
+ */
 Enemigos::Enemigos(QGraphicsItem *parent)
     : QGraphicsPixmapItem(parent), vida(1) {
 
@@ -15,6 +17,10 @@ Enemigos::Enemigos(QGraphicsItem *parent)
     setPixmap(imagen.scaled(-50, 50));
 }
 
+/**
+ * @brief Permite disminuir la vida que
+ * @param cantidad de vida que se le va a quitar al enemigo
+ */
 void Enemigos::disminuirVida(int cantidad) {
     vida -= cantidad;
 }

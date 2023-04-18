@@ -132,7 +132,7 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/backward/auto_ptr.h \
   /usr/include/c++/12.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/12.2.1/pstl/execution_defs.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -377,25 +377,25 @@ CMakeFiles/Battle_Space.dir/Battle_Space_autogen/mocs_compilation.cpp.o: Battle_
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
   Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h
 
-CMakeFiles/Battle_Space.dir/Bullets.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp \
+CMakeFiles/Battle_Space.dir/Bullets.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/qt/QtWidgets/QGraphicsItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
@@ -717,7 +717,7 @@ CMakeFiles/Battle_Space.dir/Bullets.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II
   /usr/include/c++/12.2.1/pstl/glue_memory_defs.h \
   /usr/include/qt/QtGui/qimage.h \
   /usr/include/qt/QtGui/qpixelformat.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtCore/QDir \
   /usr/include/qt/QtCore/qdir.h \
@@ -725,7 +725,7 @@ CMakeFiles/Battle_Space.dir/Bullets.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h
 
-CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp \
+CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/qt/QtWidgets/QGraphicsItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
@@ -1052,12 +1052,12 @@ CMakeFiles/Battle_Space.dir/DifficultEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Da
   /usr/include/qt/QtCore/qfileinfo.h \
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem
 
-CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp \
+CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -1384,9 +1384,9 @@ CMakeFiles/Battle_Space.dir/EasyEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ 
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h
 
-CMakeFiles/Battle_Space.dir/Enemigos.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.cpp \
+CMakeFiles/Battle_Space.dir/Enemigos.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -1713,9 +1713,9 @@ CMakeFiles/Battle_Space.dir/Enemigos.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ I
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h
 
-CMakeFiles/Battle_Space.dir/GameOver.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.cpp \
+CMakeFiles/Battle_Space.dir/GameOver.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -2069,7 +2069,7 @@ CMakeFiles/Battle_Space.dir/GameOver.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ I
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc
 
-CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp \
+CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/qt/QtWidgets/QWidget \
   /usr/include/qt/QtWidgets/qwidget.h \
@@ -3043,25 +3043,25 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/qt/QtSerialPort/qserialportglobal.h \
   /usr/include/qt/QtCore/QDir \
   /usr/include/qt/QtCore/QRandomGenerator \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h \
   /usr/include/c++/12.2.1/fstream \
   /usr/include/c++/12.2.1/bits/codecvt.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
@@ -3069,9 +3069,9 @@ CMakeFiles/Battle_Space.dir/GameScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/c++/12.2.1/bits/fstream.tcc \
   /usr/include/qt/QtCore/QXmlStreamReader
 
-CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
+CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
   /usr/include/c++/12.2.1/cstddef \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -3086,7 +3086,7 @@ CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/12.2.1/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stddef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/ostream \
   /usr/include/c++/12.2.1/ios \
@@ -3256,9 +3256,9 @@ CMakeFiles/Battle_Space.dir/ListaSimple.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc
 
-CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp \
+CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -3585,9 +3585,9 @@ CMakeFiles/Battle_Space.dir/MediumEnemy.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h
 
-CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp \
+CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -3924,7 +3924,7 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtWidgets/QGraphicsScene \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsRectItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtCore/qvariant.h \
@@ -3965,21 +3965,21 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h \
   /usr/include/qt/QtWidgets/QPushButton \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -4579,7 +4579,7 @@ CMakeFiles/Battle_Space.dir/MenuDificultades.cpp.o: /home/oscaraad/TEC/2023SEMI/
   /usr/include/qt/QtWidgets/QGraphicsProxyWidget \
   /usr/include/qt/QtCore/QRectF
 
-CMakeFiles/Battle_Space.dir/Node.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.cpp \
+CMakeFiles/Battle_Space.dir/Node.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -4762,13 +4762,13 @@ CMakeFiles/Battle_Space.dir/Node.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
   /usr/include/c++/12.2.1/cstddef \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h
 
-CMakeFiles/Battle_Space.dir/NodeList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
+CMakeFiles/Battle_Space.dir/NodeList.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -4951,9 +4951,9 @@ CMakeFiles/Battle_Space.dir/NodeList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ I
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc
 
-CMakeFiles/Battle_Space.dir/Player.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.cpp \
+CMakeFiles/Battle_Space.dir/Player.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -5280,9 +5280,9 @@ CMakeFiles/Battle_Space.dir/Player.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h
 
-CMakeFiles/Battle_Space.dir/SerialPort.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.cpp \
+CMakeFiles/Battle_Space.dir/SerialPort.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.h \
   /usr/include/qt/QtSerialPort/QSerialPort \
   /usr/include/qt/QtSerialPort/qserialport.h \
   /usr/include/qt/QtCore/qiodevice.h \
@@ -5565,9 +5565,9 @@ CMakeFiles/Battle_Space.dir/SerialPort.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/c++/12.2.1/bits/parse_numbers.h \
   /usr/include/qt/QtSerialPort/qserialportglobal.h
 
-CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp \
+CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtCore/qobjectdefs.h \
@@ -5851,14 +5851,14 @@ CMakeFiles/Battle_Space.dir/SerialWorker.cpp.o: /home/oscaraad/TEC/2023SEMI/Dato
   /usr/include/qt/QtCore/qiodevice.h \
   /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtSerialPort/qserialportglobal.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h
 
-CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
+CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -6041,7 +6041,7 @@ CMakeFiles/Battle_Space.dir/SimpleList.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc
 
-CMakeFiles/Battle_Space.dir/WonScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.cpp \
+CMakeFiles/Battle_Space.dir/WonScreen.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/qt/QtCore/QDir \
   /usr/include/qt/QtCore/qdir.h \
@@ -6328,7 +6328,7 @@ CMakeFiles/Battle_Space.dir/WonScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ 
   /usr/include/c++/12.2.1/bits/parse_numbers.h \
   /usr/include/qt/QtCore/qshareddata.h \
   /usr/include/qt/QtCore/qhash.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -6399,9 +6399,9 @@ CMakeFiles/Battle_Space.dir/WonScreen.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ 
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc
 
-CMakeFiles/Battle_Space.dir/XmlReader.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.cpp \
+CMakeFiles/Battle_Space.dir/XmlReader.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.cpp \
   /usr/include/stdc-predef.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h \
   /usr/include/c++/12.2.1/iostream \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -6703,7 +6703,7 @@ CMakeFiles/Battle_Space.dir/XmlReader.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ 
   /usr/include/c++/12.2.1/ctime \
   /usr/include/c++/12.2.1/bits/parse_numbers.h
 
-CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/main.cpp \
+CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/main.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/qt/QtCore/QCoreApplication \
   /usr/include/qt/QtCore/qcoreapplication.h \
@@ -7024,15 +7024,15 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
   /usr/include/qt/QtCore/QTextStream \
   /usr/include/qt/QtCore/qtextstream.h \
   /usr/include/qt/QtCore/qiodevice.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/qobject.h \
   /usr/include/qt/QtSerialPort/QSerialPort \
   /usr/include/qt/QtSerialPort/qserialport.h \
   /usr/include/qt/QtSerialPort/qserialportglobal.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
-  /home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h \
+  /home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtGui/qpainter.h \
@@ -7097,27 +7097,19 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtCore/QCoreApplication:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/main.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.cpp:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.cpp:
 
 /usr/include/qt/QtWidgets/QPushButton:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.cpp:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.cpp:
 
 /usr/include/qt/QtCore/QXmlStreamReader:
 
@@ -7131,9 +7123,7 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/c++/12.2.1/fstream:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.h:
 
 /usr/include/qt/QtCore/QRandomGenerator:
 
@@ -7204,6 +7194,8 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 /usr/include/qt/QtWidgets/qmdiarea.h:
 
 /usr/include/qt/QtWidgets/qlistwidget.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MenuDificultades.h:
 
 /usr/include/qt/QtWidgets/qlcdnumber.h:
 
@@ -7303,8 +7295,6 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 
 /usr/include/qt/QtCore/qmargins.h:
 
-/usr/include/strings.h:
-
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/qt/QtGui/qinputmethod.h:
@@ -7322,6 +7312,8 @@ CMakeFiles/Battle_Space.dir/main.cpp.o: /home/oscaraad/TEC/2023SEMI/Datos\ II/CE
 /usr/include/c++/12.2.1/bits/stl_relops.h:
 
 /usr/include/qt/QtGui/qaccessible.h:
+
+/usr/include/qt/QtGui/qopengltextureblitter.h:
 
 /usr/include/gnu/stubs-64.h:
 
@@ -7345,6 +7337,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/c++/12.2.1/numeric:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.cpp:
+
 /usr/include/c++/12.2.1/bits/stl_numeric.h:
 
 /usr/include/c++/12.2.1/bits/random.tcc:
@@ -7367,8 +7361,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/qt/QtCore/qsharedpointer.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp:
-
 /usr/include/c++/12.2.1/iterator:
 
 /usr/include/qt/QtCore/qconcatenatetablesproxymodel.h:
@@ -7387,11 +7379,11 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/c++/12.2.1/cerrno:
 
-/usr/include/bits/types.h:
-
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/features-time64.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
 
 /usr/include/qt/QtWidgets/qabstractscrollarea.h:
 
@@ -7419,6 +7411,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/qt/QtCore/qstring.h:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.cpp:
+
 /usr/include/c++/12.2.1/string_view:
 
 /usr/include/c++/12.2.1/bits/cxxabi_forced.h:
@@ -7445,6 +7439,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/qt/QtCore/qwaitcondition.h:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/WonScreen.h:
+
 /usr/include/locale.h:
 
 /usr/include/qt/QtWidgets/QGraphicsScene:
@@ -7454,6 +7450,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 /usr/include/qt/QtCore/QList:
 
 /usr/include/qt/QtWidgets/qslider.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.h:
 
 /usr/include/qt/QtCore/qregexp.h:
 
@@ -7474,8 +7472,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 /usr/include/qt/QtGui/qopenglext.h:
 
 /usr/include/c++/12.2.1/stdexcept:
-
-/usr/include/c++/12.2.1/bits/unique_ptr.h:
 
 /usr/include/c++/12.2.1/bits/basic_string.h:
 
@@ -7533,6 +7529,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 /usr/include/bits/time64.h:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h:
+
 /usr/include/qt/QtGui/qopenglshaderprogram.h:
 
 /usr/include/qt/QtWidgets/qheaderview.h:
@@ -7557,6 +7555,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_GameScreen.cpp:
 
 Battle_Space_autogen/mocs_compilation.cpp:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h:
+
 /usr/include/qt/QtCore/qsettings.h:
 
 /usr/include/qt/QtGui/qfontdatabase.h:
@@ -7571,23 +7571,17 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qstringlist.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp:
-
 /usr/include/qt/QtWidgets/QGraphicsPixmapItem:
 
 /usr/include/c++/12.2.1/iosfwd:
 
 /usr/include/c++/12.2.1/bits/new_allocator.h:
 
-/usr/include/bits/types/time_t.h:
-
 /usr/include/qt/QtCore/qalgorithms.h:
 
 /usr/include/c++/12.2.1/bits/parse_numbers.h:
 
 /usr/include/qt/QtCore/QSize:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.cpp:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -7610,10 +7604,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/qt/QtWidgets/qfiledialog.h:
 
 /usr/include/c++/12.2.1/bits/uses_allocator.h:
-
-/usr/include/qt/QtWidgets/QCommonStyle:
-
-/usr/include/c++/12.2.1/ext/aligned_buffer.h:
 
 /usr/include/stdlib.h:
 
@@ -7665,8 +7655,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/bits/ios_base.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.cpp:
-
 /usr/include/sys/types.h:
 
 /usr/include/qt/QtWidgets/QGraphicsItem:
@@ -7682,8 +7670,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/c++/12.2.1/bits/stl_list.h:
 
 /usr/include/c++/12.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/12.2.1/array:
 
 /usr/include/c++/12.2.1/mutex:
 
@@ -7791,6 +7777,12 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtGui/qsurfaceformat.h:
 
+/usr/include/bits/types/time_t.h:
+
+/usr/include/qt/QtWidgets/qtablewidget.h:
+
+/usr/include/c++/12.2.1/bits/stl_heap.h:
+
 /usr/include/qt/QtGui/qopengl.h:
 
 /usr/include/c++/12.2.1/bits/stringfwd.h:
@@ -7814,10 +7806,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/bits/types/error_t.h:
 
 /usr/include/c++/12.2.1/bits/functexcept.h:
-
-/usr/include/qt/QtGui/qopengltextureblitter.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h:
 
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -7860,8 +7848,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/qt/QtCore/qline.h:
 
 /usr/include/wchar.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/XmlReader.cpp:
 
 /usr/include/c++/12.2.1/bits/allocated_ptr.h:
 
@@ -7919,6 +7905,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/functional:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/main.cpp:
+
 /usr/include/qt/QtCore/qfile.h:
 
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
@@ -7942,8 +7930,6 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/qt/QtWidgets/qlayoutitem.h:
 
 /usr/include/c++/12.2.1/bits/exception_ptr.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.cpp:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -8023,13 +8009,17 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtGui/qpalette.h:
 
+/usr/include/c++/12.2.1/array:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameScreen.h:
+
+/usr/include/qt/QtGui/qopenglframebufferobject.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h:
 
 /usr/include/qt/QtCore/qglobal.h:
 
 /usr/include/qt/QtCore/qstringalgorithms.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp:
 
 /usr/include/stdio.h:
 
@@ -8040,6 +8030,8 @@ Battle_Space_autogen/mocs_compilation.cpp:
 /usr/include/c++/12.2.1/condition_variable:
 
 /usr/include/qt/QtCore/qidentityproxymodel.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -8123,21 +8115,17 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12.2.1/future:
 
-/usr/include/qt/QtGui/QtGui:
-
-/usr/include/c++/12.2.1/bits/atomic_futex.h:
-
 /usr/include/qt/QtCore/qtimer.h:
 
 /usr/include/qt/QtCore/qbasictimer.h:
 
 /usr/include/qt/QtWidgets/QLabel:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h:
-
 /usr/include/qt/QtWidgets/qlabel.h:
 
 /usr/include/c++/12.2.1/ostream:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h:
 
 /usr/include/qt/QtCore/qstate.h:
 
@@ -8163,39 +8151,39 @@ Battle_Space_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtGui/qvector4d.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.h:
+/usr/include/qt/QtGui/qclipboard.h:
 
-/usr/include/qt/QtCore/qcborcommon.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Node.h:
+/usr/include/c++/12.2.1/bits/std_mutex.h:
 
-/usr/include/qt/QtCore/qregularexpression.h:
+/usr/include/qt/QtGui/qimagewriter.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Player.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SimpleList.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h:
+/usr/include/qt/QtWidgets/qformlayout.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
+/usr/include/qt/QtCore/qitemselectionmodel.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/MediumEnemy.h:
+/usr/include/c++/12.2.1/bits/unique_ptr.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.h:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/include/qt/QtWidgets/qcompleter.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialWorker.h:
 
 Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp:
+/usr/include/qt/QtWidgets/QCommonStyle:
 
-/usr/include/qt/QtCore/qresultstore.h:
+/usr/include/c++/12.2.1/ext/aligned_buffer.h:
 
-/usr/include/qt/QtCore/qabstractanimation.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.cpp:
 
-/usr/include/qt/QtGui/qaccessibleplugin.h:
+/usr/include/qt/QtGui/QtGui:
+
+/usr/include/c++/12.2.1/bits/atomic_futex.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h:
 
 /usr/include/qt/QtGui/qtextoption.h:
 
@@ -8205,21 +8193,33 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtCore/qfiledevice.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp:
+/usr/include/strings.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/DifficultEnemy.cpp:
 
-/usr/include/qt/QtWidgets/qtablewidget.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.cpp:
 
-/usr/include/c++/12.2.1/bits/stl_heap.h:
+/usr/include/qt/QtWidgets/qscroller.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.h:
+/usr/include/qt/QtGui/qmatrix4x4.h:
 
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.h:
+/usr/include/bits/types.h:
 
-/usr/include/qt/QtWidgets/qwhatsthis.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.cpp:
 
-/usr/include/qt/QtCore/qtranslator.h:
+/usr/include/qt/QtGui/qimageiohandler.h:
+
+/usr/include/qt/QtGui/qopenglbuffer.h:
+
+/usr/include/qt/QtWidgets/qdatawidgetmapper.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Enemigos.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/GameOver.cpp:
+
+/usr/include/c++/12.2.1/pstl/pstl_config.h:
+
+/usr/include/qt/QtGui/qtextformat.h:
 
 /usr/include/qt/QtWidgets/QWidget:
 
@@ -8228,6 +8228,12 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtCore/QtCore:
 
 /usr/include/qt/QtCore/QtCoreDepends:
+
+/usr/include/qt/QtCore/qresultstore.h:
+
+/usr/include/qt/QtCore/qabstractanimation.h:
+
+/usr/include/qt/QtGui/qaccessibleplugin.h:
 
 /usr/include/qt/QtCore/qabstractnativeeventfilter.h:
 
@@ -8287,6 +8293,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtCore/qcborvalue.h:
 
+/usr/include/qt/QtCore/qcborcommon.h:
+
 /usr/include/qt/QtCore/qdebug.h:
 
 /usr/include/qt/QtCore/qtextstream.h:
@@ -8296,6 +8304,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/qt/QtCore/qcontiguouscache.h:
+
+/usr/include/qt/QtCore/qregularexpression.h:
 
 /usr/include/c++/12.2.1/bits/stl_vector.h:
 
@@ -8357,10 +8367,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtWidgets/qabstractspinbox.h:
 
-/usr/include/qt/QtWidgets/qformlayout.h:
-
-/usr/include/qt/QtCore/qitemselectionmodel.h:
-
 /usr/include/qt/QtCore/qjsonarray.h:
 
 /usr/include/qt/QtCore/qeventloop.h:
@@ -8398,8 +8404,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtGui/qiconengine.h:
 
 /usr/include/qt/QtWidgets/qframe.h:
-
-/home/oscaraad/TEC/2023SEMI/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h:
 
 /usr/include/bits/math-vector.h:
 
@@ -8481,6 +8485,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtCore/qpointer.h:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/NodeList.h:
+
 /usr/include/qt/QtCore/qprocess.h:
 
 /usr/include/qt/QtCore/qvariantanimation.h:
@@ -8545,6 +8551,10 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtCore/qtimeline.h:
 
+/usr/include/qt/QtWidgets/qwhatsthis.h:
+
+/usr/include/qt/QtCore/qtranslator.h:
+
 /usr/include/qt/QtCore/qtransposeproxymodel.h:
 
 /usr/include/qt/QtCore/qtypetraits.h:
@@ -8552,6 +8562,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/c++/12.2.1/bits/stl_map.h:
 
 /usr/include/qt/QtCore/qwineventnotifier.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/SerialPort.cpp:
 
 /usr/include/qt/QtCore/QTimer:
 
@@ -8564,10 +8576,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtGui/qevent.h:
 
 /usr/include/qt/QtGui/qsurface.h:
-
-/usr/include/c++/12.2.1/pstl/pstl_config.h:
-
-/usr/include/qt/QtGui/qtextformat.h:
 
 /usr/include/qt/QtWidgets/qprogressbar.h:
 
@@ -8585,7 +8593,7 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtCore/QRect:
 
-/usr/include/qt/QtGui/qclipboard.h:
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/Bullets.h:
 
 /usr/include/qt/QtGui/qdesktopservices.h:
 
@@ -8609,14 +8617,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtGui/qopenglextrafunctions.h:
 
-/usr/include/c++/12.2.1/bits/std_mutex.h:
-
-/usr/include/qt/QtGui/qimagewriter.h:
-
-/usr/include/qt/QtWidgets/qscroller.h:
-
-/usr/include/qt/QtGui/qmatrix4x4.h:
-
 /usr/include/qt/QtGui/qvector3d.h:
 
 /usr/include/c++/12.2.1/type_traits:
@@ -8633,12 +8633,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/inttypes.h:
 
-/usr/include/qt/QtGui/qimageiohandler.h:
-
-/usr/include/qt/QtGui/qopenglbuffer.h:
-
-/usr/include/qt/QtWidgets/qdatawidgetmapper.h:
-
 /usr/include/qt/QtWidgets/qtreeview.h:
 
 /usr/include/qt/QtCore/QScopedPointer:
@@ -8646,8 +8640,6 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtGui/qbrush.h:
 
 /usr/include/qt/QtWidgets/qstyleoption.h:
-
-/usr/include/qt/QtGui/qopenglframebufferobject.h:
 
 /usr/include/c++/12.2.1/limits:
 
@@ -8721,6 +8713,8 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 
 /usr/include/qt/QtWidgets/qcalendarwidget.h:
 
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/ListaSimple.cpp:
+
 /usr/include/qt/QtWidgets/qcheckbox.h:
 
 /usr/include/qt/QtWidgets/qcolordialog.h:
@@ -8730,6 +8724,12 @@ Battle_Space_autogen/EWIEGA46WW/moc_SerialWorker.cpp:
 /usr/include/qt/QtWidgets/qdesktopwidget.h:
 
 /usr/include/qt/QtWidgets/qcolumnview.h:
+
+/usr/include/bits/cpu-set.h:
+
+/home/oscaraad/TEC/Datos\ II/CE2103-Proyecto1/Proyecto/EasyEnemy.h:
+
+/usr/include/qt/QtWidgets/qcompleter.h:
 
 /usr/include/qt/QtWidgets/qcommonstyle.h:
 

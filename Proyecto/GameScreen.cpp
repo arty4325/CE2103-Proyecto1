@@ -28,7 +28,10 @@
 
 using namespace std;
 QThread workerThread; // variable global para el hilo
-
+/**
+ * @brief Metodo constructor de la clase GameScreen
+ * @param Dificultad La dificultad del juego, facil medio o dificil
+*/
 GameScreen::GameScreen(int Dificultad, QWidget *parent)
 {
 
@@ -261,6 +264,10 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     show();
 }
 
+/**
+ * @brief Permite animar las balas y el movimiento del jugador cuando llega un valor del  arduino
+ * @param dataList Los valores que el arduino arroja en el serial
+ */
 void GameScreen::animate(const ListaSimple &dataList) {
     //dataList.printList();
     //dataList.printList();
@@ -321,6 +328,9 @@ void GameScreen::animate(const ListaSimple &dataList) {
 
 }
 
+/**
+ * @brief Funcion shootBullets que permite disparar las balas segun el valor arorjado por el aduino
+ */
 void GameScreen::shootBullets(){
 
     int waitTime = dataList.getPosVal(3)*5;
@@ -353,6 +363,9 @@ void GameScreen::shootBullets(){
 
 }
 
+/**
+ * @brief Permite la aparicion de los enemigos en pantalla
+ */
 void GameScreen::spawnEnemys() {
     labelEnemOleadas ->setText("Faciles: " + QString::number(EnemigosFaciles) +
                                " Medios " + QString::number(EnemigosMedios) +
@@ -397,7 +410,9 @@ void GameScreen::spawnEnemys() {
 
 
 }
-
+/**
+ * @brief Permite mover los enemigos cada cierto tiempo, dependiendo del movimiento descrito por la especificacion
+ */
 void GameScreen::moveEnemys() {
     labelVidas ->setText("Vidas: " + QString::number(cantVidas));
     //cout << easyEnemys.getSize() << endl;
@@ -458,7 +473,9 @@ void GameScreen::moveEnemys() {
     }
 }
 
-
+/**
+ * @brief revisa cada cierto tiempo si existio una colision entre un enemigo y una bala
+ */
 void GameScreen::checkCollisions() {
 
     for (int i = 0; i < bulletsList.getSize(); i++){
@@ -530,7 +547,9 @@ void GameScreen::checkCollisions() {
     }
 }
 
-
+/**
+ * @brief Revisa en que oleada se esta y pasa de oleada en caso de que se haya terminado
+ */
 void GameScreen::checkOleada(){
     labelFase ->setText("Fase: " + QString::number(fase));
     labelOleada -> setText("Oleada: " + QString::number(cantOleadas - oleada));
@@ -568,6 +587,11 @@ void GameScreen::checkOleada(){
     worker -> writeData(byteArray);
 }
 
+/**
+ * @brief Ejecuta los poderes seleccionados y se encarga de la paginacion
+ * @param tempSelecStrat Estrategia seleccionada
+ * @param tempSelecPower Poder seleccionado
+ */
 void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
     cout << "Ejecuto " << tempSelecStrat << tempSelecPower << endl;
     if (tempSelecStrat == firstStrat.getPosVal(0) || tempSelecStrat == secondStrat.getPosVal(0)){
@@ -658,6 +682,9 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
     hasChoosedPower = false;
 }
 
+/**
+ * @brief Se encarga de parar la ejecucion cuando se tienen que parar 5 secs para que cargue
+ */
 void GameScreen::pararEjecucion() {
     cout << "Se para la ejecucion del juego" << endl;
     moveTimer ->setInterval(velocidadEnemigos);
@@ -673,18 +700,30 @@ void GameScreen::pararEjecucion() {
 
 }
 
+/**
+ * @brief Para la ejecucion del primer poder de la primera estrategia
+ */
 void GameScreen::stopFirstFirt() {
     cantBullets = tempCantBullets;
 }
 
+/**
+ * @brief Para la ejecucion del segundo poder de la primera estrategia
+ */
 void GameScreen::stopFirstSecond() {
     velocidadJugador = 20;
 }
 
+/**
+ * @brief Para la ejecucion del segundo poder de la segunda estrategia
+ */
 void GameScreen::stopSecondSecond() {
     velocidadBalas = 10;
 }
 
+/**
+ * @brief Para la ejecucion del segundo poder  de la cuarta estrategia
+ */
 void GameScreen::stopFourthSecond() {
     onePixel = 1;
     twoPixels = 2;

@@ -7,6 +7,9 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Metodo constructor de la clase GameOver
+ */
 GameOver::GameOver(QWidget *parent) {
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);
