@@ -29,8 +29,8 @@ class GameScreen: public QGraphicsView{
 Q_OBJECT
 private:
     string labelsPoderes[4][2] = {
-            {"Balas ilimitadas 5s", "Jugador 25% rapido"},
-            {"Elim naves en pantalla", "Elim todos los dif media de oleada"},
+            {"Balas ilimitadas 10s", "Jugador 25% rapido 10s"},
+            {"Agrega 100 balas a cartucho", "Collector recupera dano"},
             {"Baja vida naves 25%", "Balas mas rapidas"},
             {"Elimina ultima fase", "Congela naves enem"}
     };
@@ -95,7 +95,7 @@ private:
     // En el arreglo el orden de la info es:
     // velocidad, enemigos faciles, enemigos medios, enemigos dificiles
 
-    int infoOleadas[5][4] = {
+    int infoOleadas[5][3] = {
             {10, 0, 0},
             {15, 5, 0},
             {15, 10, 0},

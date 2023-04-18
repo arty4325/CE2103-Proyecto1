@@ -654,6 +654,7 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
         twoPixels = firstStrat.getPosVal(2);
         QTimer::singleShot(10000, this, &GameScreen::stopFourthSecond);
     }
+    hasChoosedPower = false;
 }
 
 void GameScreen::pararEjecucion() {
