@@ -21,3 +21,8 @@ void Bullets::disminuirDano() {
 int Bullets::getDano() {
     return damage;
 }
+
+void Bullets::setDano(int dano) {
+    damage = dano;
+}
+

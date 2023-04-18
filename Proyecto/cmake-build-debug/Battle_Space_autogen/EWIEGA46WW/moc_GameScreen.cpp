@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_GameScreen_t {
-    QByteArrayData data[14];
-    char stringdata0[159];
+    QByteArrayData data[18];
+    char stringdata0[223];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,14 +45,20 @@ QT_MOC_LITERAL(9, 93, 11), // "checkOleada"
 QT_MOC_LITERAL(10, 105, 8), // "exePower"
 QT_MOC_LITERAL(11, 114, 14), // "tempSelecStrat"
 QT_MOC_LITERAL(12, 129, 14), // "tempSelecPower"
-QT_MOC_LITERAL(13, 144, 14) // "pararEjecucion"
+QT_MOC_LITERAL(13, 144, 14), // "pararEjecucion"
+QT_MOC_LITERAL(14, 159, 13), // "stopFirstFirt"
+QT_MOC_LITERAL(15, 173, 15), // "stopFirstSecond"
+QT_MOC_LITERAL(16, 189, 16), // "stopSecondSecond"
+QT_MOC_LITERAL(17, 206, 16) // "stopFourthSecond"
 
     },
     "GameScreen\0animate\0\0ListaSimple\0"
     "dataList\0shootBullets\0spawnEnemys\0"
     "moveEnemys\0checkCollisions\0checkOleada\0"
     "exePower\0tempSelecStrat\0tempSelecPower\0"
-    "pararEjecucion"
+    "pararEjecucion\0stopFirstFirt\0"
+    "stopFirstSecond\0stopSecondSecond\0"
+    "stopFourthSecond"
 };
 #undef QT_MOC_LITERAL
 
@@ -62,7 +68,7 @@ static const uint qt_meta_data_GameScreen[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -70,14 +76,18 @@ static const uint qt_meta_data_GameScreen[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   54,    2, 0x0a /* Public */,
-       5,    0,   57,    2, 0x0a /* Public */,
-       6,    0,   58,    2, 0x0a /* Public */,
-       7,    0,   59,    2, 0x0a /* Public */,
-       8,    0,   60,    2, 0x0a /* Public */,
-       9,    0,   61,    2, 0x0a /* Public */,
-      10,    2,   62,    2, 0x0a /* Public */,
-      13,    0,   67,    2, 0x0a /* Public */,
+       1,    1,   74,    2, 0x0a /* Public */,
+       5,    0,   77,    2, 0x0a /* Public */,
+       6,    0,   78,    2, 0x0a /* Public */,
+       7,    0,   79,    2, 0x0a /* Public */,
+       8,    0,   80,    2, 0x0a /* Public */,
+       9,    0,   81,    2, 0x0a /* Public */,
+      10,    2,   82,    2, 0x0a /* Public */,
+      13,    0,   87,    2, 0x0a /* Public */,
+      14,    0,   88,    2, 0x0a /* Public */,
+      15,    0,   89,    2, 0x0a /* Public */,
+      16,    0,   90,    2, 0x0a /* Public */,
+      17,    0,   91,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -87,6 +97,10 @@ static const uint qt_meta_data_GameScreen[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,   11,   12,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -106,6 +120,10 @@ void GameScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 5: _t->checkOleada(); break;
         case 6: _t->exePower((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         case 7: _t->pararEjecucion(); break;
+        case 8: _t->stopFirstFirt(); break;
+        case 9: _t->stopFirstSecond(); break;
+        case 10: _t->stopSecondSecond(); break;
+        case 11: _t->stopFourthSecond(); break;
         default: ;
         }
     }
@@ -140,13 +158,13 @@ int GameScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 12)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 8;
+        _id -= 12;
     }
     return _id;
 }

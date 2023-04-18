@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Strategy3>
     <Number ability = "2"/>
-    <Power1 abilities="4"/>
-    <Power2 abilities="15"/>
+    <Power1 abilities="50"/>
+    <Power2 abilities="30"/>
 </Strategy3>

@@ -12,6 +12,7 @@ public:
 
     void disminuirDano();
     int getDano();
+    void setDano(int dano);
 private:
     int damage;
 };

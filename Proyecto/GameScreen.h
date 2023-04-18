@@ -70,9 +70,12 @@ private:
     int fase;
 
     int cantBullets;
+    int tempCantBullets;
     int cantVidas;
     int velocidadJugador;
     int velocidadBalas;
+    int onePixel;
+    int twoPixels;
     int poteDisparo;
     int faseJuego;
     int oleadaJuego;
@@ -117,6 +120,16 @@ public slots:
     void checkOleada();
     void exePower(int tempSelecStrat, int tempSelecPower);
     void pararEjecucion();
+
+    void stopFirstFirt();
+    void stopFirstSecond();
+    void stopSecondSecond();
+    //void stopThirdFirst();
+    //void stopThirdSecond();
+    //void stopFourthFirst();
+    void stopFourthSecond();
+
+
     //void fireBullets(const ListaSimple &dataList);
 };
 

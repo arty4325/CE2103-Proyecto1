@@ -67,6 +67,8 @@ GameScreen::GameScreen(int Dificultad, QWidget *parent)
     tempSelecPower = 0;
     tempSelecStrat = 0;
     velocidadBalas = 10;
+    onePixel = 1;
+    twoPixels = 2;
     labelsPowers.insertHead("Cuarto Estrategia");
     labelsPowers.insertHead("Tercer Estrategia");
     labelsPowers.insertHead("Segundo Estrategia");
@@ -400,7 +402,7 @@ void GameScreen::moveEnemys() {
     //cout << easyEnemys.getSize() << endl;
     for (int i = 0; i < easyEnemys.getSize(); i++){
         EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
-        tempEnemy -> setPos(tempEnemy->pos().x() - 1, tempEnemy->pos().y());
+        tempEnemy -> setPos(tempEnemy->pos().x() - onePixel, tempEnemy->pos().y());
         if (tempEnemy-> pos().x() <= 0 ){
             //cout << "SE SALIO" << endl;
             worker -> writeData("6");
@@ -413,7 +415,7 @@ void GameScreen::moveEnemys() {
     }
     for (int i = 0; i < mediumEnemys.getSize(); i++){
         MediumEnemy* tempEnemy = mediumEnemys.getPosVal(i);
-        tempEnemy -> setPos(tempEnemy ->pos().x() - 2, tempEnemy->pos().y());
+        tempEnemy -> setPos(tempEnemy ->pos().x() - twoPixels, tempEnemy->pos().y());
         if (tempEnemy -> pos().x() <= 0){
             //cout << "SE SALIO MEDIUM " << endl;
             worker -> writeData("6");
@@ -428,9 +430,9 @@ void GameScreen::moveEnemys() {
         DifficultEnemy* tempEnemy = difficultEnemys.getPosVal(i);
         bool direc = tempEnemy->getDirection();
         if (direc){
-            tempEnemy -> setPos(tempEnemy -> pos().x() - 2, tempEnemy -> pos().y() + 1);
+            tempEnemy -> setPos(tempEnemy -> pos().x() - twoPixels, tempEnemy -> pos().y() + onePixel);
         } else if (not direc){
-            tempEnemy -> setPos(tempEnemy -> pos().x() - 2, tempEnemy -> pos().y() - 1);
+            tempEnemy -> setPos(tempEnemy -> pos().x() - twoPixels, tempEnemy -> pos().y() - onePixel);
         }
         if ((tempEnemy -> pos().y() <= 100) || (tempEnemy-> pos().y() >= 500) ){
             tempEnemy->setDirection( not tempEnemy->getDirection());
@@ -595,30 +597,62 @@ void GameScreen::exePower(int tempSelecStrat, int tempSelecPower) {
         firstStrat.insertHead(stoi(a));
         firstStrat.insertHead(stoi(x));
     }
+
     if (tempSelecStrat == 0 && tempSelecPower == 0){
         cout << " Primer primer" << endl;
         cout << firstStrat.getPosVal(1) << endl;
+        tempCantBullets = cantBullets;
+        cantBullets = firstStrat.getPosVal(1) ;
+        QTimer::singleShot(10000, this, &GameScreen::stopFirstFirt);
     } else if (tempSelecStrat == 0 && tempSelecPower == 1){
         cout << " Primer Segundo" << endl;
         cout << firstStrat.getPosVal(2) << endl;
+        velocidadJugador = firstStrat.getPosVal(2);
+        QTimer::singleShot(10000, this, &GameScreen::stopFirstSecond);
     } else if (tempSelecStrat == 1 && tempSelecPower == 0){
         cout << "Segundo Primero " << endl;
         cout << secondStrat.getPosVal(1) << endl;
+        cantBullets += secondStrat.getPosVal(1);
     } else if (tempSelecStrat == 1 && tempSelecPower == 1){
         cout << "Segundo Segundo " << endl;
         cout << secondStrat.getPosVal(2) << endl;
+        for (int i = 0; i < bulletCollector.getSize(); i++){
+            Bullets* bullet = bulletCollector.getPosVal(i);
+            bullet->setDano(secondStrat.getPosVal(2));
+        }
+
     } else if (tempSelecStrat == 2 && tempSelecPower == 0){
         cout << "Tercer primero " << endl;
         cout << firstStrat.getPosVal(1) << endl;
+        for (int i = 0; i < easyEnemys.getSize(); i++){
+            EasyEnemy* tempEnemy = easyEnemys.getPosVal(i);
+            tempEnemy->disminuirVida(firstStrat.getPosVal(1));
+        }
+        for (int k = 0; k < mediumEnemys.getSize(); k++){
+            MediumEnemy* tempEnemy = mediumEnemys.getPosVal(k);
+            tempEnemy ->disminuirVida(firstStrat.getPosVal(1));
+        }
+        for (int j = 0; j < difficultEnemys.getSize(); j ++){
+            DifficultEnemy* tempEnemy = difficultEnemys.getPosVal(j);
+            tempEnemy ->disminuirVida(firstStrat.getPosVal(1));
+        }
+
     } else if (tempSelecStrat == 2 && tempSelecPower == 1){
         cout << "Tercer Segundo " << endl;
         cout << firstStrat.getPosVal(2) << endl;
+        velocidadBalas = firstStrat.getPosVal(2);
+        QTimer::singleShot(10000, this, &GameScreen::stopSecondSecond);
+
     } else if (tempSelecStrat == 3 && tempSelecPower == 0){
         cout << "Cuarto Primer " << endl;
         cout << firstStrat.getPosVal(1) << endl;
+        oleada = firstStrat.getPosVal(1);
     } else if (tempSelecStrat == 3 && tempSelecPower == 1){
         cout << "Cuarto Segundo " << endl;
         cout << firstStrat.getPosVal(2) << endl;
+        onePixel = firstStrat.getPosVal(2);
+        twoPixels = firstStrat.getPosVal(2);
+        QTimer::singleShot(10000, this, &GameScreen::stopFourthSecond);
     }
 }
 
@@ -634,4 +668,22 @@ void GameScreen::pararEjecucion() {
     collisionTimer -> start();
     oleadaTimer -> setInterval(1000);
     oleadaTimer -> start();
+
+}
+
+void GameScreen::stopFirstFirt() {
+    cantBullets = tempCantBullets;
+}
+
+void GameScreen::stopFirstSecond() {
+    velocidadJugador = 20;
+}
+
+void GameScreen::stopSecondSecond() {
+    velocidadBalas = 10;
+}
+
+void GameScreen::stopFourthSecond() {
+    onePixel = 1;
+    twoPixels = 2;
 }
