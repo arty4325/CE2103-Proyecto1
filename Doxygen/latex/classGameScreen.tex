@@ -1,0 +1,109 @@
+\hypertarget{classGameScreen}{}\doxysection{Game\+Screen Class Reference}
+\label{classGameScreen}\index{GameScreen@{GameScreen}}
+Inheritance diagram for Game\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGameScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameScreen_a036ee41ebfaa8a19201089a36683013f}{animate}} (const \mbox{\hyperlink{classListaSimple}{Lista\+Simple}} \&data\+List)
+\begin{DoxyCompactList}\small\item\em Permite animar las balas y el movimiento del jugador cuando llega un valor del arduino. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_ae0248a9e7f219cc3e0d6314f7b53d1e9}\label{classGameScreen_ae0248a9e7f219cc3e0d6314f7b53d1e9}} 
+void {\bfseries shoot\+Bullets} ()
+\begin{DoxyCompactList}\small\item\em Funcion shoot\+Bullets que permite disparar las balas segun el valor arorjado por el aduino. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_ad634d9595d90bc30d71667319e4378b5}\label{classGameScreen_ad634d9595d90bc30d71667319e4378b5}} 
+void {\bfseries spawn\+Enemys} ()
+\begin{DoxyCompactList}\small\item\em Permite la aparicion de los enemigos en pantalla. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_ab54cb1d7bde08e4337a71ebd6a805ba3}\label{classGameScreen_ab54cb1d7bde08e4337a71ebd6a805ba3}} 
+void {\bfseries move\+Enemys} ()
+\begin{DoxyCompactList}\small\item\em Permite mover los enemigos cada cierto tiempo, dependiendo del movimiento descrito por la especificacion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_ade99e089544db3a5329f4aa224c73cdf}\label{classGameScreen_ade99e089544db3a5329f4aa224c73cdf}} 
+void {\bfseries check\+Collisions} ()
+\begin{DoxyCompactList}\small\item\em revisa cada cierto tiempo si existio una colision entre un enemigo y una bala \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_af1620d663ffa7d305de23d52cb7c09df}\label{classGameScreen_af1620d663ffa7d305de23d52cb7c09df}} 
+void {\bfseries check\+Oleada} ()
+\begin{DoxyCompactList}\small\item\em Revisa en que oleada se esta y pasa de oleada en caso de que se haya terminado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameScreen_ad7e0bba60eca512f8eb6e46def367551}{exe\+Power}} (int temp\+Selec\+Strat, int temp\+Selec\+Power)
+\begin{DoxyCompactList}\small\item\em Ejecuta los poderes seleccionados y se encarga de la paginacion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_afd20fb6feebd2b11de7d2db51d9cf047}\label{classGameScreen_afd20fb6feebd2b11de7d2db51d9cf047}} 
+void {\bfseries parar\+Ejecucion} ()
+\begin{DoxyCompactList}\small\item\em Se encarga de parar la ejecucion cuando se tienen que parar 5 secs para que cargue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_a86ab5a8ff6084547f5a6d8f93ab43aef}\label{classGameScreen_a86ab5a8ff6084547f5a6d8f93ab43aef}} 
+void {\bfseries stop\+First\+Firt} ()
+\begin{DoxyCompactList}\small\item\em Para la ejecucion del primer poder de la primera estrategia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_a184d53a6864aafe8265c6c2a84dc6487}\label{classGameScreen_a184d53a6864aafe8265c6c2a84dc6487}} 
+void {\bfseries stop\+First\+Second} ()
+\begin{DoxyCompactList}\small\item\em Para la ejecucion del segundo poder de la primera estrategia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_a3c32357329701245908393e37a4baa0b}\label{classGameScreen_a3c32357329701245908393e37a4baa0b}} 
+void {\bfseries stop\+Second\+Second} ()
+\begin{DoxyCompactList}\small\item\em Para la ejecucion del segundo poder de la segunda estrategia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameScreen_a306cbfe7f4b34ec55e1480224467d4e3}\label{classGameScreen_a306cbfe7f4b34ec55e1480224467d4e3}} 
+void {\bfseries stop\+Fourth\+Second} ()
+\begin{DoxyCompactList}\small\item\em Para la ejecucion del segundo poder de la cuarta estrategia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameScreen_adafd5eb522945ee2005315c1dca34f6f}{Game\+Screen}} (int Dificultad, QWidget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Metodo constructor de la clase \mbox{\hyperlink{classGameScreen}{Game\+Screen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGameScreen_adafd5eb522945ee2005315c1dca34f6f}\label{classGameScreen_adafd5eb522945ee2005315c1dca34f6f}} 
+\index{GameScreen@{GameScreen}!GameScreen@{GameScreen}}
+\index{GameScreen@{GameScreen}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{GameScreen()}{GameScreen()}}
+{\footnotesize\ttfamily Game\+Screen\+::\+Game\+Screen (\begin{DoxyParamCaption}\item[{int}]{Dificultad,  }\item[{QWidget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Metodo constructor de la clase \mbox{\hyperlink{classGameScreen}{Game\+Screen}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dificultad} & La dificultad del juego, facil medio o dificil \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameScreen_a036ee41ebfaa8a19201089a36683013f}\label{classGameScreen_a036ee41ebfaa8a19201089a36683013f}} 
+\index{GameScreen@{GameScreen}!animate@{animate}}
+\index{animate@{animate}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{animate}{animate}}
+{\footnotesize\ttfamily void Game\+Screen\+::animate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classListaSimple}{Lista\+Simple}} \&}]{data\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Permite animar las balas y el movimiento del jugador cuando llega un valor del arduino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+List} & Los valores que el arduino arroja en el serial \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameScreen_ad7e0bba60eca512f8eb6e46def367551}\label{classGameScreen_ad7e0bba60eca512f8eb6e46def367551}} 
+\index{GameScreen@{GameScreen}!exePower@{exePower}}
+\index{exePower@{exePower}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{exePower}{exePower}}
+{\footnotesize\ttfamily void Game\+Screen\+::exe\+Power (\begin{DoxyParamCaption}\item[{int}]{temp\+Selec\+Strat,  }\item[{int}]{temp\+Selec\+Power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Ejecuta los poderes seleccionados y se encarga de la paginacion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp\+Selec\+Strat} & Estrategia seleccionada \\
+\hline
+{\em temp\+Selec\+Power} & Poder seleccionado \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Screen.\+h\item 
+Game\+Screen.\+cpp\end{DoxyCompactItemize}

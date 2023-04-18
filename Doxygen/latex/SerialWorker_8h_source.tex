@@ -1,0 +1,40 @@
+\hypertarget{SerialWorker_8h_source}{}\doxysection{Serial\+Worker.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ oscaraad\ on\ 31/03/23.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ BATTLE\_SPACE\_SERIALWORKER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ BATTLE\_SPACE\_SERIALWORKER\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QSerialPort>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}ListaSimple.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSerialWorker}{SerialWorker}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ Q\_OBJECT}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classSerialWorker}{SerialWorker}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classSerialWorker}{\string~SerialWorker}}()\ \{\}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ signals:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ dataReceived(\mbox{\hyperlink{classListaSimple}{ListaSimple}}\ lista);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ finished();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSerialWorker_a0f4fc0c30e96e6c998c17b13d16bb9eb}{readData}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSerialWorker_ab836401e1ad40dad0d1a1f6f80a124a8}{writeData}}(\textcolor{keyword}{const}\ QByteArray\ \&data);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ QSerialPort\ m\_serialPort;}
+\DoxyCodeLine{00029\ \ \ \ \ QByteArray\ m\_data;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BATTLE\_SPACE\_SERIALWORKER\_H}}
+
+\end{DoxyCode}

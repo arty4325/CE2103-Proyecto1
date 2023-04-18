@@ -1,0 +1,143 @@
+\hypertarget{GameScreen_8h_source}{}\doxysection{Game\+Screen.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Created\ by\ oscaraad\ on\ 03/04/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ BATTLE\_SPACE\_GAMESCREEN\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ BATTLE\_SPACE\_GAMESCREEN\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QGraphicsView>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QGraphicsRectItem>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QSerialPort>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}ListaSimple.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}Bullets.h"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}SimpleList.h"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}SimpleList.cpp"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}EasyEnemy.h"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}SerialWorker.h"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}MediumEnemy.h"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}DifficultEnemy.h"{}}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameScreen}{GameScreen}}:\ \textcolor{keyword}{public}\ QGraphicsView\{}
+\DoxyCodeLine{00029\ Q\_OBJECT}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ labelsPoderes[4][2]\ =\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Balas\ ilimitadas\ 10s"{}},\ \textcolor{stringliteral}{"{}Jugador\ 25\%\ rapido\ 10s"{}}\},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Agrega\ 100\ balas\ a\ cartucho"{}},\ \textcolor{stringliteral}{"{}Collector\ recupera\ dano"{}}\},}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Baja\ vida\ naves\ 25\%"{}},\ \textcolor{stringliteral}{"{}Balas\ mas\ rapidas"{}}\},}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Elimina\ ultima\ fase"{}},\ \textcolor{stringliteral}{"{}Congela\ naves\ enem"{}}\}}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}\ *player;}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classListaSimple}{ListaSimple}}\ dataList;}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<Bullets*>}}\ bulletsList;}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<Bullets*>}}\ bulletCollector;}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<EasyEnemy*>}}\ easyEnemys;}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<MediumEnemy*>}}\ mediumEnemys;}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<string>}}\ labelsPowers;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<string>}}\ primeraStrat;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<string>}}\ segundaStrat;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<string>}}\ terceraStrat;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<string>}}\ cuartaStrat;}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<DifficultEnemy*>}}\ difficultEnemys;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//SimpleList<SimpleList<int>>\ stratsLoaded;}}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<int>}}\ firstStrat;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classSimpleList}{SimpleList<int>}}\ secondStrat;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ QThread\ workerThread;}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{classSerialWorker}{SerialWorker}}*\ worker;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ QLabel\ *labelBalas;}
+\DoxyCodeLine{00062\ \ \ \ \ QLabel\ *labelCollector;}
+\DoxyCodeLine{00063\ \ \ \ \ QLabel\ *labelOleada;}
+\DoxyCodeLine{00064\ \ \ \ \ QLabel\ *labelVidas;}
+\DoxyCodeLine{00065\ \ \ \ \ QLabel\ *labelEnemOleadas;}
+\DoxyCodeLine{00066\ \ \ \ \ QLabel\ *labelFase;}
+\DoxyCodeLine{00067\ \ \ \ \ QLabel\ *labelStrat;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ oleada;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ fase;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ cantBullets;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ cantOleadas;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ tempCantBullets;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ cantVidas;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ velocidadJugador;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ velocidadBalas;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ onePixel;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ twoPixels;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ poteDisparo;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ faseJuego;}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ oleadaJuego;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ QTimer*\ moveTimer;}
+\DoxyCodeLine{00085\ \ \ \ \ QTimer*\ timer;}
+\DoxyCodeLine{00086\ \ \ \ \ QTimer*\ spawnTimer;}
+\DoxyCodeLine{00087\ \ \ \ \ QTimer*\ collisionTimer;}
+\DoxyCodeLine{00088\ \ \ \ \ QTimer*\ oleadaTimer;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ velocidadEnemigos;}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ EnemigosFaciles;}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ EnemigosMedios;}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{int}\ EnemigosDificiles;}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{int}\ tempSelecStrat;}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{int}\ tempSelecPower;}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ En\ el\ arreglo\ el\ orden\ de\ la\ info\ es:}}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//\ velocidad,\ enemigos\ faciles,\ enemigos\ medios,\ enemigos\ dificiles}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ infoOleadas[5][3]\ =\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \{10,\ 0,\ 0\},}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \{15,\ 5,\ 0\},}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \{15,\ 10,\ 0\},}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \{15,\ 15,\ 0\},}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \{10,\ 25,\ 0\}}
+\DoxyCodeLine{00105\ \ \ \ \ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasChoosedPower;}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{bool}\ cambioOleada;}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//bool\ primeraOleada;}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classGameScreen}{GameScreen}}(\textcolor{keywordtype}{int}\ Dificultad,\ QWidget\ *\ parent\ =\ 0);}
+\DoxyCodeLine{00115\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_a036ee41ebfaa8a19201089a36683013f}{animate}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classListaSimple}{ListaSimple}}\ \&dataList);}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_ae0248a9e7f219cc3e0d6314f7b53d1e9}{shootBullets}}();}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_ad634d9595d90bc30d71667319e4378b5}{spawnEnemys}}();}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_ab54cb1d7bde08e4337a71ebd6a805ba3}{moveEnemys}}();}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_ade99e089544db3a5329f4aa224c73cdf}{checkCollisions}}();}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_af1620d663ffa7d305de23d52cb7c09df}{checkOleada}}();}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_ad7e0bba60eca512f8eb6e46def367551}{exePower}}(\textcolor{keywordtype}{int}\ tempSelecStrat,\ \textcolor{keywordtype}{int}\ tempSelecPower);}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_afd20fb6feebd2b11de7d2db51d9cf047}{pararEjecucion}}();}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_a86ab5a8ff6084547f5a6d8f93ab43aef}{stopFirstFirt}}();}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_a184d53a6864aafe8265c6c2a84dc6487}{stopFirstSecond}}();}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_a3c32357329701245908393e37a4baa0b}{stopSecondSecond}}();}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{comment}{//void\ stopThirdFirst();}}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//void\ stopThirdSecond();}}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{comment}{//void\ stopFourthFirst();}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameScreen_a306cbfe7f4b34ec55e1480224467d4e3}{stopFourthSecond}}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{comment}{//void\ fireBullets(const\ ListaSimple\ \&dataList);}}
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BATTLE\_SPACE\_GAMESCREEN\_H}}
+
+\end{DoxyCode}
