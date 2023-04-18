@@ -13,6 +13,9 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Ejecuta la ventana del juego facil
+ */
 void MenuDificultades::easy() {
     cout << "Funciona el boton y la interfaz" << endl;
     GameScreen * easy = new GameScreen(0);
@@ -20,6 +23,9 @@ void MenuDificultades::easy() {
     this -> close();
 }
 
+/**
+ * @brief Ejecuta la ventana del juego medio
+ */
 void MenuDificultades::medium() {
     cout << "Funciona el boton y la interfaz" << endl;
     GameScreen * medium = new GameScreen(1);
@@ -27,6 +33,9 @@ void MenuDificultades::medium() {
     this -> close();
 }
 
+/**
+ * @brief Ejecuta la ventana del juego dificil
+ */
 void MenuDificultades::difficult() {
     cout << "Funciona el boton yu la interfaz" << endl;
     GameScreen * hard = new GameScreen(2);
@@ -34,6 +43,9 @@ void MenuDificultades::difficult() {
     this -> close();
 }
 
+/**
+ * @brief Metodo constructor de la clase Menu Dificultades
+ */
 MenuDificultades::MenuDificultades(QWidget *parent) {
     // Se crea la escena
     QGraphicsScene *scene = new QGraphicsScene();

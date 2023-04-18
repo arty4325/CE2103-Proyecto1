@@ -8,21 +8,40 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Clase constructora de la clase Simple List
+ * @tparam T
+ */
 template <class T>
 SimpleList<T>::SimpleList() {
     this -> head = nullptr;
 }
 
+/**
+ * @brief Obtiene el primer valor dde la lista SimpleList
+ * @tparam T Tipo de dato
+ * @return El valor que esta en la cabeza de SimpleList
+ */
 template <class T>
 NodeList<T>* SimpleList<T>::getHead(){
     return this -> head;
 }
 
+/**
+ * @brief Permite definir de nuevo cual es el primer valor en la lista SimpleList
+ * @tparam T Tipo del dato
+ * @param newHead El valor que se esta sustituyendo
+ */
 template <class T>
 void SimpleList<T>::setHead(NodeList<T>* newHead){
     this -> head = newHead;
 }
 
+/**
+ * @brief Permite insertar un valor en la cabeza de Simple List
+ * @tparam T Tipo del dato
+ * @param value El valor que se esta ingresando en la cabeza de SimpleList
+ */
 template <class T>
 void SimpleList<T>::insertHead(T value){
     NodeList<T>* newNode = new NodeList<T>(value);
@@ -30,6 +49,10 @@ void SimpleList<T>::insertHead(T value){
     this -> head = newNode;
 }
 
+/**
+ * @brief Permite borrar el primer valor que esta en una Lista Simple
+ * @tparam T El tipo del dato
+ */
 template <class T>
 void SimpleList<T>::deleteHead(){
     if (head != nullptr){
@@ -40,7 +63,10 @@ void SimpleList<T>::deleteHead(){
     }
 }
 
-
+/**
+ * @brief Imprime los valores que estan dentro de simple list
+ * @tparam T Tipo del dato
+ */
 template <class T>
 void SimpleList<T>::printList() const {
     cout << "*********************" << endl;
@@ -53,6 +79,12 @@ void SimpleList<T>::printList() const {
     cout << "*********************" << endl;
 }
 
+/**
+ * @brief Obtiene el valor e una posicion de la lista
+ * @tparam T El tipo del dato
+ * @param position La posicion que se quiere obtener
+ * @return El valor que esta en la posicion dada
+ */
 template <class T>
 T SimpleList<T>::getPosVal(int position) const {
     NodeList<T>* current = this -> head;
@@ -69,6 +101,11 @@ T SimpleList<T>::getPosVal(int position) const {
     return current -> value;
 }
 
+/**
+ * @brief Permite obtener el valor de la cantidad de datos que hay en la lista
+ * @tparam T Tipo de los datos
+ * @return La cantidad de datos que hay en la lista
+ */
 template <class T>
 int SimpleList<T>::getSize() const {
     NodeList<T>* current = this -> head;
@@ -80,7 +117,11 @@ int SimpleList<T>::getSize() const {
     return size;
 }
 
-
+/**
+ * @brief Borra el valor en una posicion en la lista
+ * @tparam T El tipo de los datos
+ * @param position La posicion del dato que se quiere borrar
+ */
 template <class T>
 void SimpleList<T>::deletePos(int position) {
     if (position == 0) {

@@ -7,6 +7,9 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief pantalla que le dice al jugador que gano
+ */
 WonScreen::WonScreen(QWidget *parent){
     QGraphicsScene *scene = new QGraphicsScene();
     scene -> setSceneRect(0, 0, 1000, 700);

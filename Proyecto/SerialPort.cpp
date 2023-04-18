@@ -1,11 +1,17 @@
 #include "SerialPort.h"
 
+/**
+ * @brief Metodo constructor de la clase Serial Port
+ */
 SerialPort::SerialPort()
 {
     portName = "/dev/ttyACM0"; // Reemplazar con el puerto serial que esté utilizando
     baudRate = QSerialPort::Baud9600;
 }
 
+/**
+ * @brief Metodo que permite abrir el Port Serial
+ */
 SerialPort::~SerialPort()
 {
     if (isOpen()) {
@@ -13,6 +19,9 @@ SerialPort::~SerialPort()
     }
 }
 
+/**
+ * @brief Inicializador del port serial
+ */
 void SerialPort::initialize()
 {
     setPortName(portName);

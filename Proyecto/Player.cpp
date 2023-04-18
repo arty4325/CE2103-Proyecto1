@@ -5,7 +5,9 @@
 #include "Player.h"
 #include <QDir>
 
-
+/**
+ * @brief Metodo constructor de la clase Player
+ */
 Player::Player(QGraphicsItem *parent)
         : QGraphicsPixmapItem(parent), cantidadBalas(10), vida(100) {
     // Configurar imagen del jugador
@@ -15,15 +17,25 @@ Player::Player(QGraphicsItem *parent)
 }
 
 
-
+/**
+ * @brief Disminuye las balas que el jugador tiene disponibles
+ */
 void Player::disminuirBalas() {
     cantidadBalas--;
 }
 
+/**
+ * @brief Disminuye la vida que el jugador tiene disponible
+ * @param cantidad Cantidad de vida que se le va a disminuir al Jugador
+ */
 void Player::disminuirVida(int cantidad) {
     vida -= cantidad;
 }
 
+/**
+ * @brief Aumenta la vida del jugador
+ * @param cantidad Cantidad de vida que se le va a aumentar al jugador
+ */
 void Player::aumentarVida(int cantidad) {
     vida += cantidad;
 }

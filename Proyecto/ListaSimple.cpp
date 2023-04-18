@@ -8,7 +8,7 @@ using namespace std;
 
 
 /**
- * @brief Método constructor de la clase istaSimple
+ * @brief Método constructor de la clase ListaSimple
  */
 ListaSimple::ListaSimple() {
     this->head = nullptr;

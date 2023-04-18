@@ -4,6 +4,9 @@
 #include "SerialWorker.h"
 #include "ListaSimple.h"
 
+/**
+ * @brief Metodo constructor de la clase serial worker
+ */
 SerialWorker::SerialWorker(QObject *parent) : QObject(parent)
 {
     m_serialPort.setBaudRate(QSerialPort::Baud9600);
@@ -13,6 +16,9 @@ SerialWorker::SerialWorker(QObject *parent) : QObject(parent)
     connect(&m_serialPort, &QSerialPort::readyRead, this, &SerialWorker::readData);
 }
 
+/**
+ * @brief Metodo lector de la informacion
+ */
 void SerialWorker::readData()
 {
     QList<QString> dataList;
@@ -37,6 +43,10 @@ void SerialWorker::readData()
     }
 }
 
+/**
+ * @brief Metodo que manda informacion al serial del Arduino
+ * @param data La informacion que le va a mandar al serial del Arduino
+ */
 void SerialWorker::writeData(const QByteArray &data)
 {
     m_serialPort.write(data);
